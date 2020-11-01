@@ -46,6 +46,7 @@ ul,li,dl,dt,dd {
 }
 
 a { 
+  color:#000;
   text-decoration: none; 
 }
 
@@ -169,7 +170,7 @@ header nav li a:hover {
 
 .work::before {
   content: '';
-  background: #e8e7e7;
+  background:rgba(255,228,196,0.5);;
   position: absolute;
   width: 100%;
   height: 300px;
@@ -235,6 +236,50 @@ header nav li a:hover {
   color: #949494;
   padding-right: 0px;
   margin-right: 80px;
+}
+
+.recruit {
+  position: relative;
+}
+
+.recruit-img img{
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
+  margin-right:20%;
+
+}
+
+.recruit-img::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top:0;
+  left: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.recruit h2 {
+  position: absolute;
+  top: 68%;
+  right: 45%;
+  width: 400px;
+  height: 60px;
+  color:#000;
+  background-color: rgba(255,255,255,0.6);
+  line-height: 60px;
+  text-align: center;
+}
+
+.bg2 {
+  position: absolute;
+  background:rgba(255,228,196,0.5);;
+  height: 400px;
+  width: 45%;
+  top: -20%;
+  right: 0;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1199px) {
