@@ -45,6 +45,10 @@ ul,li,dl,dt,dd {
   list-style: none;
 }
 
+a { 
+  text-decoration: none; 
+}
+
 a:hover { 
   transition: all .6s ease;
 }
@@ -59,11 +63,6 @@ section h2 {
 }
 
 .header {
-  height: 100px;
-}
-
-.header .content-wrapper {
-  background-color: antiquewhite;
   display:-ms-flexbox;
   display:-webkit-flex;
   display: flex;
@@ -77,13 +76,20 @@ section h2 {
   z-index: 1;
 }
 
+.header h1 {
+  margin: 0 0 0 25px;	
+  padding: 0 10px;
+  font-size: 2rem;
+  color: #000;
+  background:rgba(255,228,196,0.5);
+}
+
 .header nav ul {
   display:-ms-flexbox;
   display:-webkit-flex;
   display: flex;
   align-items: center;
   font-size: 1.2rem;
-  padding: 2rem;
 }
 
 .header nav ul li {
@@ -91,82 +97,48 @@ section h2 {
 }
 
 header nav li a {
-  color: #000;
-  text-decoration: none;
+  color: #fff;
 }
 
 header nav li a:hover {
   opacity: 0.6;
 }
 
+.header nav li.phone {
+  margin: 0 30px 0 10px;
+  padding: 0 25px;
+  border: 1px solid #fff;
+  line-height: 50px;
+  display: block;
+  color: #fff;
+}
+
 .mainvisual {
-  background-color: #FFEED6;
-  height:700px;
- }
+  position: relative;
+} 
 
-.mainvisual .main_cat {
-  position: relative;/*相対配置*/
+.mainvisual img {
   height: 700px;
-  width: 1280px;
-  margin: 0 20% 0 20%;
+  object-fit: cover;
+  object-position: 0 50%;
 }
 
-.mainvisual .main_cat img {
-  height: 600px;
-  width: 900px;
-  margin: 50px 0;
-}
-
-.mainvisual .main_cat h2 {
-  font-size: 3rem;
-  
+.mainvisual h2 {
   position: absolute;
   top: 50%;
+  left: 10%;
   transform: translateY(-50%);
-  left: 0;
-  background: rgba(255, 255, 255, 0.6);
-}
-/* .greeting {
-  background-color: #FFEED6;
-  height:500px;
-}
+  z-index: 1;
+  font-size: 4vw;
+  color: #000;
 
-.greeting h2 {
-  margin-bottom: 50px;
-  text-align: center;
+  background:rgba(255,255,255,0.5);
+  padding-left: 40px;
 }
 
-.greeting p {
-  text-align: center;
-}
 
-.greeting .contents {
-  display: flex;
-  justify-self: space-between;
-  align-items: center;
-}
 
-.greeting img {
-  height: 400px;
-  width: 600px;
-  margin: 50px 0;
-} */
-
-@media screen and (max-width: 1190px) {
-  .header {
-    height: 50px;
-  }
-
-  .header .content-wrapper {
-    height: 50px;
-  }
-
-  .header h1 {
-    margin: 0 0 0 13px;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-
+@media screen and (max-width: 1199px) {
   .hamburger {
     display: block;
     position:absolute;
@@ -174,9 +146,19 @@ header nav li a:hover {
     top: 50%;
     transform: translateY(-50%);
     width: 30px;
-    height: 22px;
+    height: 26px;
     cursor: pointer;
   }
+
+  .header {
+    height: 50px;
+  }
+
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+
   
   header nav {
     display: none;
@@ -190,7 +172,7 @@ header nav li a:hover {
   .nav-button {
     position: relative;
     width: 30px;
-    height: 22px;
+    height: 26px;
   }
   
   .nav-button span {
@@ -198,7 +180,7 @@ header nav li a:hover {
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: #000;
+    background-color: #fff;
   }
   
   .nav-button span:nth-of-type(1) {
@@ -206,38 +188,22 @@ header nav li a:hover {
   }
   
   .nav-button span:nth-of-type(2) {
-    top: 9px;
+    top: 11px;
   }
   
   .nav-button span:nth-of-type(3) {
     bottom: 0;
   }
 
-  .mainvisual {
-    height: 250px;
+  .mainvisual img {
+    height: auto;
   }
 
-  .mainvisual .main_cat {
-    position: relative;/*相対配置*/
-    height: 250px;
-    width: 100%;
-    margin: 0;
+  .mainvisual h2 {
+    padding-left: 5px;
   }
-  
-  .mainvisual .main_cat img {
-    height: 250px;
-    width: 100%;
-    margin: 0px;
-  }
-  
-  .mainvisual .main_cat h2 {
-    font-size: 1.1rem;
-    position: absolute;
-    top: 30%;
-    /* transform: translateY(%); */
-    left: 5%;
-    background: rgba(255, 255, 255, 0.6);
-  }
-
-
 }
+
+
+
+
