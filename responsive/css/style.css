@@ -282,37 +282,57 @@ header nav li a:hover {
   z-index: -1;
 }
 
-footer .content-wrapper {
+.footer {
+  padding-top: 120px;
+  padding-bottom: 0;
+}
+
+.footer .high {
+  border-bottom: 1px solid #333;
   display:-ms-flexbox;
   display:-webkit-flex;
   display: flex;
   -ms-flex-pack:justify;
   -webkit-justify-content: space-between;
   justify-content:space-between;
-  align-items: center;
-  padding: 50px 0;
+  align-items: flex-end;
 }
 
-.address p {
-  line-height: 1.8;
+.footer .high h2 {
+  font-size: 1.8rem;
 }
 
-footer ul {
+.footer .high ul {
+  display:-ms-flexbox;
+  display:-webkit-flex;
   display: flex;
+  margin-bottom: 15px;
 }
 
-footer ul li {
-  margin-right: 50px;
+.footer .high li a {
+  color: #333;
+  padding: 0 25px;
 }
 
-.copylight p {
+.footer .high li a:hover {
+  opacity: 0.6;
+}
+
+.footer .low {
+  padding-top: 25px;
+  color: #333;
+}
+
+.footer .low span {
+  padding-left: 1em;
+}
+
+.footer .low p {
+  color: #333;
   text-align: center;
   font-size: 1.3rem;
-  margin: 0;
-  line-height: 100px;
-  color: #333;
-  background-color: #FFE4C4;
 }
+
 
 @media screen and (max-width: 1199px) {
   .hamburger {
@@ -487,6 +507,46 @@ footer ul li {
     text-align: center;
   }
 
+  .footer {
+    padding-top: 20px;
+  }
+
+  .footer .high {
+    display: block;
+  }
+
+  .footer .high h2{
+    font-size: 1.0em;
+    text-align: center;
+  }
+
+  .footer .high ul {
+    margin-bottom: 5px;
+  }
+
+  .footer .high li {
+    width: calc(100%/5);
+    margin: 0 0 10px;
+    font-size: 0.6em;
+  }
+
+  .footer .high li a {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer .high h1 {
+    text-align: center;
+  }
+
+  .low {
+    text-align: center;
+  }
+
+  .footer .low p {
+    font-size: 1.0em;
+  }
 }
 
 
