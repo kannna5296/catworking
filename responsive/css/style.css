@@ -54,7 +54,7 @@ a:hover {
 }
 
 .content-wrapper {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -118,7 +118,7 @@ header nav li a:hover {
 } 
 
 .mainvisual img {
-  height: 700px;
+  height: 800px;
   object-fit: cover;
   object-position: 0 50%;
 }
@@ -136,8 +136,31 @@ header nav li a:hover {
   padding-left: 40px;
 }
 
+.about {
+  margin-top: 3em;
+}
 
-
+.about h2 {
+  margin-bottom: 50px;
+  text-align: center;
+ }
+ 
+ .about .contents {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+ }
+ 
+ .about .contents figure {
+  width: 50%;
+ }
+ 
+ .about .content {
+  width: 48%;
+ }
+ 
 @media screen and (max-width: 1199px) {
   .hamburger {
     display: block;
@@ -157,8 +180,6 @@ header nav li a:hover {
   .header h1 {
     font-size: 1.2rem;
   }
-
-
   
   header nav {
     display: none;
@@ -201,6 +222,41 @@ header nav li a:hover {
 
   .mainvisual h2 {
     padding-left: 5px;
+  }
+
+  .about {
+    margin-top: 1em;
+  }
+
+  .about .contents {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .about .contents {
+    text-align: center;
+  }
+
+  .about .contents figure,
+  .about .contents .content {
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  .about h2 {
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin:0;
+  }
+
+  .about p {
+    padding:0;
+    margin:0;
+    font-size: 0.8em;
+    text-align: left;
   }
 }
 
