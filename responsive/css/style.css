@@ -177,9 +177,8 @@ header nav li a:hover {
 }
 
 .work h2 {
-  margin-bottom: 60px;
+  margin-bottom: 1em;
   text-align: center;
-
 }
 
 .work ul {
@@ -302,6 +301,24 @@ header nav li a:hover {
     margin:0;
     font-size: 0.8em;
     text-align: left;
+  }
+
+  .work::before{
+    display: none;
+  }
+
+  .work ul{
+    display: block;
+    width: 100%;
+  }
+
+  .work ul li {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .work ul li p {
+    font-size: 0.8em;
   }
 }
 
