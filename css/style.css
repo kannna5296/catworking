@@ -516,18 +516,24 @@ header nav li a:hover {
   }
 
   .footer .high h2{
-    font-size: 1.0em;
+    font-size: 1.2em;
     text-align: center;
   }
 
   .footer .high ul {
     margin-bottom: 5px;
+    display: block;
+    border-bottom-style: ridge;
+    border-right-style:ridge;
+    border-left-style:ridge;
   }
 
   .footer .high li {
-    width: calc(100%/5);
-    margin: 0 0 10px;
-    font-size: 0.6em;
+    width: 100%;
+    margin: 0;
+    font-size: 1.0em;
+    border-top-style: ridge;
+    background-color: rgba(255,228,196,0.5)
   }
 
   .footer .high li a {
