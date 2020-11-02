@@ -121,7 +121,7 @@ header nav li a:hover {
 .mainvisual img {
   height: 800px;
   object-fit: cover;
-  object-position: 0 50%;
+  object-position: 20% 50%;
 }
 
 .mainvisual h2 {
@@ -390,7 +390,7 @@ header nav li a:hover {
   }
 
   .mainvisual img {
-    height: auto;
+    height: 300px;
   }
 
   .mainvisual h2 {
