@@ -111,6 +111,10 @@ padding-bottom: 13px;
 #hamburger nav ul li a{
 color: #fff;
 }
+
+.fas {
+margin-right: 5px;
+}
 /* ヘッダ(ハンバーガー)終了 */
 /* ヘッダ終了 */
 
