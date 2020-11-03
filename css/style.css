@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Common */
 html {
   margin: 0;
   padding:0;
@@ -62,7 +63,9 @@ a:hover {
 section h2 {
   font-size: 2rem;
 }
+/* Common終了 */
 
+/* ヘッダ */
 .header {
   display:-ms-flexbox;
   display:-webkit-flex;
@@ -106,10 +109,12 @@ padding-bottom: 13px;
 }
 
 #hamburger nav ul li a{
-color: #000;
+color: #fff;
 }
 /* ヘッダ(ハンバーガー)終了 */
+/* ヘッダ終了 */
 
+/* メインビジュアル */
 .mainvisual {
   position: relative;
 } 
@@ -132,7 +137,9 @@ color: #000;
   background:rgba(255,255,255,0.5);
   padding-left: 40px;
 }
+/* メインビジュアル終了 */
 
+/* 会社概要 */
 .about {
   margin-top: 3em;
 }
@@ -157,7 +164,9 @@ color: #000;
 .about .content {
   width: 48%;
 }
+/* 会社概要終了 */
 
+/* 事業内容 */
 .work {
   width: 100%;
   padding-top:2em;
@@ -201,7 +210,9 @@ color: #000;
 .work ul li figure {
   margin: 0;
 }
+/* 事業内容終了 */
 
+/* ニュース */
 .news .content-wrapper{
   width: 1200px;
   margin: 0 auto;
@@ -233,7 +244,9 @@ color: #000;
   padding-right: 0px;
   margin-right: 80px;
 }
+/* ニュース終了 */
 
+/* 採用情報 */
 .recruit {
   position: relative;
 }
@@ -277,7 +290,9 @@ color: #000;
   right: 0;
   z-index: -1;
 }
+/* 採用情報終了 */
 
+/* フッタ */
 .footer {
   padding-top: 120px;
   padding-bottom: 0;
@@ -328,9 +343,11 @@ color: #000;
   text-align: center;
   font-size: 1.3rem;
 }
+/* フッタ終了 */
 
 
 @media screen and (max-width: 1199px) {
+  /* ヘッダ */
   .header {
     height: 50px;
   }
@@ -353,8 +370,12 @@ color: #000;
     z-index: 2;
   }
 
-  #hamburger nav ul li {
+  #hamburger nav ul {
     display:block;
+  }
+
+  #hamburger nav ul li {
+    width: 300px;
   }
  
   #hamburger nav ul li a {
@@ -428,8 +449,9 @@ color: #000;
     right: 10%
   }
   /* ヘッダ(ハンバーガー)終了 */
+  /* ヘッダ終了 */
   
-
+  /* メインビジュアル */
   .mainvisual img {
     height: 300px;
   }
@@ -437,7 +459,9 @@ color: #000;
   .mainvisual h2 {
     padding-left: 5px;
   }
+  /* メインビジュアル終了 */
 
+  /* 会社概要 */
   .about {
     margin-top: 1em;
   }
@@ -472,7 +496,9 @@ color: #000;
     font-size: 0.8em;
     text-align: left;
   }
+  /* 会社概要終了 */
 
+  /* 事業内容 */
   .work::before{
     display: none;
   }
@@ -490,7 +516,9 @@ color: #000;
   .work ul li p {
     font-size: 0.8em;
   }
+  /* 事業内容終了 */
 
+  /* ニュース */
   .news .content-wrapper {
     width: 100%;
     margin-bottom:20px;
@@ -512,7 +540,9 @@ color: #000;
   .news ul li p {
     font-size: 0.8em;
   }
+  /* ニュース終了 */
 
+  /* 採用情報 */
   /* recruitの疑似要素消す */
   .bg2 {
     display: none;
@@ -547,7 +577,9 @@ color: #000;
     line-height: 60px;
     text-align: center;
   }
+  /* 採用情報終了 */
 
+  /* フッタ */
   .footer {
     padding-top: 20px;
   }
@@ -594,6 +626,7 @@ color: #000;
   .footer .low p {
     font-size: 1.0em;
   }
+  /* フッタ終了 */
 }
 
 
