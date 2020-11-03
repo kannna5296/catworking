@@ -93,26 +93,22 @@ section h2 {
   font-size: 1.2rem;
 }
 
-.header nav ul li {
-  margin: 0 20px;
+/* ヘッダ(ハンバーガー) */
+#hamburger nav ul{
+  margin-right: 160px;
 }
 
-header nav li a {
-  color: #fff;
+#hamburger nav ul li{
+display:inline-block;
+font-size: 16px;
+margin-left: 55px;
+padding-bottom: 13px;
 }
 
-header nav li a:hover {
-  opacity: 0.6;
+#hamburger nav ul li a{
+color: #000;
 }
-
-.header nav li.phone {
-  margin: 0 30px 0 10px;
-  padding: 0 25px;
-  border: 1px solid #fff;
-  line-height: 50px;
-  display: block;
-  color: #fff;
-}
+/* ヘッダ(ハンバーガー)終了 */
 
 .mainvisual {
   position: relative;
@@ -335,17 +331,6 @@ header nav li a:hover {
 
 
 @media screen and (max-width: 1199px) {
-  .hamburger {
-    display: block;
-    position:absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 26px;
-    cursor: pointer;
-  }
-
   .header {
     height: 50px;
   }
@@ -353,41 +338,97 @@ header nav li a:hover {
   .header h1 {
     font-size: 4vw;
   }
-  
-  header nav {
-    display: none;
-  }
-  
-  .nav-button,
-  .nav-button span {
-    display: inline-block;
-  }
-  
-  .nav-button {
-    position: relative;
-    width: 30px;
-    height: 26px;
-  }
-  
-  .nav-button span {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: #fff;
-  }
-  
-  .nav-button span:nth-of-type(1) {
+
+  /* ヘッダ(ハンバーガー) */
+  #hamburger nav {
+    position: fixed;
     top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    padding-top: 100px;
+    background:#deb887;
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 2;
   }
+
+  #hamburger nav ul li {
+    display:block;
+  }
+ 
+  #hamburger nav ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+ 
+  #hamburger .btn-gnavi {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 24px;
+    z-index: 3;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+  }
+ 
+  #hamburger .btn-gnavi span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #666;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+  }
+ 
+  #hamburger .btn-gnavi span:nth-child(1) {
+    top: 0
+  }
+ 
+  #hamburger .btn-gnavi span:nth-child(2) {
+    top: 10px
+  }
+ 
+  #hamburger .btn-gnavi span:nth-child(3) {
+    top: 20px
+  }
+ 
+  #hamburger .btn-gnavi.open {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+  }
+ 
+  #hamburger .btn-gnavi.open span {
+    background: #fff
+  }
+ 
+  #hamburger .btn-gnavi.open span {
+    width: 24px;
+  }
+
+  #hamburger .contents section p {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    line-height: 1.4;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 6px #666;
+  }
+ 
+  #hamburger .contents section:nth-child(odd) p {
+    left: 10%
+  }
+ 
+  #hamburger .contents section:nth-child(even) p {
+    right: 10%
+  }
+  /* ヘッダ(ハンバーガー)終了 */
   
-  .nav-button span:nth-of-type(2) {
-    top: 11px;
-  }
-  
-  .nav-button span:nth-of-type(3) {
-    bottom: 0;
-  }
 
   .mainvisual img {
     height: 300px;
