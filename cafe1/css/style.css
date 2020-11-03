@@ -1,0 +1,283 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/* Common */
+html {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 2.0;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  font-family: "游ゴシック", "Yu Gothic";
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h1,h2{
+  margin: 0;
+  padding: 0;
+}
+
+.medium {
+  font-family: "游ゴシック", "Yu Gothic";
+  font-size: 16px;
+  font-weight: medium;
+}
+
+.buttton {
+  font-family: "游ゴシック", "Yu Gothic";
+  font-size: 14px;
+  font-weight: medium;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+figure {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,li,dl,dt,dd {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+a { 
+  color:#000;
+  text-decoration: none; 
+}
+
+a:hover { 
+  transition: all .6s ease;
+}
+
+.content-wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+/* Common終了 */
+
+/* ヘッダ */
+.header {
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+  -ms-flex-pack:justify;
+  -webkit-justify-content: space-between;
+  justify-content:space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.header #pc_navi ul {
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+  align-items: center;
+  margin-right: 160px;
+  
+  vertical-align: center;
+}
+
+.header #pc_navi ul li {
+  padding: 0;
+}
+
+.header #pc_navi ul li a{
+  margin-left:55px;
+}
+
+.header h1 {
+  margin-left: 165px;
+  color: #5d3c28;
+}
+
+/* ヘッダ(ハンバーガー) */
+#hamburger nav ul{
+  margin-right: 160px;
+}
+
+#hamburger nav ul li{
+display:inline-block;
+font-size: 16px;
+margin-left: 55px;
+padding-bottom: 13px;
+}
+
+#hamburger nav ul li a{
+color: #000;
+}
+
+/* ヘッダ(ハンバーガー)終了 */
+/* ヘッダ終了 */
+
+/* メインビジュアル */
+.mainvisual {
+  height: 800px;
+  position: relative;
+}
+
+.mainvisual h1 {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left: 8%;
+
+  color: #fff;
+  z-index: 1;
+}
+
+.mainvisual img {
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+
+  object-fit: cover;
+  object-position: 50%;
+}
+/* メインビジュアル終了 */
+
+
+
+@media screen and (max-width: 1199px) {
+  /* ヘッダ */
+  .header h1 {
+    margin-left: 18px;
+  }
+
+  /* ヘッダ(ハンバーガー) */
+  #hamburger nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    padding-top: 100px;
+    background:#deb887;
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+
+  #hamburger nav ul li {
+    display:block;
+  }
+ 
+  #hamburger nav ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+ 
+  #hamburger .btn-gnavi {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 24px;
+    z-index: 3;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+  }
+ 
+  #hamburger .btn-gnavi span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #666;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+  }
+ 
+  #hamburger .btn-gnavi span:nth-child(1) {
+    top: 0
+  }
+ 
+  #hamburger .btn-gnavi span:nth-child(2) {
+    top: 10px
+  }
+ 
+  #hamburger .btn-gnavi span:nth-child(3) {
+    top: 20px
+  }
+ 
+  #hamburger .btn-gnavi.open {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+  }
+ 
+  #hamburger .btn-gnavi.open span {
+    background: #fff
+  }
+ 
+  #hamburger .btn-gnavi.open span {
+    width: 24px;
+  }
+
+  #hamburger .contents section p {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    line-height: 1.4;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 6px #666;
+  }
+ 
+  #hamburger .contents section:nth-child(odd) p {
+    left: 10%
+  }
+ 
+  #hamburger .contents section:nth-child(even) p {
+    right: 10%
+  }
+  /* ヘッダ(ハンバーガー)終了 */
+  /* ヘッダ終了 */
+
+  /* メインビジュアル */
+  .mainvisual {
+    height: 350px;
+    position: relative;
+  }
+
+  .mainvisual h1 {
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    font-size: 24px;
+  }
+
+  .mainvisual img {
+    object-fit: cover;
+    object-position: 50%;
+  }
+  /* メインビジュアル終了 */
+}
