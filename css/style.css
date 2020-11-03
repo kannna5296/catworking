@@ -112,8 +112,8 @@ padding-bottom: 13px;
 color: #fff;
 }
 
-.fas {
-margin-right: 5px;
+#hamburger .fas {
+margin-right: 7px;
 }
 /* ヘッダ(ハンバーガー)終了 */
 /* ヘッダ終了 */
