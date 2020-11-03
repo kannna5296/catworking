@@ -426,9 +426,23 @@ margin-right: 7px;
     top: 20px
   }
  
-  #hamburger .btn-gnavi.open {
+  /* #hamburger .btn-gnavi.open {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg)
+  } */
+
+  #hamburger .btn-gnavi.open span:nth-of-type(1){
+    -webkit-transform: translateY(10px) rotate(-45deg);
+    transform: translateY(10px) rotate(-45deg);
+  }
+
+  #hamburger .btn-gnavi.open span:nth-of-type(2){
+    opacity: 0;
+  }
+
+  #hamburger .btn-gnavi.open span:nth-of-type(3){
+    -webkit-transform: translateY(-10px) rotate(45deg);
+    transform: translateY(-10px) rotate(45deg);
   }
  
   #hamburger .btn-gnavi.open span {
@@ -449,13 +463,13 @@ margin-right: 7px;
     text-shadow: 0 0 6px #666;
   }
  
-  #hamburger .contents section:nth-child(odd) p {
+  /* #hamburger .contents section:nth-child(odd) p {
     left: 10%
   }
  
   #hamburger .contents section:nth-child(even) p {
     right: 10%
-  }
+  } */
   /* ヘッダ(ハンバーガー)終了 */
   /* ヘッダ終了 */
   
