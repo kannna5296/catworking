@@ -381,6 +381,9 @@ margin-right: 7px;
 
   #hamburger nav ul li {
     width: 300px;
+    border-bottom: dashed;
+    margin-left: 10px;
+    padding: 10px 0;
   }
  
   #hamburger nav ul li a {
