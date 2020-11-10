@@ -388,6 +388,15 @@ color: #000;
 
 
 @media screen and (max-width: 1199px) {
+
+  .contents-wrapper {
+    width: 375px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
   /* ヘッダ */
   .header h1 {
     margin-left: 18px;
@@ -494,7 +503,7 @@ color: #000;
     /* top: 50%; */
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 300px;
+    width: 320px;
     font-size: 24px;
   }
 
@@ -503,4 +512,64 @@ color: #000;
     object-position: 50%;
   }
   /* メインビジュアル終了 */
+
+  /* 会社概要 */
+  .about {
+    height: 723px;
+    margin:0;
+  }
+
+  .about h2 {
+    margin-top: 59px;
+    margin-bottom:41px;
+  }
+
+  .about p {
+    width: 335px;
+    margin:0 auto;
+  }
+  /* 会社概要終了 */
+
+  /* メニュー */
+  .menu {
+    height: 1415px;
+    margin: 0;
+    background-color: #fcf5f1;
+  }
+
+  .menu h2 {
+    padding-top: 52px;
+  }
+
+  .menu .contents-wrapper ul {
+    display: block;
+  }
+
+  .menu .contents-wrapper ul li {
+    width: 335px;
+    margin:0 auto;
+  }
+
+  .menu .contents-wrapper ul li h2 {
+    margin: 18px auto;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .menu .contents-wrapper ul li p {
+    margin-bottom: 35px;
+    padding: 0;
+    font-size: 16px;
+    line-height:1.2;
+  }
+  /* メニュー終了 */
+
+  /* 内観 */
+  /* 内観終了 */
+
+  /* ニュース */
+  /* ニュース終了 */
+
+  /* フッタ */
+  /* フッタ終了 */
 }
