@@ -665,5 +665,55 @@ color: #000;
   /* ニュース終了 */
 
   /* フッタ */
+
+  .footer {
+    height: 663px;
+  }
+
+  .footer h1 {
+    margin:0;
+    padding:0;
+    text-align: center;
+    width: 335px;
+  }
+
+  .footer p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .footer .contents-wrapper .info_map {
+    display:-webkit-box; 
+    display: -webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    width: 335px;
+  }
+
+  .footer .contents-wrapper .info_map .map{
+    -webkit-box-ordinal-group:1;
+    -ms-flex-order:1;
+    -webkit-order:1;  
+    order:1;
+    height: 252px;
+  }
+
+  .footer .contents-wrapper .info_map .info{
+    -webkit-box-ordinal-group:2;
+    -ms-flex-order:2;
+    -webkit-order:2;  
+    order:2;
+    margin:0;
+    padding:0;
+  }
+
+  .footer .contents-wrapper .info ul {
+    justify-content: center;
+  }
+
+
   /* フッタ終了 */
 }
