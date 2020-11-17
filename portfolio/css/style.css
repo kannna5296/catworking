@@ -111,12 +111,6 @@ section h2 {
 }
 /* Common終了 */
 
-
-.mainvisual h2 {
-  font-weight: 400;
-  font-size:60px;
-}
-
 .header {
   display:-ms-flexbox;
   display:-webkit-flex;
@@ -172,3 +166,29 @@ section h2 {
   margin-right:30px;
 }
 
+.mainvisual {
+  position: relative;
+  height: 860px;
+  width: 100%;
+}
+
+.mainvisual img {
+  width: 75%;
+  height: 850px;
+  position: absolute;
+  right:0;
+  object-fit: cover;
+  object-position: 20% 50%;
+}
+
+.mainvisual h2 {
+  position: absolute;
+  top: 30%;
+  left: 17%; 
+  z-index: 1;
+  font-size: 4vw;
+  color: #000;
+
+  font-weight: 100;
+  font-size: 90px;
+}

@@ -126,7 +126,7 @@ margin-right: 7px;
 .mainvisual img {
   height: 800px;
   object-fit: cover;
-  object-position: 20% 50%;
+  object-position: 50% 50%;
 }
 
 .mainvisual h2 {
