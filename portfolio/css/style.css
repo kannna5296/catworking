@@ -178,17 +178,54 @@ section h2 {
   position: absolute;
   right:0;
   object-fit: cover;
-  object-position: 20% 50%;
+  object-position: 20% 60%;
 }
 
 .mainvisual h2 {
   position: absolute;
   top: 30%;
-  left: 17%; 
+  left: 15%; 
   z-index: 1;
   font-size: 4vw;
   color: #000;
 
-  font-weight: 100;
-  font-size: 90px;
+  font-weight: normal;
+  font-size: 80px;
+}
+
+.mainvisual h2:after {
+  content:"WEB CREATOR & ENGINEER";
+  font-family: "Calibli";
+  font-size:16px;
+  font-weight: 400;
+
+  display: block;
+  position:absolute;
+  width: 400px;
+  left:0;
+  top:120px;
+}
+
+.mainvisual p {
+  position: absolute;
+  font-family: "Calibli";
+  font-size:16px;
+  font-weight: 400;
+
+  top: 70%;
+  left: 13%; 
+  transform: rotate(0.25turn);
+  margin: 0;
+}
+
+.mainvisual p::after {
+  content:"";
+  display:block;
+  width:120px;
+  height:0.5px;
+  background-color:#000;
+  position:absolute;
+  top:50%;
+
+  left:100px;
 }
