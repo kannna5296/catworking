@@ -161,7 +161,27 @@ section h2 {
 .header #globalnavi ul .inpage a{
   margin-right:50px;
   font-family: "Yu Gothic";
+  position: relative;
 }
+
+/* ホバーしたら下線 */
+.header #globalnavi ul .inpage a:after{
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+
+.header #globalnavi ul .inpage a:hover:after{
+  transform: scale(1, 1);
+}
+
 .header #globalnavi ul .sns a{
   margin-right:30px;
 }
@@ -206,7 +226,7 @@ section h2 {
   top:120px;
 }
 
-.mainvisual p {
+.mainvisual a {
   position: absolute;
   font-family: "Calibli";
   font-size:16px;
@@ -218,14 +238,53 @@ section h2 {
   margin: 0;
 }
 
-.mainvisual p::after {
+/* .mainvisual a::before {
   content:"";
   display:block;
-  width:120px;
+  width:150px;
   height:0.5px;
-  background-color:#000;
+  background: #999;
   position:absolute;
-  top:50%;
-
+  top:35%;
   left:100px;
+} */
+
+.mainvisual a::after {
+  content:"";
+  display:block;
+  width:150px;
+  height:0.5px;
+  background: #000;
+  position:absolute;
+  top:35%;
+  left:100px;
+  animation: SSS 3s cubic-bezier(0.87, 0, 0.13, 1) infinite;
+}
+
+@keyframes SSS {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+}
+
+
+
+
+.about {
+  display: block;
+  /* スクロール用、仮 */
+  height: 600px;
 }
