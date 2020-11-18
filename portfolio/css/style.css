@@ -111,6 +111,7 @@ section h2 {
 }
 /* Common終了 */
 
+/* ヘッダ */
 .header {
   display:-ms-flexbox;
   display:-webkit-flex;
@@ -182,10 +183,13 @@ section h2 {
   transform: scale(1, 1);
 }
 
+
 .header #globalnavi ul .sns a{
   margin-right:30px;
 }
+/* ヘッダ終了 */
 
+/* メインビジュアル */
 .mainvisual {
   position: relative;
   height: 860px;
@@ -238,17 +242,6 @@ section h2 {
   margin: 0;
 }
 
-/* .mainvisual a::before {
-  content:"";
-  display:block;
-  width:150px;
-  height:0.5px;
-  background: #999;
-  position:absolute;
-  top:35%;
-  left:100px;
-} */
-
 .mainvisual a::after {
   content:"";
   display:block;
@@ -279,12 +272,25 @@ section h2 {
     transform-origin: 0 100%;
   }
 }
+/* メインビジュアル終了 */
 
-
-
-
+/* about */
 .about {
   display: block;
   /* スクロール用、仮 */
   height: 600px;
 }
+/* about終了 */
+
+
+/* service */
+/* service終了 */
+
+/* works */
+/* works終了 */
+
+/* skill */
+/* skill終了 */
+
+/* フッタ */
+/* フッタ終了 */
