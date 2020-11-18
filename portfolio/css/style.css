@@ -28,7 +28,7 @@ h1 {
 h2 {
   margin:0;
   padding:0;
-  font-size: 36px;
+  font-size: 48px;
   font-family: "Felix Tilting MT";
 }
 
@@ -37,6 +37,14 @@ h3 {
   margin:0;
   padding:0;
   font-size: 30px;
+  font-weight:Medium;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+}
+
+p {
+  margin:0;
+  padding:0;
+  font-size: 16px;
   font-weight:Medium;
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
 }
@@ -63,10 +71,6 @@ h3 {
   box-sizing: border-box
  }
 
-h2,h3,h4,h5 {
-  margin: 0;
-  padding: 0;
-}
 
 img {
   width: 100%;
@@ -97,17 +101,9 @@ a:hover {
   transition: all .6s ease;
 }
 
-.content-wrapper {
-  width: 95%;
-  margin: 0 auto;
-}
-
-section h2 {
-  font-size: 2rem;
-}
-
 .contents-wrapper {
   width:1280px;
+  margin: 0 auto;
 }
 /* Common終了 */
 
@@ -277,8 +273,51 @@ section h2 {
 /* about */
 .about {
   display: block;
-  /* スクロール用、仮 */
-  height: 600px;
+  height: 919px;
+  margin:0;
+  padding:0;
+}
+
+.about .contents-wrapper .content {
+  position: relative;
+  height: 650px;
+}
+
+.about .contents-wrapper h2 {
+  text-align: center;
+  margin-top:151px;
+  margin-bottom:92px;
+}
+
+.about .contents-wrapper h2::after {
+  content:"私について";
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  font-size:16px;
+  font-weight: 400;
+
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about .contents-wrapper .box {
+  position: absolute;
+  width: 56%;
+  height: 650px;
+  background-color: #e4e4e4;
+  z-index: -1;
+}
+
+.about .contents-wrapper p {
+  width: 60%;
+  height: 436px;
+  padding: 52px 49px;
+  background-color: #fafafa;
+  z-index: 1;
+
+  position: absolute;
+  right:0;
+  top: 107px;
 }
 /* about終了 */
 
