@@ -86,7 +86,7 @@ table {
   border-spacing: 0;
 }
 
-ul,li,dl,dt,dd {
+ul,ol,li,dl,dt,dd {
   margin:0;
   padding:0;
   list-style: none;
@@ -141,7 +141,7 @@ a:hover {
   top:-2px;
 }
 
-.header #globalnavi ul {
+.header #globalnavi ol {
   display:-ms-flexbox;
   display:-webkit-flex;
   display: flex;
@@ -151,18 +151,18 @@ a:hover {
   vertical-align: center;
 }
 
-.header #globalnavi ul li {
+.header #globalnavi ol li {
   padding: 0;
 }
 
-.header #globalnavi ul .inpage a{
+.header #globalnavi ol .inpage a{
   margin-right:50px;
   font-family: "Yu Gothic";
   position: relative;
 }
 
 /* ホバーしたら下線 */
-.header #globalnavi ul .inpage a:after{
+.header #globalnavi ol .inpage a:after{
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -175,12 +175,12 @@ a:hover {
   transition: transform .3s;
 }
 
-.header #globalnavi ul .inpage a:hover:after{
+.header #globalnavi ol .inpage a:hover:after{
   transform: scale(1, 1);
 }
 
 
-.header #globalnavi ul .sns a{
+.header #globalnavi ol .sns a{
   margin-right:30px;
 }
 /* ヘッダ終了 */
@@ -325,7 +325,7 @@ a:hover {
 /* service */
 .service {
   display: block;
-  height: 850px;
+  height: 600px;
   margin:0;
   padding:0;
 }
@@ -347,7 +347,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.service .contents-wrapper .content ul {
+.service .contents-wrapper .content ol {
   display:-ms-flexbox;
   display:-webkit-flex;
   display: flex;
@@ -357,31 +357,63 @@ a:hover {
   align-items: center;
 }
 
-.service .contents-wrapper .content ul li {
+.service .contents-wrapper .content ol li {
   width: 410px;
 }
 
-.service .contents-wrapper .content ul li h3{
+.service .contents-wrapper .content ol li h3{
   color: #808080;
   text-align: center;
 }
 
-.service .contents-wrapper .content ul li img {
+.service .contents-wrapper .content ol li img {
   height:113px;
   width:113px;
   margin: 30px 150px 42px;
 }
 
-.service .contents-wrapper .content ul li .explanation {
+.service .contents-wrapper .content ol li .explanation {
   font-weight: 400;
   font-size: 16px;
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
 }
-
-
 /* service終了 */
 
 /* works */
+.works {
+  display: block;
+  height: 850px;
+  margin:0;
+  padding:0;
+}
+
+.works .contents-wrapper h2 {
+  text-align: center;
+  margin-top:151px;
+  margin-bottom:92px;
+}
+
+.works .contents-wrapper h2::after {
+  content:"作ったもの";
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  font-size:16px;
+  font-weight: 400;
+
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.works .contents-wrapper .content table  {
+  width: 100%;
+}
+.works .contents-wrapper .content table .work {
+  background-color: #e5e5e5;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
 /* works終了 */
 
 /* skill */
