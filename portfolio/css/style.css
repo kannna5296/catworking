@@ -323,7 +323,7 @@ a:hover {
 
 
 /* service */
-.about {
+.service {
   display: block;
   height: 850px;
   margin:0;
@@ -346,6 +346,39 @@ a:hover {
   text-align: center;
   margin: 0 auto;
 }
+
+.service .contents-wrapper .content ul {
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+  -ms-flex-pack:justify;
+  -webkit-justify-content: space-between;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.service .contents-wrapper .content ul li {
+  width: 410px;
+}
+
+.service .contents-wrapper .content ul li h3{
+  color: #808080;
+  text-align: center;
+}
+
+.service .contents-wrapper .content ul li img {
+  height:113px;
+  width:113px;
+  margin: 30px 150px 42px;
+}
+
+.service .contents-wrapper .content ul li .explanation {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+}
+
+
 /* service終了 */
 
 /* works */
