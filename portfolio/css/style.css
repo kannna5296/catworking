@@ -179,7 +179,6 @@ a:hover {
   transform: scale(1, 1);
 }
 
-
 .header #globalnavi ol .sns a{
   margin-right:30px;
 }
@@ -382,7 +381,7 @@ a:hover {
 /* works */
 .works {
   display: block;
-  height: 850px;
+  height: 950px;
   margin:0;
   padding:0;
 }
@@ -417,6 +416,59 @@ a:hover {
 /* works終了 */
 
 /* skill */
+.skill {
+  height: 1349px;
+}
+
+.skill .contents-wrapper .contents{
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+  -ms-flex-pack:justify;
+  -webkit-justify-content: space-between;
+  justify-content:space-between;
+}
+
+.skill .contents-wrapper .content1 {
+  position: relative;
+  height:1349px;
+  width: 480px;
+}
+
+.skill .contents-wrapper .content2 {
+  position: relative;
+  height:1349px;
+  width: 800px;
+}
+
+.skill .contents-wrapper .content1 h2{
+  position: absolute;
+  width: 300px;
+  left: 40%;
+  top: 300px;
+  transform: rotate(0.25turn);
+}
+
+.skill .contents-wrapper .content1 h2::after {
+  content:"スキルについて";
+  font-family: "Calibli";
+  font-size:16px;
+  font-weight: 400;
+
+  width:30px;
+  position: absolute;
+  top:30%;
+  left:45%;
+  transform: rotate(-0.25turn);
+} 
+.skill .contents-wrapper .content1 img{
+  position: absolute;
+  width: 480px;
+  height: 850px;
+
+  left: -66%;
+  z-index: 0;
+}
 /* skill終了 */
 
 /* フッタ */
