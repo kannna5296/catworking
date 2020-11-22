@@ -482,5 +482,71 @@ a:hover {
 }
 /* skill終了 */
 
+/* contact */
+.contact {
+  height: 1000px;
+  background-color: #e5e5e5;
+}
+
+.contact h2 {
+  padding-top:120px;
+  padding-bottom:70px;
+  text-align: center;
+}
+
+.contact h2::after {
+  content:"お問い合わせ";
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  font-size:16px;
+  font-weight: 400;
+
+  display: block;
+}
+
+.contact .contents-wrapper input {
+  height: 70px;
+  width: 100%;
+  border:none;
+  margin-bottom: 50px;
+}
+
+.contact .contents-wrapper textarea {
+  height: 280px;
+  width: 100%;
+  border:none;
+  margin-bottom: 70px;
+}
+
+.contact .contents-wrapper .button-wrapper {
+  text-align: center;
+
+}
+
+.contact .contents-wrapper button {
+  height: 65px;
+  width: 220px;
+
+  background-color: #000;
+  color:#fff;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  font-size:16px;
+  font-weight: 400;
+
+  position: relative;
+}
+
+.contact .contents-wrapper button::after {
+  content:"";
+  background-color: #fff;
+  height: 1px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  top:50%;
+  right:0;
+
+}
+/* contact終了 */
+
 /* フッタ */
 /* フッタ終了 */
