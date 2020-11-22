@@ -118,7 +118,6 @@ a:hover {
   align-items: center;
   width: 100%;
   height: 100px;
-  position: absolute;
   z-index: 1;
 }
 
@@ -149,6 +148,7 @@ a:hover {
   margin-right: 160px;
   
   vertical-align: center;
+  z-index: 1;
 }
 
 .header #globalnavi ol li {
@@ -225,6 +225,7 @@ a:hover {
   top:120px;
 }
 
+/* スクロールバー */
 .mainvisual a {
   position: absolute;
   font-family: "Calibli";
@@ -244,7 +245,7 @@ a:hover {
   height:0.5px;
   background: #000;
   position:absolute;
-  top:35%;
+  top:45%;
   left:100px;
   animation: SSS 3s cubic-bezier(0.87, 0, 0.13, 1) infinite;
 }
@@ -312,7 +313,7 @@ a:hover {
   height: 436px;
   padding: 52px 49px;
   background-color: #fafafa;
-  z-index: 1;
+  z-index: 0;
 
   position: absolute;
   right:0;
