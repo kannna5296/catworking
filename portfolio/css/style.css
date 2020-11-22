@@ -49,7 +49,7 @@ p {
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
 }
 
-.button {
+button {
   margin:0;
   padding:0;
   font-size: 16px;
@@ -549,4 +549,46 @@ a:hover {
 /* contact終了 */
 
 /* フッタ */
+footer {
+  background-color: #000;
+}
+
+footer ol {
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+  -ms-flex-pack:justify;
+  -webkit-justify-content: space-between;
+  justify-content:space-between;
+}
+
+footer .copyright {
+  height: 80px;
+  color: #fff;
+  position: relative;
+}
+
+footer .copyright p {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+
+footer .sns .icon-wrapper{
+  width:100px;
+  height: 80px;
+  color:#fff;
+  position: relative;
+  position: relative;
+}
+
+footer .sns .icon-wrapper .fa-twitter::before {
+  position: absolute;
+  top:35px;
+  left:50%;
+  transform: translateX(-50%);
+
+}
 /* フッタ終了 */
