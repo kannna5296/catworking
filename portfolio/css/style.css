@@ -509,6 +509,7 @@ a:hover {
   width: 100%;
   border:none;
   margin-bottom: 50px;
+  padding-left:20px;
 }
 
 .contact .contents-wrapper textarea {
@@ -516,6 +517,8 @@ a:hover {
   width: 100%;
   border:none;
   margin-bottom: 70px;
+  padding-left:20px;
+  padding-top:25px;
 }
 
 .contact .contents-wrapper .button-wrapper {
