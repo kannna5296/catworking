@@ -8,6 +8,14 @@
  <link rel="stylesheet" href="css/style.css">
  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
+ <!-- スクロール -->
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
+ <script> scroll = new SmoothScroll('a[href*="#"]', {
+  speedAsDuration:true,
+  speed:600,
+  easing:'easeInOutQuint'
+  });
+</script>
 </head>
 <body>
  <header class="header">
@@ -20,11 +28,11 @@
     </p>
     <nav id="globalnavi">
      <ol class="menu">    
-      <li class="inpage"><a href="#about">ABOUT</a></li>
-      <li class="inpage"><a href="#service">SERVICE</a></li>
-      <li class="inpage"><a href="#works">WORKS</a></li>
-      <li class="inpage"><a href="#skill">SKILL</a></li>
-      <li class="inpage"><a href="#contact">CONTACT</a></li>
+      <li class="inpage"><a data-scroll href="#about">ABOUT</a></li>
+      <li class="inpage"><a data-scroll href="#service">SERVICE</a></li>
+      <li class="inpage"><a data-scroll href="#works">WORKS</a></li>
+      <li class="inpage"><a data-scroll href="#skill">SKILL</a></li>
+      <li class="inpage"><a data-scroll href="#contact">CONTACT</a></li>
       <li class="sns"><a href="https://twitter.com/Jzm_engineer"><i class="fab fa-twitter"></i></a></li>
       <li class="sns"><a href=""><i class="fab fa-facebook-f"></i></a></li>
      </ol>
@@ -37,7 +45,7 @@
   <h2>HIRO</h2>
 
   <img src="images/mainvisual.jpg" alt="メインビジュアル">
-  <a href="#about">SCROLL</a>
+  <a data-scroll href="#about">SCROLL</a>
  </article>
  
  <section class="about" id="about">
