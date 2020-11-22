@@ -469,6 +469,17 @@ a:hover {
   left: -66%;
   z-index: 0;
 }
+
+.skill .contents-wrapper .content2 p {
+  margin-top: 180px;
+  width: 545px;
+  height: 480px;
+}
+
+.skill .contents-wrapper .content2 img {
+  width: 800px;
+  height: 415px;
+}
 /* skill終了 */
 
 /* フッタ */
