@@ -444,10 +444,10 @@ a:hover {
 
 .skill .contents-wrapper .content1 h2{
   position: absolute;
-  width: 300px;
-  left: 40%;
-  top: 300px;
-  transform: rotate(0.25turn);
+  width: 400px;
+  left: 300px;
+  top: 200px;
+  writing-mode: vertical-lr;
 }
 
 .skill .contents-wrapper .content1 h2::after {
@@ -457,10 +457,13 @@ a:hover {
   font-weight: 400;
 
   width:30px;
+  height: 300px;
   position: absolute;
-  top:30%;
-  left:45%;
-  transform: rotate(-0.25turn);
+  top:130px;
+  left:17px;
+
+  writing-mode: vertical-lr;
+  
 } 
 .skill .contents-wrapper .content1 img{
   position: absolute;
