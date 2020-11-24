@@ -319,6 +319,11 @@ a:hover {
   right:0;
   top: 107px;
 }
+
+.about .content-wrapper .content img {
+  object-fit: cover;
+  
+}
 /* about終了 */
 
 
