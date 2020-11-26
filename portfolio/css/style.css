@@ -617,9 +617,13 @@ footer .sns .icon-wrapper .fa-twitter::before {
     width: 335px;
   }
 
+.header {
+  position: fixed;
+}
+
   .header h1{
     margin:10px 0 0 10px;
-  }
+  }  
 
 /* ヘッダ(ハンバーガー) */
 #hamburger nav {
@@ -635,25 +639,31 @@ footer .sns .icon-wrapper .fa-twitter::before {
   z-index: 2;
 }
 
-#hamburger nav ul {
-  display:block;
+.header #globalnavi ol {
+  display: block;
 }
 
-#hamburger nav ul li {
+#hamburger nav ol li {
   width: 300px;
   border-bottom: dashed;
+  display:block;
+  margin-top:20px;
   margin-left: 10px;
   padding: 10px 0;
 }
 
-#hamburger nav ul li a {
+#hamburger nav ol li a {
   text-decoration: none;
   color: #000;
 }
 
+#hamburger nav ol .sns {
+  display: none;
+}
+
 #hamburger .btn-gnavi {
   position: fixed;
-  top: 30px;
+  top: 35px;
   right: 20px;
   width: 30px;
   height: 24px;
@@ -717,6 +727,22 @@ footer .sns .icon-wrapper .fa-twitter::before {
   color: #fff;
   text-shadow: 0 0 6px #666;
 }
+
+.site-header{
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  transition: .5s;
+  width: 100%;
+  z-index: 999;
+}
+
+.site-header.hide{
+  transform: translateY(-100%);
+}
 /* ヘッダ(ハンバーガー)終了 */
 /* ヘッダ終了 */
+
+
 }
