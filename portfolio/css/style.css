@@ -268,6 +268,10 @@ a:hover {
     transform-origin: 0 100%;
   }
 }
+
+.mainvisual .sp-copy {
+  display: none;
+}
 /* メインビジュアル終了 */
 
 /* about */
@@ -613,17 +617,21 @@ footer .sns .icon-wrapper .fa-twitter::before {
 
 @media screen and (max-width: 899px) {
 
-  .contents-wrapper {
-    width: 335px;
-  }
+.contents-wrapper {
+  width: 335px;
+}
 
 .header {
   position: fixed;
 }
 
-  .header h1{
-    margin:10px 0 0 10px;
-  }  
+.header h1{
+  margin:0;
+}  
+
+.header h1:before {
+  display: none;
+}
 
 /* ヘッダ(ハンバーガー) */
 #hamburger nav {
@@ -728,6 +736,7 @@ footer .sns .icon-wrapper .fa-twitter::before {
   text-shadow: 0 0 6px #666;
 }
 
+/* 下スクロール時だけ消えるヘッダ */
 .site-header{
   background: rgba(255,255,255,0.8);
   padding: 20px;
@@ -744,5 +753,35 @@ footer .sns .icon-wrapper .fa-twitter::before {
 /* ヘッダ(ハンバーガー)終了 */
 /* ヘッダ終了 */
 
+/* メインビジュアル */
 
+.mainvisual {
+  width:100%;
+  height:450px;
+  position: relative;
+}
+
+.mainvisual img {
+  margin-top:100px;
+  height: 350px;
+  width:100%;
+}
+
+.mainvisual h2,
+.mainvisual a{
+  display: none;
+}
+
+.mainvisual .sp-copy {
+  display: block;
+  position: absolute;
+  background-color: #fafafa;
+  padding: 20px;
+  text-align: center;
+  top:45%;
+  left:50%;
+  transform: translateX(-50%);
+  z-index:2;
+}
+/* メインビジュアル終了 */
 }
