@@ -784,4 +784,33 @@ footer .sns .icon-wrapper .fa-twitter::before {
   z-index:2;
 }
 /* メインビジュアル終了 */
+
+.about {
+  height: 750px;
+}
+
+.about .contents-wrapper {
+  height: 100%;
+}
+
+.about .contents-wrapper .content {
+  height: 550px;
+}
+
+.about .contents-wrapper h2 {
+  padding:30px;
+  margin:0;
+}
+
+.about .contents-wrapper .box {
+  height:335px;
+  width: 335px;
+}
+
+.about .contents-wrapper p {
+  width:100%;
+  top:350px;
+  padding:20px;
+  height:200px;
+}
 }
