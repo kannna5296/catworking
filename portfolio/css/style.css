@@ -241,12 +241,12 @@ a:hover {
 .mainvisual a::after {
   content:"";
   display:block;
-  width:150px;
+  width:100px;
   height:0.5px;
   background: #000;
   position:absolute;
   top:45%;
-  left:100px;
+  left:130px;
   animation: SSS 3s cubic-bezier(0.87, 0, 0.13, 1) infinite;
 }
 
