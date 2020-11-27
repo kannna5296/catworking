@@ -767,9 +767,22 @@ footer .sns .icon-wrapper .fa-twitter::before {
   width:100%;
 }
 
-.mainvisual h2,
-.mainvisual a{
+.mainvisual h2{
   display: none;
+}
+
+.mainvisual a {
+  transform: rotate(0deg);
+  background-color: #fafafa;
+  top:87%;
+  left:73%;
+
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.mainvisual a:after{
+  display:none;
 }
 
 .mainvisual .sp-copy {
