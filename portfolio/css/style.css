@@ -873,4 +873,39 @@ footer .sns .icon-wrapper .fa-twitter::before {
   display: block;
 }
 /* service終了 */
+
+/* works開始 */
+.works {
+  height: 700px;
+}
+
+.works .contents-wrapper h2 {
+  padding:30px;
+  margin:0;
+}
+
+.works .contents-wrapper .content {
+  width:100%;
+}
+
+.works .contents-wrapper .content table th,
+.works .contents-wrapper .content table td {
+  width:100%;
+
+  display:block;
+}
+
+.works .contents-wrapper .content table th .work {
+  width:100%;
+  height:150px;
+  margin:0;
+
+  display:block;
+}
+
+.works .contents-wrapper .content table th .work img {
+  object-fit: cover;
+  object-position: 0 -50px;
+}
+/* works終了 */
 }
