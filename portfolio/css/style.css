@@ -798,7 +798,11 @@ footer .sns .icon-wrapper .fa-twitter::before {
   transform: rotate(0deg);
   background-color: #f0f0f0;
   top:87%;
-  left:69%;
+
+  left:100%;
+  transform: translateX(-100%);
+  width:150px;
+  text-align: center;
 
   padding: 10px 20px;
   border-radius: 20px;
@@ -989,6 +993,10 @@ footer .sns .icon-wrapper .fa-twitter::before {
 .skill .contents-wrapper .contents .content2 p{
   width: 335px;
   margin:0;
+}
+
+.contact h2 {
+  padding:50px 30px;
 }
 
 }
