@@ -900,7 +900,7 @@ footer .sns .icon-wrapper .fa-twitter::before {
 
 /* works開始 */
 .works {
-  height: 700px;
+  height: 1100px;
 }
 
 .works .contents-wrapper h2 {
@@ -932,4 +932,63 @@ footer .sns .icon-wrapper .fa-twitter::before {
   object-position: 0 -50px;
 }
 /* works終了 */
+
+.skill {
+  height:600px;
+}
+
+.skill .contents-wrapper .contents{
+  width: 100%;
+  display: block;
+}
+
+.skill .contents-wrapper .contents .content1{
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.skill .contents-wrapper .contents .content1 h2{
+  writing-mode: horizontal-tb;
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top:0;
+  left:0;
+ 
+  /* transform: translateX(-50%); */
+}
+
+.skill .contents-wrapper .contents .content1 h2::after{
+  writing-mode: horizontal-tb;
+  width:335px;
+  height:30px;
+  /* top:80px;
+  left:-110px; */
+  display: block;
+  position: relative;
+  text-align: center;
+  top:0;
+  left:0;
+}
+
+.skill .contents-wrapper .contents .content1 img{
+  display: none;
+}
+
+.skill .contents-wrapper .contents .content2{
+  height:500px;
+}
+
+.skill .contents-wrapper .contents .content2 img{
+  display: none;
+}
+
+.skill .contents-wrapper .contents .content2 p{
+  width: 335px;
+  margin:0;
+}
+
 }
