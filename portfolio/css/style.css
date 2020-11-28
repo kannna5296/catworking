@@ -640,6 +640,22 @@ footer .sns .icon-wrapper .fa-twitter::before {
   display: none;
 }
 
+.header #globalnavi ol .inpage a:after{
+  display: none;
+}
+
+.header #globalnavi ol .grayback a{
+  background-color:#333;
+  padding-bottom: 9px;
+
+  border-radius:0px;
+  color:#fff;
+}
+
+#hamburger nav ol .grayback{
+  border-bottom: hidden;
+}
+
 /* ヘッダ(ハンバーガー) */
 #hamburger nav {
   position: fixed;
