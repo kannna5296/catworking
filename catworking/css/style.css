@@ -470,6 +470,10 @@ margin-right: 7px;
   #hamburger .contents section:nth-child(even) p {
     right: 10%
   } */
+
+  .site-header.hide{
+    transform: translateY(-100%);
+}
   /* ヘッダ(ハンバーガー)終了 */
   /* ヘッダ終了 */
   

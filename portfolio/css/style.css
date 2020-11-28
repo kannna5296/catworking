@@ -248,12 +248,12 @@ a:hover {
 .mainvisual a::after {
   content:"";
   display:block;
-  width:150px;
+  width:100px;
   height:0.5px;
   background: #000;
   position:absolute;
   top:45%;
-  left:100px;
+  left:130px;
   animation: SSS 3s cubic-bezier(0.87, 0, 0.13, 1) infinite;
 }
 
@@ -274,6 +274,10 @@ a:hover {
     transform: scale(1, 0);
     transform-origin: 0 100%;
   }
+}
+
+.mainvisual .sp-copy {
+  display: none;
 }
 /* メインビジュアル終了 */
 
@@ -569,7 +573,6 @@ a:hover {
   position: absolute;
   top:50%;
   right:0;
-
 }
 /* contact終了 */
 
@@ -617,3 +620,387 @@ footer .sns .icon-wrapper .fa-twitter::before {
 
 }
 /* フッタ終了 */
+
+@media screen and (max-width: 899px) {
+
+.contents-wrapper {
+  width: 335px;
+}
+
+.header {
+  position: fixed;
+}
+
+.header h1{
+  margin:0;
+}  
+
+.header h1:before {
+  display: none;
+}
+
+.header #globalnavi ol .inpage a:after{
+  display: none;
+}
+
+.header #globalnavi ol .grayback a{
+  background-color:#333;
+  padding-bottom: 9px;
+
+  border-radius:0px;
+  color:#fff;
+}
+
+#hamburger nav ol .grayback{
+  border-bottom: hidden;
+}
+
+/* ヘッダ(ハンバーガー) */
+#hamburger nav {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  padding-top: 100px;
+  background:#deb887;
+  font-size: 16px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.header #globalnavi ol {
+  display: block;
+}
+
+#hamburger nav ol li {
+  width: 300px;
+  border-bottom: dashed;
+  display:block;
+  margin-top:20px;
+  margin-left: 10px;
+  padding: 10px 0;
+}
+
+#hamburger nav ol li a {
+  text-decoration: none;
+  color: #000;
+}
+
+#hamburger nav ol .sns {
+  display: none;
+}
+
+#hamburger .btn-gnavi {
+  position: fixed;
+  top: 35px;
+  right: 20px;
+  width: 30px;
+  height: 24px;
+  z-index: 3;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 400ms;
+  transition: all 400ms
+}
+
+#hamburger .btn-gnavi span {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #000;
+  border-radius: 10px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms
+}
+
+#hamburger .btn-gnavi span:nth-child(1) {
+  top: 0
+}
+
+#hamburger .btn-gnavi span:nth-child(2) {
+  top: 10px
+}
+
+#hamburger .btn-gnavi span:nth-child(3) {
+  top: 20px
+}
+
+#hamburger .btn-gnavi.open span:nth-of-type(1){
+  -webkit-transform: translateY(10px) rotate(-45deg);
+  transform: translateY(10px) rotate(-45deg);
+}
+
+#hamburger .btn-gnavi.open span:nth-of-type(2){
+  opacity: 0;
+}
+
+#hamburger .btn-gnavi.open span:nth-of-type(3){
+  -webkit-transform: translateY(-10px) rotate(45deg);
+  transform: translateY(-10px) rotate(45deg);
+}
+
+#hamburger .btn-gnavi.open span {
+  background: #000;
+}
+
+#hamburger .btn-gnavi.open span {
+  width: 24px;
+}
+
+#hamburger .contents section p {
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  line-height: 1.4;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 0 6px #666;
+}
+
+/* 下スクロール時だけ消えるヘッダ */
+.site-header{
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  transition: .5s;
+  width: 100%;
+  z-index: 999;
+}
+
+.site-header.hide{
+  transform: translateY(-100%);
+}
+/* ヘッダ(ハンバーガー)終了 */
+/* ヘッダ終了 */
+
+/* メインビジュアル */
+
+.mainvisual {
+  width:100%;
+  height:450px;
+  position: relative;
+}
+
+.mainvisual img {
+  margin-top:100px;
+  height: 350px;
+  width:100%;
+}
+
+.mainvisual h2{
+  display: none;
+}
+
+.mainvisual a {
+  transform: rotate(0deg);
+  background-color: #f0f0f0;
+  top:87%;
+
+  left:100%;
+  transform: translateX(-100%);
+  width:150px;
+  text-align: center;
+
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.mainvisual a:after{
+  display:none;
+}
+
+.mainvisual .sp-copy {
+  display: block;
+  position: absolute;
+  background-color: #fafafa;
+  padding: 20px;
+  text-align: center;
+  top:45%;
+  left:50%;
+  transform: translateX(-50%);
+  z-index:2;
+}
+/* メインビジュアル終了 */
+
+/* about */
+.about {
+  height: 900px;
+}
+
+.about .contents-wrapper {
+  height: 100%;
+}
+
+.about .contents-wrapper .content {
+  height: 550px;
+}
+
+.about .contents-wrapper h2 {
+  padding:30px;
+  margin:0;
+}
+
+.about .contents-wrapper .box {
+  height:335px;
+  width: 335px;
+}
+
+.about .contents-wrapper p {
+  width:100%;
+  top:350px;
+  padding:20px;
+  height:400px;
+  font-size:12px;
+}
+/* about終了 */
+
+/* service開始 */
+.service {
+  height: 1200px;
+}
+
+.service .contents-wrapper h2 {
+  padding:30px;
+  margin:0;
+}
+
+.service .contents-wrapper .content {
+  width:100%;
+}
+
+.service .contents-wrapper .content ol {
+  display: block;
+  width:100%;
+}
+
+.service .contents-wrapper .content ol li{
+  height: 330px;
+  width:100%;
+  margin-bottom: 30px;
+}
+
+.service .contents-wrapper .content ol li img{
+  display:block;
+  margin:0 auto;
+  margin-top:10px;
+  margin-bottom:20px;
+  width:120px;
+}
+
+.service .contents-wrapper .content ol li img{
+  font-size: 12px;
+}
+
+.service .contents-wrapper .content ol li .explanation {
+  height: 150px;
+  font-size:12px;
+  display: block;
+}
+/* service終了 */
+
+/* works開始 */
+.works {
+  height: 1100px;
+}
+
+.works .contents-wrapper h2 {
+  padding:30px;
+  margin:0;
+}
+
+.works .contents-wrapper .content {
+  width:100%;
+}
+
+.works .contents-wrapper .content table th,
+.works .contents-wrapper .content table td {
+  width:100%;
+
+  display:block;
+}
+
+.works .contents-wrapper .content table th .work {
+  width:100%;
+  height:150px;
+  margin:0;
+
+  display:block;
+}
+
+.works .contents-wrapper .content table th .work img {
+  object-fit: cover;
+  object-position: 0 -50px;
+}
+/* works終了 */
+
+/* skill */
+.skill {
+  height:600px;
+}
+
+.skill .contents-wrapper .contents{
+  width: 100%;
+  display: block;
+}
+
+.skill .contents-wrapper .contents .content1{
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.skill .contents-wrapper .contents .content1 h2{
+  writing-mode: horizontal-tb;
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top:0;
+  left:0;
+}
+
+.skill .contents-wrapper .contents .content1 h2::after{
+  writing-mode: horizontal-tb;
+  width:335px;
+  height:30px;
+  display: block;
+  position: relative;
+  text-align: center;
+  top:0;
+  left:0;
+}
+
+.skill .contents-wrapper .contents .content1 img{
+  display: none;
+}
+
+.skill .contents-wrapper .contents .content2{
+  height:500px;
+}
+
+.skill .contents-wrapper .contents .content2 img{
+  display: none;
+}
+
+.skill .contents-wrapper .contents .content2 p{
+  width: 335px;
+  margin:0;
+}
+/* skill終了 */
+
+/* contact */
+.contact {
+  height:930px;
+}
+.contact h2 {
+  padding:50px 30px;
+}
+
+.contact .contents-wrapper textarea {
+  margin-bottom:50px;
+}
+/* contact終了 */
+}
