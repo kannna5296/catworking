@@ -573,7 +573,6 @@ a:hover {
   position: absolute;
   top:50%;
   right:0;
-
 }
 /* contact終了 */
 
@@ -858,7 +857,6 @@ footer .sns .icon-wrapper .fa-twitter::before {
 /* about終了 */
 
 /* service開始 */
-
 .service {
   height: 1200px;
 }
@@ -937,6 +935,7 @@ footer .sns .icon-wrapper .fa-twitter::before {
 }
 /* works終了 */
 
+/* skill */
 .skill {
   height:600px;
 }
@@ -961,16 +960,12 @@ footer .sns .icon-wrapper .fa-twitter::before {
   text-align: center;
   top:0;
   left:0;
- 
-  /* transform: translateX(-50%); */
 }
 
 .skill .contents-wrapper .contents .content1 h2::after{
   writing-mode: horizontal-tb;
   width:335px;
   height:30px;
-  /* top:80px;
-  left:-110px; */
   display: block;
   position: relative;
   text-align: center;
@@ -994,7 +989,9 @@ footer .sns .icon-wrapper .fa-twitter::before {
   width: 335px;
   margin:0;
 }
+/* skill終了 */
 
+/* contact */
 .contact {
   height:930px;
 }
@@ -1005,5 +1002,5 @@ footer .sns .icon-wrapper .fa-twitter::before {
 .contact .contents-wrapper textarea {
   margin-bottom:50px;
 }
-
+/* contact終了 */
 }
