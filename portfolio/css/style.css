@@ -798,6 +798,7 @@ footer .sns .icon-wrapper .fa-twitter::before {
 }
 /* メインビジュアル終了 */
 
+/* about */
 .about {
   height: 750px;
 }
@@ -826,4 +827,50 @@ footer .sns .icon-wrapper .fa-twitter::before {
   padding:20px;
   height:200px;
 }
+/* about終了 */
+
+/* service開始 */
+
+.service {
+  height: 1200px;
+}
+
+.service .contents-wrapper h2 {
+  padding:30px;
+  margin:0;
+}
+
+.service .contents-wrapper .content {
+  width:100%;
+}
+
+.service .contents-wrapper .content ol {
+  display: block;
+  width:100%;
+}
+
+.service .contents-wrapper .content ol li{
+  height: 330px;
+  width:100%;
+  margin-bottom: 20px;
+}
+
+.service .contents-wrapper .content ol li img{
+  display:block;
+  margin:0 auto;
+  margin-top:10px;
+  margin-bottom:20px;
+  width:120px;
+}
+
+.service .contents-wrapper .content ol li img{
+  font-size: 12px;
+}
+
+.service .contents-wrapper .content ol li .explanation {
+  height: 155px;
+  font-size:16px;
+  display: block;
+}
+/* service終了 */
 }
