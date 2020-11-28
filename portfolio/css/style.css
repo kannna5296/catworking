@@ -995,8 +995,15 @@ footer .sns .icon-wrapper .fa-twitter::before {
   margin:0;
 }
 
+.contact {
+  height:930px;
+}
 .contact h2 {
   padding:50px 30px;
+}
+
+.contact .contents-wrapper textarea {
+  margin-bottom:50px;
 }
 
 }
