@@ -161,6 +161,13 @@ a:hover {
   position: relative;
 }
 
+.header #globalnavi ol .grayback a{
+  background-color: #333;
+  padding:10px 15px;
+  border-radius:30px;
+  color:#fff;
+}
+
 /* ホバーしたら下線 */
 .header #globalnavi ol .inpage a:after{
   position: absolute;
