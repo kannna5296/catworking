@@ -56,17 +56,79 @@ a:hover {
 /* Common終了 */
 
 .header {
-  height:605px;
-  background-color: #7a7a7a;
+  background-image: url("../images/bg_header_pink-4704d42ed44908fb061e80afc515a93ab2fcbfd605c2580de486a4d980b2115a.jpg");
+  background-size: cover ;
+  /* 横一杯にする bottom */
+  background-position: center bottom;
+  height: 100vh;
+  border: 1px solid;
 }
 
 .service {
   height:490px;
 }
 
+.service ol {
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+  -ms-flex-pack:justify;
+  -webkit-justify-content: space-between;
+  justify-content:space-between;
+  align-items: center;
+  height:100%;
+  width:100%;
+}
+
+.service ol .feature-column1 {
+  background-color: #aaaaaa;
+  height:100%;
+  width : calc(100% / 3) ;
+  border: 1px solid;
+}
+
+.service ol .feature-column2 {
+  background-color: #aaaaaa;
+  height:100%;
+  width : calc(100% / 3) ;
+  border: 1px solid;
+}
+
+.service ol .feature-column3 {
+  background-color: #aaaaaa;
+  height:100%;
+  width : calc(100% / 3) ;
+  border: 1px solid;
+}
+
 .price {
   height:390px;
-  background-color: #7a7a7a;
+}
+
+.price ol {
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+  -ms-flex-pack:justify;
+  -webkit-justify-content: space-between;
+  justify-content:space-between;
+  align-items: center;
+  height:100%;
+  width:100%;
+}
+
+.price ol .price-column1 {
+  background-color: #aaaaaa;
+  height:100%;
+  width : calc(100% / 2) ;
+  border: 1px solid;
+}
+
+.price ol .schedule-column2 {
+  background-color: #aaaaaa;
+  height:100%;
+  width : calc(100% / 2) ;
+  border: 1px solid;
 }
 
 .flower {
