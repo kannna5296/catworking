@@ -61,11 +61,10 @@ a:hover {
   /* 横一杯にする bottom */
   background-position: center bottom;
   height: 100vh;
-  border: 1px solid;
 }
 
 .service {
-  height:490px;
+  height:800px;
 }
 
 .service ol {
@@ -81,28 +80,34 @@ a:hover {
 }
 
 .service ol .feature-column1 {
-  background-color: #aaaaaa;
+  background-image: url("../images/bg_service01-01ee576583ddad054106d9f2dc78caf78be6c829383351a4fbc99ac5a566020a.jpg");
+  background-size: cover ;
+  /* 横一杯にする bottom */
+  background-position: center bottom;
   height:100%;
   width : calc(100% / 3) ;
-  border: 1px solid;
 }
 
 .service ol .feature-column2 {
-  background-color: #aaaaaa;
+  background-image: url("../images/bg_service02-cd59d8cd17b05503a9fc3eeae42d618d0cc19b2277b581f5db275d5dde09e94d.jpg");
+  background-size: cover ;
+  /* 横一杯にする bottom */
+  background-position: center bottom;
   height:100%;
   width : calc(100% / 3) ;
-  border: 1px solid;
 }
 
 .service ol .feature-column3 {
-  background-color: #aaaaaa;
+  background-image: url("../images/bg_service03-4c44f872ed6f7ed3007faeb109b1e03ceabcdb3106ba54392a5457a159a0f2ab.jpg");
+  background-size: cover ;
+  /* 横一杯にする bottom */
+  background-position: center bottom;
   height:100%;
   width : calc(100% / 3) ;
-  border: 1px solid;
 }
 
 .price {
-  height:390px;
+  height:590px;
 }
 
 .price ol {
@@ -118,21 +123,20 @@ a:hover {
 }
 
 .price ol .price-column1 {
-  background-color: #aaaaaa;
+  background-color: #F5F5F5;
   height:100%;
   width : calc(100% / 2) ;
-  border: 1px solid;
 }
 
 .price ol .schedule-column2 {
-  background-color: #aaaaaa;
+  background-color: #ffffff;
   height:100%;
   width : calc(100% / 2) ;
-  border: 1px solid;
 }
 
 .flower {
-  height:480px;
+  height:850px;
+  background-color: #F0F0F0;
 }
 
 .vase {
