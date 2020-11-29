@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* Common */
+html {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 2.0;
+  letter-spacing: 0.1em;
+}
+
+@font-face {
+  font-family: 'Felix Tilting MT';
+  src: url(https://themes.googleusercontent.com/static/fonts/kaushanscript/v1/qx1LSqts-NtiKcLw4N03IFhlQWQpSCpzb2Peu3I-Q34.woff) format('woff');
+}
+
+h1 {
+  margin:0;
+  padding:0;
+  font-size: 36px;
+  font-family: "Felix Tilting MT";
+}
+
+h2 {
+  margin:0;
+  padding:0;
+  font-size: 36px;
+  font-family: "Felix Tilting MT";
+}
+
+
+h3 {
+  margin:0;
+  padding:0;
+  font-size: 30px;
+  font-weight:Medium;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+}
+
+p {
+  margin:0;
+  padding:0;
+  font-size: 16px;
+  font-weight:Medium;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+}
+
+button {
+  margin:0;
+  padding:0;
+  font-size: 16px;
+  font-weight:Bold;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+}
+
+.copylight {
+  margin:0;
+  padding:0;
+  font-size: 12px;
+  font-weight:Medium;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+}
+
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+ }
+
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+figure {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,ol,li,dl,dt,dd {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+a { 
+  color:#000;
+  text-decoration: none; 
+}
+
+a:hover { 
+  transition: all .6s ease;
+}
+
+.contents-wrapper {
+  width:1280px;
+  margin: 0 auto;
+}
+/* Common終了 */
