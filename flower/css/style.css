@@ -142,11 +142,13 @@ a:hover {
 
 .flower .container {
   display: flex;
+  flex-flow: column wrap;
   height: 100%;
   width: 100%;
 }
 
 .flower .container .img{
+  order:1;
   background-image: url("../images/bg_flower-1a07674a0e731b035e9344d0b0ec772eb116759368da38dc0b21bec925479009.jpg");
   height: 100%;
   width: 50%;
@@ -156,8 +158,26 @@ a:hover {
 }
 
 .vase {
+  padding: 0 5%;
   height:540px;
-  background-color: #7a7a7a;
+  background-color:#E7E3DF;
+}
+
+.vase .container {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.vase .container .img{
+  order:3;
+  background-image: url("../images/bg_vase-45bcc89846e1a077353f799e42054251c3e3e570fcc453b8d96282d5df1ad6db.jpg");
+  height: 100%;
+  width: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .service2 {
