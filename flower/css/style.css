@@ -61,6 +61,55 @@ a:hover {
   /* 横一杯にする bottom */
   background-position: center bottom;
   height: 100vh;
+  
+  position: relative;
+}
+
+.header .header-logo {
+  height:130px;
+  width:130px;
+  position: absolute;
+  top:20%;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.header .header-catch {
+  color:white;
+  text-align: center;
+  margin-top:33vh;
+  font-size: 20px;
+}
+
+.header .attention {
+  color:white;
+  font-size:13px;
+  text-align: center;
+
+}
+
+.header .container {
+  position: absolute;
+  bottom:5vh;
+  left:50%;
+  transform: translateX(-50%);
+  width:35%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header .container .applestore {
+  width:200px;
+  height:50px;
+  padding:20px;
+  margin-bottom:100px;
+}
+
+.header .container .googleplay {
+  width:200px;
+  height:50px;
+  padding:20px;
+  margin-bottom:200px;
 }
 
 .service {
