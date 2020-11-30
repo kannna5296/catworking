@@ -157,9 +157,18 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+.flower .container .title{
+  order:2;
+  text-align: center;
+}
+
+.flower .container .content{
+  order:3;
+}
+
 .vase {
-  padding: 0 5%;
-  height:540px;
+  /* padding: 0 5%; */
+  height:740px;
   background-color:#E7E3DF;
 }
 
@@ -178,6 +187,16 @@ a:hover {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.vase .container .title {
+  order:1;
+  width: 50%;
+}
+
+.vase .container .desc {
+  order:2;
+  width: 50%;
 }
 
 .service2 {
