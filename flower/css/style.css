@@ -68,17 +68,17 @@ a:hover {
 .header .header-logo {
   height:130px;
   width:130px;
-  position: absolute;
-  top:20%;
-  left:50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
+  margin-top: 15vh;
+  animation: fadeIn 2.0s ease 0s 1 normal;
 }
 
 .header .header-catch {
   color:white;
   text-align: center;
-  margin-top:33vh;
+  margin-top:3vh;
   font-size: 20px;
+  animation: fadeIn 2.0s ease 0s 1 normal;
 }
 
 .header .container {
@@ -100,15 +100,17 @@ a:hover {
 .header .container .dl .applestore {
   width:200px;
   height:50px;
-  padding:20px;
+  padding:15px;
   margin-bottom:70px;
+  animation: fadeIn 2.0s ease 0s 1 normal;
 }
 
 .header .container .dl .googleplay {
   width:200px;
   height:50px;
-  padding:20px;
+  padding:15px;
   margin-bottom:70px;
+  animation: fadeIn 2.0s ease 0s 1 normal;
 }
 
 .header .container .attention {
@@ -116,7 +118,18 @@ a:hover {
   color:white;
   font-size:13px;
   text-align: center;
+  animation: fadeIn 2.0s ease 0s 1 normal;
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .service {
