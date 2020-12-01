@@ -293,6 +293,15 @@ a:hover {
   width: 100%;
 }
 
+.flower .container .title {
+  order:2;
+  font-size: 26px;
+  text-align: center;
+  padding-top: 170px;
+  padding-bottom: 130px;
+  width: 50%;
+}
+
 .flower .container .img{
   order:1;
   background-image: url("../images/bg_flower-1a07674a0e731b035e9344d0b0ec772eb116759368da38dc0b21bec925479009.jpg");
@@ -303,13 +312,24 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-.flower .container .title{
-  order:2;
+.flower .container .content{
+  order:3;
+  width: 50%;
   text-align: center;
 }
 
-.flower .container .content{
-  order:3;
+.flower .container .content .subtitle {
+  font-size: 20px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.flower .container .content p {
+  font-size: 15px;
+  width: 400px;
+  margin:0 auto;
+  margin-bottom:30px;
+  text-align: left;
 }
 
 .vase {
