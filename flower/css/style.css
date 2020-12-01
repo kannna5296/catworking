@@ -81,13 +81,6 @@ a:hover {
   font-size: 20px;
 }
 
-.header .attention {
-  color:white;
-  font-size:13px;
-  text-align: center;
-
-}
-
 .header .container {
   position: absolute;
   bottom:5vh;
@@ -98,18 +91,32 @@ a:hover {
   flex-flow: row wrap;
 }
 
-.header .container .applestore {
-  width:200px;
-  height:50px;
-  padding:20px;
-  margin-bottom:100px;
+.header .container .dl {
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
 }
 
-.header .container .googleplay {
+.header .container .dl .applestore {
   width:200px;
   height:50px;
   padding:20px;
-  margin-bottom:200px;
+  margin-bottom:70px;
+}
+
+.header .container .dl .googleplay {
+  width:200px;
+  height:50px;
+  padding:20px;
+  margin-bottom:70px;
+}
+
+.header .container .attention {
+  width:100%;
+  color:white;
+  font-size:13px;
+  text-align: center;
+
 }
 
 .service {
