@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  line-height: 2.0;
+  line-height: 1.5;
   letter-spacing: 0.1em;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -133,7 +133,25 @@ a:hover {
 }
 
 .service {
-  height:800px;
+  height:80vh;
+}
+
+.service .subtitle {
+  font-size: 24px;
+  color:#fff;
+  font-weight: 400px;
+  font-style: normal;
+  padding:50px 40px 10px 40px;
+}
+
+.service .desc {
+  font-size: 15px;
+  color:#fff;
+  font-weight: 400px;
+  font-style: normal;
+  /* padding-top:40px; */
+  padding-right:40px;
+  padding-left:40px;
 }
 
 .service ol {
