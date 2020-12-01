@@ -34,7 +34,7 @@ table {
   border-spacing: 0;
 }
 
-ul,ol,li,dl,dt,dd {
+ul,ol,li,dl,dt,dd,p {
   margin:0;
   padding:0;
   list-style: none;
@@ -214,6 +214,53 @@ a:hover {
   height:100%;
   width : calc(100% / 2) ;
 }
+
+.price ol .price-column1 .title {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+.price ol .price-column1 .first {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.price ol .price-column1 .first-flower {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.price ol .price-column1 .price-booque {
+  width: 400px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: bold;
+  padding:20px 0;
+}
+
+.price ol .price-column1 .price-booque p {
+  text-align: center;
+}
+
+.price ol .price-column1 .price-booque .big {
+  font-size: 20px;
+}
+
+.price ol .price-column1 .price-booque .big span{
+  font-size: 15px;
+}
+
+.price ol .price-column1 .price-attention {
+  width: 400px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.price ol .price-column1 .price-attention p {
+  text-align: center
+};
 
 .price ol .schedule-column2 {
   background-color: #ffffff;
