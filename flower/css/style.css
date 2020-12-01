@@ -326,14 +326,13 @@ a:hover {
 
 .flower .container .content p {
   font-size: 15px;
-  width: 400px;
+  width: 60%;
   margin:0 auto;
   margin-bottom:30px;
   text-align: left;
 }
 
 .vase {
-  /* padding: 0 5%; */
   height:740px;
   background-color:#E7E3DF;
 }
@@ -343,6 +342,12 @@ a:hover {
   flex-flow: column wrap;
   height: 100%;
   width: 100%;
+}
+
+.vase .container .title {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .vase .container .img{
