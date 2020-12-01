@@ -216,7 +216,7 @@ a:hover {
 }
 
 .price ol .price-column1 .title {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 10px;
@@ -259,13 +259,25 @@ a:hover {
 }
 
 .price ol .price-column1 .price-attention p {
-  text-align: center
-};
+  text-align: center;
+}
 
 .price ol .schedule-column2 {
   background-color: #ffffff;
   height:100%;
   width : calc(100% / 2) ;
+}
+
+.price ol .schedule-column2 .title {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 170px;
+  padding-bottom: 30px;
+}
+
+.price ol .schedule-column2 .calendar {
+  width: 170px;
+  margin: 0 auto;
 }
 
 .flower {
