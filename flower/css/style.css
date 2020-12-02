@@ -377,20 +377,24 @@ a:hover {
   font-size: 15px;
   line-height: 24px;
   text-align: left;
-  width:55%;
+  width:45%;
   margin:0 auto;
 }
 
 .vase .container .content .image-container {
   display: flex;
-  width: 55%;
+  justify-content: space-between;
+  width: 45%;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 .vase .container .content .image-container .vaseimg {
-  width:100px;
-  height: 116px;
-  margin:20px;
+  width:10vh;
+  background-size: contain;
+  height: 12vh;
+  /* margin:20px; */
+
   position: relative;
 }
 
@@ -434,11 +438,52 @@ a:hover {
 
 .vase .container .desc {
   order:2;
-  width: 50%;
+  width: 45%;
 }
 
-.vase .container ol .image-container {
+.vase .container .image-container {
   display: flex;
+}
+
+.vase .container .price-container {
+  display: flex;
+  width:45%;
+  margin:0 auto;
+  margin-top: 30px;
+}
+
+.vase .container .price-container .period {
+  width: 25%;
+  margin: 0 16px 0 0;
+  padding: 4px;
+  border: 2px solid;
+  font-size:14px;
+  font-weight: 700px;
+}
+
+.vase .container .price-container .content {
+  width: 80%;
+}
+
+
+.vase .container .price-container .discount-price {
+  margin-left:15px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.vase .container .price-container .normal-price {
+  margin-left:15px;
+  text-align: left;
+  font-size:13px;
+}
+
+.vase .container .content .buy {
+  width:45%;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  text-align: left;
 }
 
 .service2 {
