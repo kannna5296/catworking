@@ -384,7 +384,7 @@ a:hover {
 .vase .container .content .image-container {
   display: flex;
   justify-content: space-between;
-  width: 45%;
+  width: 55%;
   margin: 0 auto;
   margin-top: 30px;
 }
@@ -436,24 +436,26 @@ a:hover {
   width: 50%;
 }
 
-.vase .container .desc {
+.vase .container .content .desc {
   order:2;
-  width: 45%;
+  width: 55%;
 }
 
 .vase .container .image-container {
   display: flex;
+  width: 55%;
 }
 
 .vase .container .price-container {
   display: flex;
-  width:45%;
+  width:55%;
+  height:50px;
   margin:0 auto;
   margin-top: 30px;
 }
 
 .vase .container .price-container .period {
-  width: 25%;
+  width: 40%;
   margin: 0 16px 0 0;
   padding: 4px;
   border: 2px solid;
