@@ -390,9 +390,9 @@ a:hover {
 }
 
 .vase .container .content .image-container .vaseimg {
-  width:10vh;
+  width:12vh;
   background-size: contain;
-  height: 12vh;
+  height: 15vh;
   /* margin:20px; */
 
   position: relative;
@@ -455,12 +455,12 @@ a:hover {
 }
 
 .vase .container .price-container .period {
-  width: 40%;
+  width:14vh;
   margin: 0 16px 0 0;
   padding: 4px;
   border: 2px solid;
   font-size:14px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .vase .container .price-container .content {
@@ -481,10 +481,9 @@ a:hover {
 }
 
 .vase .container .content .buy {
-  width:45%;
+  width:55%;
   margin: 0 auto;
   margin-top: 20px;
-
   text-align: left;
 }
 
