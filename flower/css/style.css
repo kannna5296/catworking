@@ -482,6 +482,10 @@ a:hover {
   margin-top: 80px;
 }
 
+.service2 .content {
+  display: flex;
+}
+
 .download {
   height:280px;
   background-color: #7a7a7a;
