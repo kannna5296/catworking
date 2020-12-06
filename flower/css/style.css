@@ -476,6 +476,12 @@ a:hover {
   height:370px;
 }
 
+.service2 .title {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 80px;
+}
+
 .download {
   height:280px;
   background-color: #7a7a7a;
