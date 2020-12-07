@@ -480,10 +480,52 @@ a:hover {
   font-size: 26px;
   text-align: center;
   margin-top: 80px;
+  margin-bottom:30px;
 }
 
 .service2 .content {
+  margin: 0 auto;
+  width:80%;
   display: flex;
+  justify-content: space-between;
+}
+
+.service2 .content .simple .img {
+  background-image: url("../images/icon01-a28ec01862252e91844e967c292c48f010ba5745676732f440604d719fb55337.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service2 .content .app .img {
+  background-image: url("../images/icon02-6a6d3d2a031a144e73704a6503c1ca38ca27285aa7462f9d93b914dea4228c8c.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service2 .content .sec .img {
+  background-image: url("../images/icon03-25ad908ec8524d66e532f232a4dee07d6e0fe1535e366871cba3bede0dd3e334.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service2 .content .img {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.service2 .content .subtitle {
+  text-align: center;
+  font-size: 22px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.service2 .content .desc {
+  font-size: 15px;
 }
 
 .download {
