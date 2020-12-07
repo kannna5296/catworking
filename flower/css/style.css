@@ -9,8 +9,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  line-height: 1.5;
-  letter-spacing: 0.1em;
+  /* line-height: 1.5; */
+  line-height: 24px;
+  letter-spacing: 0.10em;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -142,6 +143,7 @@ a:hover {
   font-weight: 400px;
   font-style: normal;
   padding:50px 40px 10px 40px;
+  line-height: 42px;
 }
 
 .service .desc {
@@ -220,6 +222,7 @@ a:hover {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 10px;
+  line-height: 32px;
 }
 
 .price ol .price-column1 .first {
@@ -273,6 +276,7 @@ a:hover {
   text-align: center;
   padding-top: 170px;
   padding-bottom: 30px;
+  line-height: 32px;
 }
 
 .price ol .schedule-column2 .calendar {
@@ -300,6 +304,7 @@ a:hover {
   padding-top: 170px;
   padding-bottom: 130px;
   width: 50%;
+  line-height: 42px;
 }
 
 .flower .container .img{
@@ -351,6 +356,7 @@ a:hover {
   text-align: center;
   margin-top: 100px;
   width:50%;
+  line-height: 42px;
 }
 
 .vase .container .first {
@@ -481,6 +487,7 @@ a:hover {
   text-align: center;
   margin-top: 80px;
   margin-bottom:30px;
+  line-height: 42px;
 }
 
 .service2 .content {
