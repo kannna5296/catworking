@@ -573,5 +573,43 @@ a:hover {
 }
 
 .footer {
-  height:270px;
+  height:500px;
+  background-color: #3f434a;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .content ol {
+  display: flex;
+
+}
+
+.footer .content ol li {
+  margin: 70px 50px;
+}
+
+.footer .content ol li a {
+  font-size:14px;
+  color: white;
+}
+
+.footer .content .instagram {
+  background-image: url("../images/icon_instagram-6c2d12f7a83c502d4e70a7df909d1124e0b21acab3b6793411c6453aa3172f5f.png");
+  height:60px;
+  width:60px;
+  margin:30px;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.footer .copy {
+  color: #8a8c90;
+  text-align: center;
+  margin-top:150px;
+  margin-bottom:150px;
+  font-size: 13px;
 }
