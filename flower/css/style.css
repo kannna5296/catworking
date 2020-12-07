@@ -473,7 +473,7 @@ a:hover {
 /* vase終了 */
 
 .service2 {
-  height:370px;
+  height:450px;
 }
 
 .service2 .title {
@@ -529,8 +529,47 @@ a:hover {
 }
 
 .download {
-  height:280px;
-  background-color: #7a7a7a;
+  height:400px;
+  width:100%;
+  background-color: #EFDFC5;
+}
+
+.download .content {
+  height:100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.download .content .img {
+  background-image: url("../images/bg_download2-afd5325a6ad7ae095cd1aad7172be40a68704bad0eaae90dbff5e274759345ad.jpg");
+  height:100%;
+  width: 40%;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transform: translateX(-100px);
+}
+
+.download .content .copy {
+  transform: translateX(-50px);
+}
+
+.download .content .copy .icon {
+  background-image: url("../images/logo_vertical_navy-a362e5ea10920c0f986d06be36f717a75260d77bfaa4543c4dad42c188d87568.png");
+  height:40%;
+  width: 70%;
+  margin: 0 auto;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  
+}
+
+.download .content .copy .title {
+  text-align: center;
+  margin:10px auto;
 }
 
 .footer {
