@@ -1,0 +1,118 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding:10px 20px;
+  width: 300px;
+  max-width: 100%;
+  background-color: #e25c00;
+  border: 2px solid transparent;
+  font-size: 1.125rem;
+  color:#fff;
+  box-shadow: 0 3px 6px rgba(0,0,0, .16);
+
+  transition: 0.25s;
+
+  /* 本来関係ないけど見やすいように */
+  margin:0.5rem 0.5rem;
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: #fff;
+  color: #e25c00;
+  border-color: currentColor;
+}
+
+.btn--arrow-right {
+  position: relative;
+  padding-right: 2em;
+  padding-left: 1.38em;
+}
+
+.btn--arrow-right::after {
+  content:"\f061";
+  position: absolute;
+  right: 0.83em;
+  top:50%;
+  transform: translateY(-50%);
+
+  font-family: "Font awesome 5 Free";
+  font-weight: 900;
+}
+
+.btn--large {
+  width: 340px;
+  padding-top:25px;
+  padding-bottom:25px;
+  font-size: 1.375rem;
+}
+
+.btn--warning {
+  background-color: #f1de00;
+  color: #000;
+}
+
+.btn--warning:focus,
+.btn--warning:hover {
+  border-color: #f1de00;
+  color: #000;
+}
+
+.rounded-btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding:10px 20px;
+  width: 236px;
+  max-width: 100%;
+  background-color: #e25c00;
+  border: 2px solid transparent;
+  border-bottom-color: #d40152;
+  border-radius: 10px;
+  font-size: 1.125rem;
+  color:#fff;
+  transition: 0.25s;
+
+  /* 本来関係ないけど見やすいように */
+  margin:0.5rem 0.5rem;
+}
+
+.rounded-btn:focus,
+.rounded-btn:hover {
+  background-color: #fff;
+  color: #e25c00;
+  border-color: currentColor;
+}
+
+.before-icon-btn {
+  position: relative;
+  display:inline-block;
+  padding: .2em .3em;
+  border: 1px solid currentColor;
+  color: #e25c00;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.before-icon-btn:focus,
+.before-icon-btn:hover {
+  background-color: #e25c00;
+  color:#fff;
+}
+
+.before-icon-btn::before {
+  display: inline-block;
+  margin-right: .5em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.before-icon-btn-download::before {
+  content: "\f019";
+}
+
+.before-icon-btn-zoom:before {
+  content: "\f00e";
+  transform: translateY(-6%);
+}
