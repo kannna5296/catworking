@@ -64,7 +64,7 @@ a {
 }
 
 .header {
-  height: 97px;
+  height: 94px;
   box-shadow: 0px 3px 6px #00000029;
   position: fixed;
   width:100%;
@@ -117,4 +117,32 @@ a {
 
 .mainvisual {
   padding-top:97px;
+  height: 771px;
+
+  background-image: url("../images/楕円形\ 1.svg");
+  background-repeat: no-repeat;
+  background-position: 820px -40px;
+}
+
+.mainvisual__inner {
+  padding-left: 192px;
+  display: flex;
+  height:100px;
+}
+
+.mainvisual__inner .content h2 {
+  margin-top: 159px;
+}
+
+.mainvisual__inner .content p {
+  margin-top: 44px;
+}
+
+.mainvisual__inner .content .ly_btn {
+  margin-top: 40px;
+}
+
+.mainvisual__inner .img {
+  margin-left: 133px;
+  margin-top: 159px;
 }
