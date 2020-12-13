@@ -49,3 +49,7 @@
 .level5-heading {
     font-size: 1.125rem;
 }
+
+.caution-text {
+    color: #d40152;
+}
