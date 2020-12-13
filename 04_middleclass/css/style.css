@@ -127,7 +127,9 @@ a {
 .mainvisual__inner {
   padding-left: 192px;
   display: flex;
-  height:100px;
+  justify-content: space-between;
+  max-width: 1033px;
+  height:100%;
 }
 
 .mainvisual__inner .content h2 {
@@ -145,4 +147,47 @@ a {
 .mainvisual__inner .img {
   margin-left: 133px;
   margin-top: 159px;
+}
+
+.features {
+  height: 1800px;
+}
+
+.feature img{
+  height: 314px;
+  width: 380px;
+}
+
+.features h2 {
+  text-align: center;
+  margin-top: 73px;
+}
+
+.features h2 span {
+  display: block;
+  font-size:16px;
+  line-height: 24px;
+  color: #3BA6C9;
+  margin:10px;
+}
+
+.features h3 {
+  text-align: center;
+  margin-top:57px;
+  margin-bottom:47px;
+}
+
+.features li .content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1033px;
+  margin: 0 auto;
+}
+
+.features li .content .desc h4 {
+  margin-top: 47px;
+}
+
+.features li .content .desc p {
+  margin-top: 45px;
 }
