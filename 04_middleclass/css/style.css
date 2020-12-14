@@ -174,8 +174,8 @@ a {
 
 .features h3 {
   text-align: center;
-  margin-top:57px;
-  margin-bottom:47px;
+  padding-top:57px;
+  padding-bottom:47px;
 }
 
 .features li .content {
@@ -193,10 +193,21 @@ a {
   margin-top: 45px;
 }
 
+.price {
+  background-color:#EEFBFB;
+  height:744px;
+}
+
+.price .contents-wrapper {
+  height:100%;
+  max-width: 926px;
+  margin: 0 auto;
+}
+
 .price .contents-wrapper h2 {
   text-align: center;
-  margin-top:57px;
-  margin-bottom:47px;
+  padding-top:57px;
+  padding-bottom:47px;
 }
 
 .price .contents-wrapper span {
@@ -210,8 +221,25 @@ a {
 .price .contents-wrapper table {
   max-width: 1350px;
   margin: 0 auto;
+  background-color: #fff;
+  border-collapse:  collapse; /* セルの線を重ねる */
+  box-shadow: 0px 3px 6px #00000029;
 }
-.price .contents-wrapper table th,
+.price .contents-wrapper table th {
+  width: 35%;
+  padding: 35px 30px;
+  border:1px solid #E5E5E5;
+}
+
 .price .contents-wrapper table td {
-  padding: 20px 30px;
+  width: 65%;
+  padding: 35px 30px;
+  border:1px solid #E5E5E5;
 }
+
+.price p {
+  text-align: center;
+  margin-top:36px;
+  margin-bottom:68px;
+}
+
