@@ -391,3 +391,41 @@ a {
 .works .works--wrapper {
   display: flex;
 }
+
+.contact {
+  height: 1070px;
+  background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
+  color:#fff;
+}
+
+.contact h2 {
+  text-align: center;
+  padding-top:57px;
+  padding-bottom:47px;
+}
+
+.contact h2 span {
+  display: block;
+  font-size:16px;
+  line-height: 24px;
+  margin:10px;
+}
+
+.contact .txt {
+  width:280px;
+  margin:0 auto;
+  text-align: center;
+}
+
+.contact .contents-wrapper {
+  height: 100%;
+  max-width: 926px;
+  margin: 0 auto;
+}
+
+.contact .contents-wrapper .form {
+  background-color: #fff;
+  height:689px;
+  width:100%;
+  margin-top:44px;
+}
