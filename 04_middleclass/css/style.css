@@ -284,9 +284,64 @@ a {
   background-color: #f2f2f2;
 }
 
-
-
 .faq table {
   background-color: #ffffff;
   border-collapse:  collapse; /* セルの線を重ねる */
+}
+
+.blog {
+  height: 688px;
+  background-color:#EEFBFB;
+}
+
+.blog h2 {
+  text-align: center;
+  padding-top:57px;
+  padding-bottom:47px;
+}
+
+.blog h2 span {
+  display: block;
+  font-size:16px;
+  line-height: 24px;
+  color: #3BA6C9;
+  margin:10px;
+}
+
+.blog .contents-wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
+.cards--col3 > .cards__item {
+  width: 30%;
+  margin-bottom:30px;
+}
+
+.card__body {
+  position: relative;
+  height:130px;
+  background-color:#fff;
+}
+
+.card__text {
+  padding: 14px 18px;
+}
+
+.card__time {
+  padding:10px 32px;
+  color:#444444;
+  position: absolute;
+  bottom:0;
+  right:0;
 }
