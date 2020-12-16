@@ -127,7 +127,7 @@ a {
 .mainvisual__inner {
   /* padding-left: 192px; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 1350px;
   margin: 0 auto;
   height:100%;
@@ -243,3 +243,50 @@ a {
   margin-bottom:68px;
 }
 
+.faq {
+  height:686px;
+}
+
+.faq .contents-wrapper h2 {
+  text-align: center;
+  padding-top:57px;
+  padding-bottom:47px;
+}
+
+.faq h2 span {
+  display: block;
+  font-size:16px;
+  line-height: 24px;
+  color: #3BA6C9;
+  margin:10px;
+}
+
+.faq .contents-wrapper {
+  height:100%;
+  max-width: 926px;
+  margin: 0 auto;
+
+}
+
+.faq th {
+  padding:20px 30px;
+  border:1px solid #E5E5E5;
+  margin:0 auto;
+  max-width: 90%;
+}
+
+.faq th p {
+  text-align: left;
+  display: inline-block;
+}
+
+.faq tr:nth-child(2n){
+  background-color: #f2f2f2;
+}
+
+
+
+.faq table {
+  background-color: #ffffff;
+  border-collapse:  collapse; /* セルの線を重ねる */
+}
