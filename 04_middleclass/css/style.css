@@ -1,5 +1,6 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
+  color: #333;
 }
 
 h1 {
@@ -313,35 +314,80 @@ a {
   margin: 0 auto;
 }
 
-.cards {
+.blog .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.card {
+.blog .card {
   box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 }
 
-.cards--col3 > .cards__item {
+.blog .cards--col3 > .cards__item {
   width: 30%;
   margin-bottom:30px;
 }
 
-.card__body {
+.blog .card__body {
   position: relative;
   height:130px;
   background-color:#fff;
 }
 
-.card__text {
+.blog .card__text {
   padding: 14px 18px;
 }
 
-.card__time {
+.blog .card__time {
   padding:10px 32px;
   color:#444444;
   position: absolute;
   bottom:0;
   right:0;
+}
+
+.works {
+  height: 700px;
+}
+
+.works h2 {
+  text-align: center;
+  padding-top:57px;
+  padding-bottom:47px;
+}
+
+.works h2 span {
+  display: block;
+  font-size:16px;
+  line-height: 24px;
+  color: #3BA6C9;
+  margin:10px;
+}
+
+.works .card {
+  width: 322px;
+
+}
+
+.works .card__body {
+  position: relative;
+  height:200px;
+  background-color:#fff;
+  border: 1px solid #DDDDDD;
+}
+
+.works .card__text {
+  padding: 14px 18px;
+}
+
+.works .card__detail {
+  padding:14px 18px;
+  font-size:14px;
+  position: absolute;
+  bottom:10px;
+}
+
+.works .works--wrapper {
+  display: flex;
 }
