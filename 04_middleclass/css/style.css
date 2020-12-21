@@ -487,3 +487,27 @@ a {
   transform:		scale(1.4);
   margin: 7px;
 }
+
+.footer {
+  text-align:center;
+}
+
+.footer-title {
+  margin-top:40px;
+  font-size:24px;
+}
+
+.footer-contents {
+  display:flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.footer-contents p {
+  margin: 0 15px;
+}
+
+.copylight {
+  margin-bottom: 50px;
+}
