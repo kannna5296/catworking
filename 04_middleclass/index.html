@@ -26,6 +26,12 @@
         speed: 30000
       });
     });
+
+    $(function () {
+      $("#acMenu .question").on("click", function () {
+        $(this).next().slideToggle();
+      });
+    });
   </script>
 </head>
 
@@ -125,19 +131,19 @@
   <section class="faq">
     <div class="contents-wrapper">
       <h2>よくある質問<span>FAQ</span></h2>
-      <table>
-        <tr>
+      <table id="acMenu">
+        <tr class="question">
           <th>
             <p>デザインから一貫してお願いすることは可能でしょうか</p>
           </th>
         </tr>
-        <tr>
+        <tr class="default-show">
           <th>
             <p>ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。 ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
             </p>
           </th>
         </tr>
-        <tr>
+        <tr class="question">
           <th>
             <p>WordPressのカスタマイズをお願いすることも可能でしょうか？</p>
           </th>
@@ -147,7 +153,7 @@
             <p>可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。</p>
           </th>
         </tr>
-        <tr>
+        <tr class="question">
           <th>
             <p>コーディングのスピード感が知りたい</p>
           </th>

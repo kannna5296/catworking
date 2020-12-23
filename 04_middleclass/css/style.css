@@ -266,7 +266,6 @@ a {
   height:100%;
   max-width: 926px;
   margin: 0 auto;
-
 }
 
 .faq th {
@@ -274,6 +273,10 @@ a {
   border:1px solid #E5E5E5;
   margin:0 auto;
   max-width: 90%;
+}
+
+.faq #acMenu {
+  width:100%;
 }
 
 .faq th p {
@@ -288,6 +291,10 @@ a {
 .faq table {
   background-color: #ffffff;
   border-collapse:  collapse; /* セルの線を重ねる */
+}
+
+.faq table .hidden_row{
+  display: none;
 }
 
 .blog {
