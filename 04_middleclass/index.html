@@ -15,6 +15,7 @@
   <link href="css/jquery.bxslider.css" rel="stylesheet" />
 
   <script type="text/javascript">
+    //WORKSのスライダー
     jQuery(document).ready(function ($) {
       $('.bxslider').bxSlider({
         ticker: true,
@@ -27,6 +28,7 @@
       });
     });
 
+    //FAQのアコーディオン
     $(function () {
       $("#acMenu .question").on("click", function () {
         $(this).next().slideToggle();
@@ -131,8 +133,8 @@
   <section class="faq">
     <div class="contents-wrapper">
       <h2>よくある質問<span>FAQ</span></h2>
-      <ol>
-        <li>
+      <ol id="acMenu">
+        <li class="question">
           <p>
             デザインから一貫してお願いすることは可能でしょうか
           </p>
@@ -142,60 +144,27 @@
             ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。 ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
           </p>
         </li>
-        <li>
+        <li class="question">
           <p>
             WordPressのカスタマイズをお願いすることも可能でしょうか？
           </p>
         </li>
-        <li>
+        <li class="hidden_row">
           <p>
             可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。
           </p>
         </li>
-        <li>
+        <li class="question">
           <p>
             コーディングのスピード感が知りたい
           </p>
         </li>
-        <li>
+        <li class="hidden_row">
           <p>
             HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安になります。
           </p>
         </li>
       </ol>
-      <!-- <table id="acMenu">
-        <tr class="question">
-          <th>
-            <p>デザインから一貫してお願いすることは可能でしょうか</p>
-          </th>
-        </tr>
-        <tr class="default-show">
-          <th>
-            <p>ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。 ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
-            </p>
-          </th>
-        </tr>
-        <tr class="question">
-          <th>
-            <p>WordPressのカスタマイズをお願いすることも可能でしょうか？</p>
-          </th>
-        </tr>
-        <tr>
-          <th>
-            <p>可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。</p>
-          </th>
-        </tr>
-        <tr class="question">
-          <th>
-            <p>コーディングのスピード感が知りたい</p>
-          </th>
-        </tr>
-        <tr>
-          <th>
-            <p>HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安になります。</p>
-          </th>
-        </tr>
-      </table> -->
     </div>
   </section>
   <section class="blog">

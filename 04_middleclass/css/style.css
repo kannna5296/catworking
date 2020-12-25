@@ -278,7 +278,6 @@ a {
 }
 
 .faq .contents-wrapper ol li{
-  /* text-align: left; */
   width:100%;
   padding:15px 40px;
   border:1px solid #E5E5E5;
@@ -287,6 +286,10 @@ a {
 .faq .contents-wrapper ol li p {
     text-align: left;
     display: inline-block;
+}
+
+.faq .hidden_row {
+  display: none;
 }
 
 .blog {
