@@ -18,13 +18,14 @@
     //WORKSのスライダー
     jQuery(document).ready(function ($) {
       $('.bxslider').bxSlider({
-        ticker: true,
-        minSlides: 2,
+        auto: true,
+        pause: 5000,
+
         maxSlides: 5,
+        moveSlides: 1,
         slideWidth: 322,
         slideMargin: 56,
-        tickerHover: true,
-        speed: 30000
+        touchEnabled: true
       });
     });
 
