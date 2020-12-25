@@ -268,33 +268,25 @@ a {
   margin: 0 auto;
 }
 
-.faq th {
-  padding:20px 30px;
-  border:1px solid #E5E5E5;
-  margin:0 auto;
-  max-width: 90%;
-}
-
-.faq #acMenu {
+.faq .contents-wrapper ol {
   width:100%;
+  text-align: center;
 }
 
-.faq th p {
-  text-align: left;
-  display: inline-block;
+.faq .contents-wrapper ol li:nth-child(2n){
+  background-color:#f2f2f2;
 }
 
-.faq tr:nth-child(2n){
-  background-color: #f2f2f2;
+.faq .contents-wrapper ol li{
+  /* text-align: left; */
+  width:100%;
+  padding:15px 40px;
+  border:1px solid #E5E5E5;
 }
 
-.faq table {
-  background-color: #ffffff;
-  border-collapse:  collapse; /* セルの線を重ねる */
-}
-
-.faq table .hidden_row{
-  display: none;
+.faq .contents-wrapper ol li p {
+    text-align: left;
+    display: inline-block;
 }
 
 .blog {
