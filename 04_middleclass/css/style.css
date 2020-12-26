@@ -1,6 +1,11 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
   color: #333;
+  scroll-padding-top: 94px;
+}
+
+html {
+  scroll-padding-top: 94px;
 }
 
 h1 {
@@ -126,7 +131,6 @@ a {
 }
 
 .mainvisual__inner {
-  /* padding-left: 192px; */
   display: flex;
   justify-content: space-around;
   max-width: 1350px;
@@ -152,7 +156,7 @@ a {
 }
 
 .features {
-  height: 1600px;
+  height: 1900px;
 }
 
 .feature img{
@@ -162,7 +166,8 @@ a {
 
 .features h2 {
   text-align: center;
-  margin-top: 73px;
+  padding-top:57px;
+  padding-bottom:47px;
 }
 
 .features h2 span {
@@ -369,7 +374,6 @@ a {
 
 .works .card {
   width: 322px;
-
 }
 
 .works .card__body {
