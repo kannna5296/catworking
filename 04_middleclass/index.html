@@ -9,6 +9,7 @@
   <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
@@ -36,6 +37,7 @@
       });
     });
   </script>
+
 </head>
 
 <body>
@@ -104,7 +106,7 @@
       </li>
     </ol>
   </section>
-  <section id="price" class="price">
+  <section id="price" class="price" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
     <div class="contents-wrapper">
       <h2>価格
         <span>PRICE</span>
@@ -130,7 +132,7 @@
       <p>＊詳細な価格はページや仕様によって異なります</p>
     </div>
   </section>
-  <section id="faq" class="faq">
+  <section id="faq" class="faq" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
     <div class="contents-wrapper">
       <h2>よくある質問<span>FAQ</span></h2>
       <ol id="acMenu">
@@ -167,7 +169,7 @@
       </ol>
     </div>
   </section>
-  <section id="blog" class="blog">
+  <section id="blog" class="blog" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
     <h2>ブログ<span>BLOG</span></h2>
     <div class="contents-wrapper">
       <div class="cards cards--col3">
@@ -213,7 +215,7 @@
       </div>
     </div>
   </section>
-  <section id="works" class="works">
+  <section id="works" class="works" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
     <h2>制作実績<span>WORKS</span></h2>
     <div class="bxslider works--wrapper">
       <div class="cards__item card">
@@ -270,7 +272,7 @@
       <!-- /.card -->
     </div>
   </section>
-  <section id="contact" class="contact">
+  <section id="contact" class="contact" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
     <div class="contents-wrapper">
       <h2>お問い合わせ<span>CONTACT</span></h2>
       <p class="txt">コーディングの人出が足りないとき、 あなたの力になります</p>
@@ -313,6 +315,11 @@
       ©ユアコーディング, All Rights Reserved.
     </div>
   </section>
+  <!-- ふわっと表示 -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
