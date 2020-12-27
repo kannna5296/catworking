@@ -278,29 +278,33 @@
       <p class="txt">コーディングの人出が足りないとき、 あなたの力になります</p>
 
       <!-- まずは静的に作る -->
-      <div class="form">
-        <div class="label">
-          <p class="label-txt">お名前</p>
-          <p class="require">必須</p>
+      <!-- <div class="form"> -->
+      <form
+        action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfV8IKmmZfOzYge60cJk_2wLd8YEmKoy9QI6SsN-vmjIJLB4Q/formResponse"
+        id="form">
+        <div class="label-wrapper">
+          <label class="label-txt">お名前</label>
+          <label class="require">必須</label>
         </div>
-        <input type="text" class="smalltxt">
+        <input name="entry.486107748" type="text" class="smalltxt" required>
 
-        <div class="label">
-          <p class="label-txt">メールアドレス</p>
-          <p class="require">必須</p>
+        <div class="label-wrapper">
+          <label class="label-txt">メールアドレス</label>
+          <label class="require">必須</label>
         </div>
-        <input type="text" class="smalltxt">
+        <input name="entry.62884226" type="text" class="smalltxt" required>
 
-        <div class="label">
-          <p class="label-txt">お問い合わせ内容</p>
-          <p class="require">必須</p>
+        <div class="label-wrapper">
+          <label class="label-txt">お問い合わせ内容</label>
+          <label class="require">必須</label>
         </div>
-        <textarea type="text" class="largetxt"></textarea>
+        <textarea name="entry.1441764612" type="text" class="largetxt" required></textarea>
         <div class="privacy">
           <label><input class="checkbox" type="checkbox">プライバシーポリシーに同意する</label>
         </div>
-        <a class="btn ly_btn" href="#">送信する</a>
-      </div>
+        <input type="submit" class="btn ly_btn" value="送信する">
+      </form>
+    </div>
     </div>
 
     </div>
