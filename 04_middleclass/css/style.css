@@ -494,6 +494,14 @@ a {
   margin: 7px;
 }
 
+.end-message {
+  display: none;
+}
+
+.false-message {
+  display: none;
+}
+
 .footer {
   text-align:center;
 }

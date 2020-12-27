@@ -36,7 +36,34 @@
         $(this).next().slideToggle();
       });
     });
+
+    // Googleフォーム送信時遷移しない。
+    $(document).ready(function () {
+
+      $('#form').submit(function (event) {
+        var formData = $('#form').serialize();
+        $.ajax({
+          url: "https://docs.google.com/forms/u/2/d/e/1FAIpQLSfV8IKmmZfOzYge60cJk_2wLd8YEmKoy9QI6SsN-vmjIJLB4Q/formResponse",
+          data: formData,
+          type: "POST",
+          dataType: "xml",
+          statusCode: {
+            0: function () {
+              $(".end-message").slideDown();
+              $(".submit-btn").fadeOut();
+            },
+            200: function () {
+              $(".false-message").slideDown();
+            }
+          }
+        });
+        event.preventDefault();
+      });
+
+    });
   </script>
+
+
 
 </head>
 
@@ -302,8 +329,10 @@
         <div class="privacy">
           <label><input class="checkbox" type="checkbox">プライバシーポリシーに同意する</label>
         </div>
-        <input type="submit" class="btn ly_btn" value="送信する">
+        <input type="submit" class="btn ly_btn submit-btn" value="送信する">
       </form>
+      <p class="end-message">お問い合わせありがとうございました！</p>
+      <p class="false-message">送信できませんでした。</p>
     </div>
     </div>
 
