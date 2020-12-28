@@ -138,27 +138,32 @@ a {
   max-width: 1080px;
   margin: 0 auto;
   height:100%;
+
+  position: relative;
 }
 
 .mainvisual__inner .content h2 {
   margin-top: 159px;
 }
 
-.mainvisual__inner .content p {
+.mainvisual__inner .content p,
+.mainvisual__inner .content .ly_btn {
   margin-top: 44px;
 }
 
-.mainvisual__inner .content .ly_btn {
-  margin-top: 40px;
+.mainvisual__inner .content {
+  position: absolute;
+  left:30px;
 }
 
 .mainvisual__inner .img {
-  margin-left: 133px;
+  position: absolute;
   margin-top: 159px;
+  right:30px;
 }
 
 .features {
-  height: 1900px;
+  height: 1700px;
 }
 
 .feature img{
@@ -539,4 +544,25 @@ a {
 
 .copylight {
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1080px) {
+  .header .btn {
+    margin-right: 30px;
+  }
+
+  .mainvisual__inner {
+    margin-left:30px;
+  }
+
+  .mainvisual h2 {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 425px) {
+
 }
