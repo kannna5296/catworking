@@ -125,15 +125,17 @@ a {
   padding-top:97px;
   height: 771px;
 
-  background-image: url("../images/楕円形\ 1.svg");
+
   background-repeat: no-repeat;
-  background-position: 820px -40px;
+  background-image: url("../images/楕円形\ 1.svg");
+  /* 30vwは目分量 */
+  background-position: calc(50% + 30vw) 0;
 }
 
 .mainvisual__inner {
   display: flex;
   justify-content: space-around;
-  max-width: 1350px;
+  max-width: 1080px;
   margin: 0 auto;
   height:100%;
 }
