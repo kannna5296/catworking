@@ -547,17 +547,63 @@ a {
 }
 
 @media screen and (max-width: 1080px) {
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:20px;
+  }
+
   .header .btn {
     margin-right: 30px;
   }
 
-  .mainvisual__inner {
-    margin-left:30px;
+  .mainvisual {
+    background-position:center top;
+    background-size: 450px 450px;
   }
 
-  .mainvisual h2 {
-    width: 380px;
+  .mainvisual__inner .content {
+    margin: 0 auto;
+    width: 90%;
   }
+
+  .mainvisual .content h2 {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .mainvisual .content p {
+    text-align: center;
+    margin-top:10px;
+  }
+
+  .mainvisual__inner .img {
+    margin: 0 auto;
+    width:250px;
+    height:250px;
+    top:300px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mainvisual__inner .btn {
+position:absolute;
+top:500px;
+left: 50%;
+transform: translateX(-50%);
+  }
+
+  .mainvisual__inner .content .ly_btn {
+    margin-top: 40px;
+}
+
+
+
+
+
+  
 
   /* ヘッダ(ハンバーガー) */
   #hamburger nav {
