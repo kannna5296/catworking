@@ -828,6 +828,10 @@ a {
     height: 1400px;
   }
 
+  .blog .contents-wrapper {
+    width: 80%;
+  }
+
   .blog .cards {
     display: block;
   }
