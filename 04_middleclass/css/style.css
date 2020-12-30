@@ -763,7 +763,8 @@ a {
   }
 
   .price .contents-wrapper table {
-    max-width: 375px;
+    max-width: 95%;
+    margin: 0 auto;
   }
 
   .faq {
@@ -774,8 +775,9 @@ a {
     font-size: 14px;
   }
 
-  .faq .contents-wrapper {
-    max-width: 375px;
+  .faq .contents-wrapper #acMenu {
+    max-width: 95%;
+    margin: 0 auto;
   }
 
   .blog {
