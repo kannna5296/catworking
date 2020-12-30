@@ -384,6 +384,7 @@ a {
   width: 322px;
 }
 
+
 .works .card__body {
   position: relative;
   height:200px;
@@ -787,5 +788,14 @@ a {
 
   .blog .cards--col3 > .cards__item {
     width: 100%;
+  }
+
+  .works {
+    height: 750px;
+  }
+
+  .works .car__img {
+    width: 100%;
+    margin: 0 auto;
   }
 }
