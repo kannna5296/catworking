@@ -685,6 +685,10 @@ a {
     width: 370px;
   }
 
+  .price {
+    height: 800px;
+  }
+
   .price .contents-wrapper table {
     max-width: 95%;
     margin: 0 auto;
@@ -708,8 +712,12 @@ a {
     margin-left: 20px;
   }
 
-  /* .blog {
-    height: 1500px;
+  .blog {
+    height: 1600px;
+  }
+
+  .blog .contents-wrapper {
+    width: 60%;
   }
 
   .blog .cards {
@@ -718,7 +726,12 @@ a {
 
   .blog .cards--col3 > .cards__item {
     width: 100%;
-  } */
+  }
+
+  .blog .car__img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 426px) {
@@ -761,6 +774,10 @@ a {
 
   .mainvisual__inner .content .ly_btn {
     margin-top: 50px;
+  }
+
+  .features {
+    height: 1700px;
   }
 
   .features h2 {
@@ -842,8 +859,6 @@ a {
 
   .contact .contents-wrapper form {
     padding: 30px;
-    /* width: 90%;
-    margin: 0 auto; */
   }
 
   .contact .largetxt {
