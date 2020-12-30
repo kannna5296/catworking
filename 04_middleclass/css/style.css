@@ -681,8 +681,8 @@ a {
 
 @media screen and (max-width: 769px) {
 
-  .mainvisual .mainvisual__inner .contenet .img {
-    width: 400px;
+  .mainvisual .mainvisual__inner .img {
+    width: 370px;
   }
 
   .price .contents-wrapper table {
