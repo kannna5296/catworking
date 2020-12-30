@@ -800,4 +800,26 @@ a {
     width: 100%;
     margin: 0 auto;
   }
+
+  .contact {
+    height: 1050px;
+  }
+
+  .contact .contents-wrapper {
+    width: 100%;
+  }
+
+  .contact .smalltxt {
+    width: 80%;
+  }
+
+  .contact .contents-wrapper form {
+    padding: 30px;
+    /* width: 90%;
+    margin: 0 auto; */
+  }
+
+  .contact .largetxt {
+    width: 100%;
+  }
 }
