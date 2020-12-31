@@ -414,6 +414,36 @@ a {
   display: flex;
 }
 
+.swiper-container {
+  z-index: 0;
+}
+
+.slide-item {
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  max-width: 322px;
+  display: inline-block;
+  color:black;
+  height:400px;
+}
+
+.works-img {
+  max-height: 210px;
+}
+
+.works-ttl {
+  font-size: 16px;
+  min-height: 43px;
+  line-height: 1.69;
+  margin: 23px 19px 0 18px;
+}
+
+.works-text {
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 34px 18px 34px 18px;
+}
+
 .contact {
   height: 1070px;
   background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
@@ -869,7 +899,7 @@ a {
   }
 
   .works {
-    height: 750px;
+    height: 650px;
   }
 
   .works .car__img {
