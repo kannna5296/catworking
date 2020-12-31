@@ -392,7 +392,6 @@ a {
   width: 322px;
 }
 
-
 .works .card__body {
   position: relative;
   height:200px;
@@ -562,7 +561,7 @@ a {
   }
 
   h3 {
-    font-size:24px;
+    font-size:28px;
   }
 
   h4 {
@@ -696,6 +695,10 @@ a {
     width: 370px;
   }
 
+  .features .contents-wrapper {
+    max-width: 800px;
+  }
+
   .price {
     height: 800px;
   }
@@ -710,8 +713,8 @@ a {
   }
 
   .features ol li .content .img {
-    width: 300px;
-    margin-top: 30px;
+    width: 250px;
+    margin-top: 50px;
   }
 
   .faq .contents-wrapper #acMenu {
