@@ -808,6 +808,10 @@ a {
     padding-bottom:10px;
   }
 
+  .features h4 {
+    font-size:20px;
+  }
+
   .features ol li .content .img {
     width: 250px;
     margin: 0 auto;
@@ -908,8 +912,17 @@ a {
     font-size:20px;
   }
 
+  .features {
+    height: 1800px;
+  }
+
   .features ol li .content .desc p {
     font-size:12px;
+  }
+
+  .features ol li .content .desc h4 {
+    font-size:16px;
+    line-height: 40px;
   }
 
   .price .contents-wrapper table {
@@ -943,6 +956,10 @@ a {
       font-size:11px;
     }
 
+    .features h4 {
+      font-size:14px;
+    }
+
     .faq .contents-wrapper ol li {
       padding: 15px;
     }
@@ -955,7 +972,5 @@ a {
     .blog {
       height: 1300px;
     }
-
-
   }
 
