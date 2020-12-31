@@ -677,6 +677,10 @@ a {
     color: #fff;
     text-shadow: 0 0 6px #666;
   }
+
+  .blog .card__body {
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -731,6 +735,10 @@ a {
   .blog .car__img {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .blog .card__body {
+    height: 120px;
   }
 }
 
@@ -844,6 +852,10 @@ a {
     width: 100%;
   }
 
+  .blog .card__body {
+    height: 150px;
+  }
+
   .works {
     height: 750px;
   }
@@ -892,10 +904,6 @@ a {
     height: 950px;
   }
 
-  .blog {
-    height: 1300px;
-  }
-
   .footer-contents p {
     font-size:12px;
   }
@@ -926,5 +934,11 @@ a {
       padding: 10px;
       font-size: 12px;
     }
+
+    .blog {
+      height: 1300px;
+    }
+
+
   }
 

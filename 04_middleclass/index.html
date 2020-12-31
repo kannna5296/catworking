@@ -13,69 +13,12 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
-  <script src="js/jquery.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/googleform.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/slider.js"></script>
   <link href="css/jquery.bxslider.css" rel="stylesheet" />
 
-  <script type="text/javascript">
-    //WORKSのスライダー
-    if ($(window).width() > 425) {
-      jQuery(document).ready(function ($) {
-        $('.bxslider').bxSlider({
-          auto: true,
-          pause: 5000,
-          maxSlides: 5,
-          moveSlides: 1,
-          slideWidth: 322,
-          slideMargin: 56,
-          touchEnabled: true
-        });
-      })
-    } else {
-      jQuery(document).ready(function ($) {
-        $('.bxslider').bxSlider({
-          auto: true,
-          pause: 5000,
-          maxSlides: 1,
-          moveSlides: 1,
-          slideWidth: $(window).width(),
-          slideMargin: 10,
-          touchEnabled: true
-        });
-      })
-    };
-
-    //FAQのアコーディオン
-    $(function () {
-      $("#acMenu .question").on("click", function () {
-        $(this).next().slideToggle();
-      });
-    });
-
-    // Googleフォーム送信時遷移しない。
-    $(document).ready(function () {
-
-      $('#form').submit(function (event) {
-        var formData = $('#form').serialize();
-        $.ajax({
-          url: "https://docs.google.com/forms/u/2/d/e/1FAIpQLSfV8IKmmZfOzYge60cJk_2wLd8YEmKoy9QI6SsN-vmjIJLB4Q/formResponse",
-          data: formData,
-          type: "POST",
-          dataType: "xml",
-          statusCode: {
-            0: function () {
-              $(".end-message").slideDown();
-              $(".submit-btn").fadeOut();
-            },
-            200: function () {
-              $(".false-message").slideDown();
-            }
-          }
-        });
-        event.preventDefault();
-      });
-
-    });
-  </script>
 </head>
 
 <body>
