@@ -111,6 +111,7 @@ a {
 
 .header__inner .menu{
   display: flex;
+  font-weight: bold;
 }
 
 .header__inner .menu li {
@@ -468,10 +469,10 @@ a {
 .contact .require {
   font-size:14px;
   display: inline-block;
-  padding: 3px 10px;
+  padding: 4px 16px 6px 16px;
   border-radius: 10px;
   margin:auto 0;
-  background-color: #05A5FA;
+  background-color: #0C449B;
   color:#fff;
 }
 
@@ -543,7 +544,7 @@ a {
 .footer-contents {
   display:flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 21px;
   margin-bottom: 50px;
 }
 
@@ -565,7 +566,7 @@ a {
   }
 
   h4 {
-    font-size:18px;
+    font-size:24px;
     line-height: 30px;
   }
 
@@ -891,6 +892,10 @@ a {
 }
 
 @media screen and (max-width: 376px) {
+
+  h2 {
+    font-size:24px;
+  }
 
   .header img {
     width: 40px;
