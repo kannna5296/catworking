@@ -146,7 +146,11 @@ a {
   margin-top: 159px;
 }
 
-.mainvisual__inner .content p,
+.mainvisual__inner .content p{
+  margin-top: 44px;
+  line-height: 24px;
+}
+
 .mainvisual__inner .content .ly_btn {
   margin-top: 44px;
 }
@@ -201,10 +205,12 @@ a {
 
 .features li .content .desc h4 {
   margin-top: 47px;
+  line-height: 48px;
 }
 
 .features li .content .desc p {
   margin-top: 45px;
+  line-height: 28px;
 }
 
 .price {
@@ -233,6 +239,7 @@ a {
 }
 
 .price .contents-wrapper table {
+  font-weight: bold;
   max-width: 1350px;
   margin: 0 auto;
   background-color: #fff;
@@ -550,7 +557,7 @@ a {
 
 @media screen and (max-width: 1080px) {
   h2 {
-    font-size:24px;
+    font-size:32px;
   }
 
   h3 {
@@ -684,7 +691,6 @@ a {
 }
 
 @media screen and (max-width: 769px) {
-
   .mainvisual .mainvisual__inner .img {
     width: 370px;
   }
@@ -699,7 +705,7 @@ a {
   }
 
   .features {
-    height: 1500px;
+    height: 1650px;
   }
 
   .features ol li .content .img {
@@ -786,7 +792,7 @@ a {
   }
 
   .features {
-    height: 1700px;
+    height: 1900px;
   }
 
   .features h2 {
@@ -898,6 +904,10 @@ a {
     font-size:12px;
   }
 
+  .price .contents-wrapper table {
+    font-size: 14px;
+  }
+
   .faq {
     height: 950px;
   }
@@ -916,10 +926,11 @@ a {
     .price {
       height: 700px;
     }
-
+  
     .price .contents-wrapper p {
       font-size:14px;
     }
+
     .features ol li .content .desc p {
       font-size:11px;
     }
