@@ -8,12 +8,40 @@
   <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
   <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。" />
 
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header id="header"></header>
+  <header id="header">
+    <div class="header-wrapper">
+      <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu"
+        aria-expanded="false" area-label="メニューを開閉する">
+        <span class="hamburger__line">
+        </span>
+      </button>
+      <h1>
+        <a href="#">
+          <img class="header-logo" src="images/logo02.png" alt="ヘッダロゴ">
+          <div class="header-title">石井花壇</div>
+        </a>
+      </h1>　
+      <div class="sp-global-menu" id="js-global-menu" area-hidden="true">
+        <nav>
+          <ul class="globalnavi-wrapper">
+            <ul class="globalnavi">
+              <li><a href="#">お部屋</a></li>
+              <li><a href="#">お料理</a></li>
+              <li><a href="#">温泉</a></li>
+            </ul>
+            <li><a class="rounded-btn" href="#"><i class="far fa-calendar-check"></i>宿泊予約</a></li>
+          </ul>
+        </nav>
+      </div><!-- /.sp-header-menu -->
+
+    </div>
+  </header>
   <section id="mainvisual">
   </section>
   <section id="concept">
@@ -27,6 +55,8 @@
   <section id="access">
   </section>
   <footer id="footer"></footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
