@@ -11,19 +11,34 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script>
+    jQuery(function ($) {
+      $('.zoom_slider').bxSlider({
+        auto: true,
+        pager: false,
+        controls: false,
+        mode: 'fade',
+        speed: 5000,
+        pause: 6000,
+      });
+    });
+  </script>
 </head>
 
 <body>
   <header id="header">
+    <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu"
+      aria-expanded="false" area-label="メニューを開閉する">
+      <span class="hamburger__line">
+      </span>
+    </button>
     <div class="header-wrapper">
-      <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu"
-        aria-expanded="false" area-label="メニューを開閉する">
-        <span class="hamburger__line">
-        </span>
-      </button>
       <h1>
         <a href="#">
-          <img class="header-logo" src="images/logo02.png" alt="ヘッダロゴ">
+          <img class="header-logo" src="images/logo01.png" alt="ヘッダロゴ">
           <div class="header-title">石井花壇</div>
         </a>
       </h1>　
@@ -43,6 +58,12 @@
     </div>
   </header>
   <section id="mainvisual">
+    <h2>頑張る人の頑張らない時間</h2>
+    <ul class="zoom_slider">
+      <li><img src="images/mainbg01.jpg" alt="スライド1枚目"></li>
+      <li><img src="images/mainbg02.jpg" alt="スライド2枚目"></li>
+      <li><img src="images/mainbg03.jpg" alt="スライド3枚目"></li>
+    </ul>
   </section>
   <section id="concept">
   </section>

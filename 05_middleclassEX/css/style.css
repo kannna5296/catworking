@@ -1,7 +1,6 @@
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
   color: #333;
-  margin: 0;
   box-sizing: border-box;
 }
 
@@ -77,6 +76,9 @@ a {
 
 header {
   height: 70px;
+  width: 100%;
+  position: fixed;
+  z-index:1;
 }
 
 .header-wrapper {
@@ -84,6 +86,9 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  /* position: fixed; */
+  margin: 0 auto;
+  text-align: center;
 }
 
 header .header-logo {
@@ -94,7 +99,7 @@ header .header-logo {
 header .header-title {
   margin: auto 0;
   margin-left:10px;
-  color:#000;
+  color:#fff;
   height: 70px;
 }
 
@@ -123,6 +128,7 @@ header #js-global-menu nav .globalnavi-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-size: 16px;
 }
 
 header #js-global-menu nav .globalnavi-wrapper .globalnavi {
@@ -134,6 +140,11 @@ header #js-global-menu nav .globalnavi-wrapper .globalnavi {
 header #js-global-menu nav .globalnavi-wrapper .globalnavi li {
   margin: auto 0;
   margin-left: 30px;
+  color:#fff;
+}
+
+header #js-global-menu nav .globalnavi-wrapper .globalnavi li a{
+  color:#fff;
 }
 
 header #js-global-menu nav ul li a .fa-calendar-check {
@@ -141,7 +152,43 @@ header #js-global-menu nav ul li a .fa-calendar-check {
   margin: 5px;
 }
 
+#mainvisual {
+  position: relative;
+  z-index: 0;
+}
+
+.zoom_slider > li[aria-hidden="false"] {
+  animation: anime_zoom 6s linear;
+}
+.zoom_slider > li[aria-hidden="true"] {
+  transform: scale(1.2);
+}
+
+@keyframes anime_zoom {
+  0% {
+      transform: scale(1.0);
+  }
+  100% {
+      transform: scale(1.2);
+  }
+}
+
+#mainvisual .bx-wrapper {
+  position: absolute;
+  width: 100%;
+}
+
+#mainvisual h2 {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+}
+
 @media screen and (max-width: 769px) {
+
+#js-hamburger {
+  display: block;
+}
 .button {
   display: inline-block;
   text-decoration: none;
