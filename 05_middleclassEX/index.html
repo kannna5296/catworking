@@ -17,6 +17,7 @@
   <script>
     jQuery(function ($) {
       $('.zoom_slider').bxSlider({
+        loop: true,
         auto: true,
         pager: false,
         controls: false,
@@ -29,7 +30,7 @@
 </head>
 
 <body>
-  <header id="header">
+  <header class="header">
     <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu"
       aria-expanded="false" area-label="メニューを開閉する">
       <span class="hamburger__line">
@@ -57,17 +58,23 @@
 
     </div>
   </header>
-  <section id="mainvisual">
-    <h2>頑張る人の頑張らない時間</h2>
+  <section class="mainvisual">
+    <div class="mainvisual-catchcopy">頑張る人の<br>頑張らない時間</div>
     <ul class="zoom_slider">
       <li><img src="images/mainbg01.jpg" alt="スライド1枚目"></li>
       <li><img src="images/mainbg02.jpg" alt="スライド2枚目"></li>
       <li><img src="images/mainbg03.jpg" alt="スライド3枚目"></li>
     </ul>
   </section>
-  <section id="concept">
+  <section class="concept">
+    <div class="concept-title">温海温泉の<br>美しさに癒されて</div>
+    <div class="concept-txt">東北の奥座である温海温泉郷<br>開湯は約1300年前とされ、<br>役小角が発見したと伝えられています</div>
+    <div class="concept-txt">石井花壇は江戸より続く由緒ある旅館で<br>クラシックな作りの中に大正ロマンあふれる<br>内装を残しております</div>
+    <div class="concept-txt">圧倒的癒しの空間で<br>頑張る現代人に<br>頑張らない非日常をご提供します</div>
   </section>
-  <section id="detail">
+  </section>
+  </section>
+  <section class="detail">
   </section>
   <section id="plan">
   </section>
