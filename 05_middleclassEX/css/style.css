@@ -43,6 +43,10 @@ a {
   text-decoration: none;
 }
 
+.vertical {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
 
 .rounded-btn {
   display: inline-block;
@@ -211,20 +215,39 @@ a {
   position: relative;
 }
 
-.concept-title {
-  font-size: 28px;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  letter-spacing: 22px;
-  line-height: 33px;
+.concept .concept-wrapper {
+  display: flex;
+  max-width: 1180px;
 
   position: absolute;
-  top:64px;
-  right: 20%;
-
-
+  left: 300px;
 }
 
+.concept-title {
+  font-size: 28px;
+  letter-spacing: 17px;
+  line-height: 53px;
+
+  margin-top: 64px;
+}
+
+.concept-txt {
+  font-size: 18px;
+  letter-spacing: 6px;
+  line-height: 33px;
+
+  margin-top: 155px;
+  margin-right: 118px;
+}
+
+.concept-sign {
+  font-size: 22px;
+  letter-spacing: 6px;
+  line-height: 33px;
+
+  margin-top: 520px;
+  margin-right: 118px;
+}
 
 @media screen and (max-width: 769px) {
 
