@@ -249,6 +249,26 @@ a {
   margin-right: 118px;
 }
 
+.detail {
+  height: 2080px;
+  /* background-color:#f0f0f0; */
+}
+
+.detail .contents-wrapper .contents .content {
+  display: flex;
+  margin-top: 108px;
+}
+
+.detail .contents-wrapper .contents .content figure{
+  width: 70%;
+  max-height: 545px;
+}
+
+.detail .contents-wrapper .contents .content .detail-txts{
+ margin-left: 100px;
+ margin-top: 12px;
+}
+
 @media screen and (max-width: 769px) {
 
 #js-hamburger {
