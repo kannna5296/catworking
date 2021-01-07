@@ -229,6 +229,7 @@ a {
   line-height: 53px;
 
   margin-top: 64px;
+  font-weight: bold;
 }
 
 .concept-txt {
@@ -238,6 +239,11 @@ a {
 
   margin-top: 155px;
   margin-right: 118px;
+}
+
+.concept-txt span {
+  text-combine-upright: all;
+  letter-spacing: 0;
 }
 
 .concept-sign {
@@ -250,7 +256,7 @@ a {
 }
 
 .detail {
-  height: 2080px;
+  height: 1600px;
   /* background-color:#f0f0f0; */
 }
 
@@ -259,9 +265,9 @@ a {
   margin-top: 108px;
 }
 
-.detail .contents-wrapper .contents .content figure{
-  width: 70%;
-  max-height: 545px;
+.detail .contents-wrapper .contents .content figure img{
+  width: 45rem;
+  max-height: 450px;
 }
 
 .detail .contents-wrapper .contents .content .detail-txts{
@@ -269,6 +275,58 @@ a {
  margin-top: 12px;
 }
 
+.detail .contents-wrapper .contents .content .detail-txts .detail-heading {
+  font-size: 36px;
+  line-height: 56px;
+  font-weight: bold;
+ }
+
+ .detail .contents-wrapper .contents .content .detail-txts .detail-txt {
+  margin-top: 55px;
+  font-size: 16px;
+  line-height: 32px;
+ }
+
+ .detail .contents-wrapper .contents .content .detail-txts .detail-button {
+  margin-top: 55px;
+  width: 200px;
+  height: 56px;
+
+  font-size: 16px;
+  background-color: #fff;
+  border-style: 1px solid #000;
+ }
+
+ .detail .contents-wrapper .contents .content:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+.detail .contents-wrapper .contents .content:nth-child(even) .detail-txts{
+  margin-left: 0;
+  margin-right: 200px;
+}
+
+.plan {
+  height: 600px;
+  background-image: url("../images/bg02.jpg");
+  background-size:cover;
+
+  
+}
+
+.plan .plan-logo {
+  width: 40px;
+  height: 40px;
+  display:inline-block;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.plan h2 {
+  font-size: 36px;
+  margin-top: 20px;
+  text-align: center;
+}
 @media screen and (max-width: 769px) {
 
 #js-hamburger {
