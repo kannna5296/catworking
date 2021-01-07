@@ -307,11 +307,10 @@ a {
 }
 
 .plan {
-  height: 600px;
+  height: 775px;
   background-image: url("../images/bg02.jpg");
   background-size:cover;
-
-  
+  background-position: center center;
 }
 
 .plan .plan-logo {
@@ -325,8 +324,43 @@ a {
 .plan h2 {
   font-size: 36px;
   margin-top: 20px;
+  margin-bottom: 66px;
   text-align: center;
 }
+
+.plan .contents-wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.plan .contents-wrapper .contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan .contents-wrapper .contents .content {
+  width: 331px;
+}
+
+.plan .contents-wrapper .contents .content img {
+  height: 210px;
+  width: 100%;
+}
+
+.plan .contents-wrapper .contents .content .plan-title {
+  font-size: 20px;
+  line-height: 32px;
+  margin-top: 32px;
+  font-weight: bold;
+}
+
+.plan .contents-wrapper .contents .content .plan-txt {
+  font-size: 16px;
+  line-height: 32px;
+  margin-top: 36px;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 769px) {
 
 #js-hamburger {
