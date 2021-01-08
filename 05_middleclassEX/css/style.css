@@ -41,6 +41,7 @@ ul,ol,li,dl,dt,dd {
 
 a {
   text-decoration: none;
+  color:#000;
 }
 
 .vertical {
@@ -217,10 +218,10 @@ a {
 
 .concept .concept-wrapper {
   display: flex;
-  max-width: 1180px;
+  justify-content: space-between;
+  max-width: 1000px;
 
-  position: absolute;
-  left: 300px;
+  margin: 0 auto;
 }
 
 .concept-title {
@@ -230,6 +231,7 @@ a {
 
   margin-top: 64px;
   font-weight: bold;
+  /* text-align: right; */
 }
 
 .concept-txt {
@@ -238,7 +240,6 @@ a {
   line-height: 33px;
 
   margin-top: 155px;
-  margin-right: 118px;
 }
 
 .concept-txt span {
@@ -252,12 +253,15 @@ a {
   line-height: 33px;
 
   margin-top: 520px;
-  margin-right: 118px;
 }
 
 .detail {
   height: 1600px;
-  /* background-color:#f0f0f0; */
+}
+
+.detail .contents-wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .detail .contents-wrapper .contents .content {
@@ -360,6 +364,97 @@ a {
   margin-top: 36px;
   font-weight: bold;
 }
+
+.news {
+  height: 757px;
+}
+
+.news .news-logo {
+  width: 40px;
+  height: 40px;
+  display:inline-block;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.news h2 {
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 46px;
+  text-align: center;
+}
+
+.news .contents-wrapper .news-tabs {
+  display: flex;
+  width: 200px;
+  margin: 0 auto;
+
+  margin-bottom: 49px;
+}
+
+.news .contents-wrapper .news-tabs .tab{
+  width: 100px;
+  text-align: center;
+}
+
+.news .contents-wrapper .news-contents-sales {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.news .contents-wrapper .news-contents-sales .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  width:100%;
+  margin: 0 auto;
+}
+
+.news .contents-wrapper .news-contents-sales .container .card {
+  width: 570px;
+  height: 130px;
+  background-color:#f6f6f6;
+
+  margin-bottom:20px;
+}
+
+.card {
+  display: flex;
+  padding: 15px 10px;
+}
+
+.card:hover,
+.card:focus {
+  opacity: 0.6;
+  transition: .3s;
+}
+
+.card__img-wrapper {
+  width: 100px;
+  height: 100px;
+}
+
+.card__body {
+  margin-left: 30px;
+}
+
+.card__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card__time {
+  font-size: 14px;
+}
+
+.card__txt {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
 
 @media screen and (max-width: 769px) {
 
