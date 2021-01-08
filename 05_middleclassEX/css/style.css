@@ -75,6 +75,23 @@ a {
   border-color: currentColor;
 }
 
+/* セクションの見出し共通 */
+.section-logo {
+  width: 40px;
+  height: 40px;
+  display:inline-block;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.section-top {
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 66px;
+  text-align: center;
+}
+/* セクションの見出し共通終わり */
+
 /* PCではハンバーガーボタン非表示 */
 #js-hamburger {
   display: none;
@@ -317,21 +334,6 @@ a {
   background-position: center center;
 }
 
-.plan .plan-logo {
-  width: 40px;
-  height: 40px;
-  display:inline-block;
-  margin: 0 auto;
-  margin-top: 60px;
-}
-
-.plan h2 {
-  font-size: 36px;
-  margin-top: 20px;
-  margin-bottom: 66px;
-  text-align: center;
-}
-
 .plan .contents-wrapper {
   max-width: 1180px;
   margin: 0 auto;
@@ -369,21 +371,6 @@ a {
   height: 757px;
 }
 
-.news .news-logo {
-  width: 40px;
-  height: 40px;
-  display:inline-block;
-  margin: 0 auto;
-  margin-top: 60px;
-}
-
-.news h2 {
-  font-size: 36px;
-  margin-top: 20px;
-  margin-bottom: 46px;
-  text-align: center;
-}
-
 .news .contents-wrapper .news-tabs {
   display: flex;
   width: 200px;
@@ -419,6 +406,7 @@ a {
   margin-bottom:20px;
 }
 
+/* お知らせのカード用 */
 .card {
   display: flex;
   padding: 15px 10px;
@@ -453,6 +441,7 @@ a {
   font-size: 14px;
   margin-top: 5px;
 }
+/* お知らせのカード用終了 */
 
 
 
