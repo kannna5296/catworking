@@ -444,6 +444,15 @@ a {
 /* お知らせのカード用終了 */
 
 
+.access {
+  height: 1380px;
+  background-image: url("../images/bg.jpg");
+}
+
+.access .access-first {
+  display: flex;
+}
+
 
 @media screen and (max-width: 769px) {
 
