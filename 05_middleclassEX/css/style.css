@@ -380,6 +380,12 @@ header {
   margin-top: 36px;
   font-weight: bold;
 }
+
+.plan-link:hover,
+.plan-link:focus {
+  opacity: 0.6;
+  transition: .3s;
+}
 /* おすすめプラン終了 */
 
 /*　ニュース開始 */
