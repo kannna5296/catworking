@@ -1,3 +1,4 @@
+/* 共通部開始 */
 body {
   font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
   color: #333;
@@ -97,38 +98,6 @@ a {
   display: none;
 }
 
-header {
-  height: 70px;
-  width: 100%;
-  position: fixed;
-  z-index:2;
-}
-
-.header-wrapper {
-  max-width:1920px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.header-top {
-  height: 70px;
-  width: 20%;
-  min-width: 210px;
-  display: flex;
-  align-items: center;
-  color:#fff;
-}
-
-.header-logo {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-}
-
 #js-global-menu {
   width: 80%;
   height: 70px;
@@ -166,7 +135,43 @@ header {
   height: 15px;
   margin: 5px;
 }
+/* 共通部終了 */
 
+/* ヘッダ開始 */
+header {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  z-index:2;
+}
+
+.header-wrapper {
+  max-width:1920px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-top {
+  height: 70px;
+  width: 20%;
+  min-width: 210px;
+  display: flex;
+  align-items: center;
+  color:#fff;
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+/* ヘッダ終了 */
+
+/* メインビジュアル開始 */
 .mainvisual {
   position: relative;
   height: 100vh;
@@ -219,7 +224,9 @@ header {
   top: 300px;
   right: 25%;
 }
+/* メインビジュアル終了*/
 
+/* コンセプト開始 */
 .concept {
   height: 681px;
   background-image: url("../images/bg.jpg");
@@ -264,7 +271,9 @@ header {
 
   margin-top: 520px;
 }
+/* コンセプト終了 */
 
+/* サービス詳細開始 */
 .detail {
   height: 1600px;
 }
@@ -293,15 +302,15 @@ header {
   font-size: 36px;
   line-height: 56px;
   font-weight: bold;
- }
+}
 
- .detail .contents-wrapper .contents .content .detail-txts .detail-txt {
+.detail .contents-wrapper .contents .content .detail-txts .detail-txt {
   margin-top: 55px;
   font-size: 16px;
   line-height: 32px;
- }
+}
 
- .detail .contents-wrapper .contents .content .detail-txts .detail-button {
+.detail .contents-wrapper .contents .content .detail-txts .detail-button {
   margin-top: 55px;
   width: 200px;
   height: 56px;
@@ -309,9 +318,9 @@ header {
   font-size: 16px;
   background-color: #fff;
   border-style: 1px solid #000;
- }
+}
 
- .detail .contents-wrapper .contents .content:nth-child(even){
+.detail .contents-wrapper .contents .content:nth-child(even){
   flex-direction: row-reverse;
 }
 
@@ -319,7 +328,9 @@ header {
   margin-left: 0;
   margin-right: 200px;
 }
+/* サービス詳細終了 */
 
+/* おすすめプラン開始 */
 .plan {
   height: 775px;
   background-image: url("../images/bg02.jpg");
@@ -359,7 +370,9 @@ header {
   margin-top: 36px;
   font-weight: bold;
 }
+/* おすすめプラン終了 */
 
+/*　ニュース開始 */
 .news {
   height: 757px;
 }
@@ -399,7 +412,7 @@ header {
   margin-bottom:20px;
 }
 
-/* お知らせのカード用 */
+/* お知らせのカード用css開始 */
 .card {
   display: flex;
   padding: 15px 10px;
@@ -434,9 +447,10 @@ header {
   font-size: 14px;
   margin-top: 5px;
 }
-/* お知らせのカード用終了 */
+/* お知らせのカード用css終了 */
+/*　ニュース終了 */
 
-
+/* アクセス部開始 */
 .access {
   height: 1180px;
   background-image: url("../images/bg.jpg");
@@ -480,7 +494,9 @@ header {
   text-align: center;
   margin-top: 66px;
 }
+/* アクセス部終了 */
 
+/* フッター開始 */
 footer {
   height: 572px;
 }
@@ -504,7 +520,6 @@ footer {
   letter-spacing: 10px;
 }
 
-/* セクションの見出し共通 */
 .footer-logo {
   width: 40px;
   height: 40px;
@@ -519,7 +534,6 @@ footer {
   margin-bottom: 66px;
   text-align: center;
 }
-/* セクションの見出し共通終わり */
 
 .footer-access {
   font-size: 16px;
@@ -545,6 +559,7 @@ footer {
   font-size:12px;
   padding-top: 17px;
 }
+/* フッター終了 */
 
 @media screen and (max-width: 769px) {
 
