@@ -405,7 +405,7 @@ header {
   height: 757px;
 }
 
-.news .contents-wrapper .news-tabs {
+.news .contents-wrapper .tab-menu {
   display: flex;
   width: 200px;
   margin: 0 auto;
@@ -413,7 +413,7 @@ header {
   margin-bottom: 49px;
 }
 
-.news .contents-wrapper .news-tabs .tab{
+.news .contents-wrapper .tab-menu .tab-menu__item{
   width: 100px;
   text-align: center;
 }
