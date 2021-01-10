@@ -26,22 +26,45 @@
         pause: 6000,
       });
     });
+
+    $(function () {
+      var headNav = $("header");
+      var h = $(window).height();
+      //scrollだけだと読み込み時困るのでloadも追加
+      $(window).on('load scroll', function () {
+        //現在の位置が500px以上かつ、クラスfixedが付与されていない時
+        if ($(this).scrollTop() > h && headNav.hasClass('is-fixed') == false) {
+          //headerの高さ分上に設定
+          headNav.css({ "top": '-70px' });
+          headNav.css({ "display": 'block' });
+          //クラスfixedを付与
+          headNav.addClass('is-fixed');
+          //位置を0に設定し、アニメーションのスピードを指定
+          headNav.animate({ "top": 0 }, 600);
+        }
+        //現在の位置が300px以下かつ、クラスfixedが付与されている時にfixedを外す
+        else if ($(this).scrollTop() < h && headNav.hasClass('is-fixed') == true) {
+          headNav.removeClass('is-fixed');
+          headNav.css({ "display": 'none' });
+        }
+      });
+    });
   </script>
 </head>
 
 <body>
   <header class="header">
     <!-- レスポンシブ用ハンバーガーボタン開始 -->
-    <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu"
+    <!-- <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu"
       aria-expanded="false" area-label="メニューを開閉する">
       <span class="hamburger__line">
       </span>
-    </button>
+    </button> -->
     <!-- レスポンシブ用ハンバーガーボタン終了 -->
     <div class="header-wrapper">
       <a href="/05_middleclassEX">
         <h1 class="header-top">
-          <img class="header-logo" src="images/logo01.png" alt="ヘッダロゴ">
+          <img class="header-logo" src="images/logo02.png" alt="ヘッダロゴ">
           <div>石井花壇</div>
         </h1>　
       </a>
