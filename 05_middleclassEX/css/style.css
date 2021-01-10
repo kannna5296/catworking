@@ -327,7 +327,15 @@ header {
 
   font-size: 16px;
   background-color: #fff;
-  border-style: 1px solid #000;
+  border: 1px solid #000;
+}
+
+.detail .contents-wrapper .contents .content .detail-txts .detail-button:hover,
+.detail .contents-wrapper .contents .content .detail-txts .detail-button:focus {
+  background-color: #000;
+  color:#fff;
+  transition: .3s;
+  padding: 3px 10px;
 }
 
 .detail .contents-wrapper .contents .content:nth-child(even){
