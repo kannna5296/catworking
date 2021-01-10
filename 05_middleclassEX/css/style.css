@@ -414,9 +414,13 @@ header {
 }
 
 .tab-menu .tab-menu__item{
-  width: 100px;
+  width: 150px;
   text-align: center;
+}
+
+.tab-trigger {
   padding: 5px 10px;
+  box-shadow: 2px 2px;
 }
 
 .tab-trigger.is-active {
