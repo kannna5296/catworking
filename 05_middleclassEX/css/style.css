@@ -405,7 +405,7 @@ header {
   height: 757px;
 }
 
-.news .contents-wrapper .tab-menu {
+.tab-menu {
   display: flex;
   width: 200px;
   margin: 0 auto;
@@ -413,26 +413,36 @@ header {
   margin-bottom: 49px;
 }
 
-.news .contents-wrapper .tab-menu .tab-menu__item{
+.tab-menu .tab-menu__item{
   width: 100px;
   text-align: center;
+  padding: 5px 10px;
 }
 
-.news .contents-wrapper .news-contents-sales {
+.tab-trigger.is-active {
+  background-color: rgb(248, 173, 143);
+}
+
+.tab-content__item {
+  display:none;
+}
+
+.tab-content__item.is-active {
+  display:block;
   max-width: 1180px;
   margin: 0 auto;
 }
 
-.news .contents-wrapper .news-contents-sales .container {
+
+.tab-content__item .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
   width:100%;
   margin: 0 auto;
 }
 
-.news .contents-wrapper .news-contents-sales .container .card {
+.tab-content__item .container .card {
   width: 570px;
   height: 130px;
   background-color:#f6f6f6;

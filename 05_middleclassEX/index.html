@@ -48,6 +48,16 @@
         }
       });
     });
+
+    $(function () {
+      $('.js-tab-trigger').on('click', function () {
+        $('.js-tab-trigger').removeClass('is-active');
+        $('.js-tab-target').removeClass('is-active');
+        $(this).addClass('is-active');
+        let id = $(this).data("id");
+        $('#' + id).addClass('is-active')
+      });
+    });
   </script>
 </head>
 
@@ -184,13 +194,13 @@
         <div class="tab js-tab-trigger">営業情報</div>
         <div class="tab js-tab-trigger">その他</div>
       </div> -->
-      <div class="tab-menu">
+      <ul class="tab-menu">
         <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger is-active" data-id="tab01">営業活動</span>
         </li>
         <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger" data-id="tab02">その他</span></li>
-      </div>
+      </ul>
       <div class="tab-content">
-        <div class="news-contents-sales tab-content__item js-tab-target is-active" id="is-active">
+        <div class="news-contents-sales tab-content__item js-tab-target is-active" id="tab01">
           <div class="container">
             <a href="#">
               <div class="card">
@@ -278,7 +288,7 @@
             </a>
           </div><!-- /.container -->
         </div><!-- /.news-contents-sales -->
-        <div class="news-contents-other tab-content__item js-tab-target">
+        <div class="news-contents-other tab-content__item js-tab-target" id="tab02">
           <div class="container">
             <a href="#">
               <div class="card">
@@ -290,7 +300,7 @@
                     2020.12.24
                   </div>
                   <p class="card__txt">
-                    その他：年末最後の営業日は27日になります。
+                    ここにその他の文章が入ります。
                 </div><!-- /.card_body -->
               </div><!-- /.card -->
             </a>
@@ -304,7 +314,7 @@
                     2020.12.23
                   </div>
                   <p class="card__txt">
-                    年末最後の営業日のお知らせ
+                    ここにその他の文章が入ります。
                 </div><!-- /.card_body -->
               </div><!-- /.card -->
             </a>
@@ -318,7 +328,7 @@
                     2020.12.11
                   </div>
                   <p class="card__txt">
-                    12月15日は臨時休業とさせて頂きますので、よろしくお願いいたします。
+                    ここにその他の文章が入ります。
                 </div><!-- /.card_body -->
               </div><!-- /.card -->
             </a>
@@ -332,7 +342,7 @@
                     2020.12.9
                   </div>
                   <p class="card__txt">
-                    年末最後の営業日は27日になります。
+                    ここにその他の文章が入ります。
                 </div><!-- /.card_body -->
               </div><!-- /.card -->
             </a>
@@ -346,7 +356,7 @@
                     2020.12.4
                   </div>
                   <p class="card__txt">
-                    年末最後の営業日は27日になります。
+                    ここにその他の文章が入ります。
                 </div><!-- /.card_body -->
               </div><!-- /.card -->
             </a>
@@ -360,7 +370,7 @@
                     2020.11.28
                   </div>
                   <p class="card__txt">
-                    年末最後の営業日は27日になります。
+                    ここにその他の文章が入ります。
                 </div><!-- /.card_body -->
               </div><!-- /.card -->
             </a>
