@@ -468,11 +468,12 @@ header {
 
 .card__img-wrapper {
   width: 100px;
+  min-width: 100px;
   height: 100px;
 }
 
 .card__body {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .card__img {
