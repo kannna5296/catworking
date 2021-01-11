@@ -9,7 +9,8 @@
   <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。" />
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/hotspring.css">
 </head>
 
 <body>
@@ -18,11 +19,84 @@
   </header>
   <section id="mainvisual">
   </section>
-  <section id="breadcrumb">
+  <section class="breadcrumb">
+    <div class="contents-wrapper">
+      <ol class="breadcrumb-wrapper" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/05_middleclassEX/">
+            <span itemprop="name">トップ</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/05_middleclassEX/hotspring.html">
+            <span itemprop="name">温泉</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
   </section>
-  <section id="hotspring-detail">
+  <section class="hotspring-concept">
+    <div class="contents-wrapper">
+      <div class="hotspring-concept-txt">
+        心も身体も癒やす汐の温泉。<br>湯あたりしにくく、赤ちゃんから年配の方までどなたでもゆっくりと安心して入っていただけます。<br>柔らかく優しい湯にじっくりと漬かれば、心身共にリラックスできます。
+      </div>
+    </div>
   </section>
-  <footer id="footer"></footer>
+  <section class="detail">
+    <div class="contents-wrapper">
+      <ul class="detail-contents">
+        <li class="detail-content">
+          <figure class="detail-img">
+            <img src="images/onsen01.jpg">
+          </figure>
+          <div class="detail-txts">
+            <div class="detail-title">貸し切り露天風呂「雲居の湯」</div>
+            <p class="detail-text">弱酸性の湯質が優しく肌を包み込むような心地よさ 最上階の露天風呂「雲居の湯」では、湯冷めしにくい食塩泉を 熱海の町並みを遠方に望みながら・・・</p>
+          </div>
+        </li>
+        <li class="detail-content">
+          <figure class="detail-img">
+            <img src="images/onsen02.jpg">
+          </figure>
+          <div class="detail-txts">
+            <div class="detail-title">美肌を促す乳白色の硫黄泉を</div>
+            <p class="detail-text">まじりっけなしの白いにごり湯。鳥海山から引いた酸性の強い硫酸塩泉を、たっぷりと掛け流しています。 四季の移り変わりを、天然温泉の湯に浸りながら味わってください。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-upper">
+      <div class="footer-menu-wrapper">
+        <div class="footer-menu vertical"><a class="footer-menu-link" href="/05_middleclassEX/hotspring.html">温泉</a>
+        </div><!-- /.footer-menu -->
+        <div class="footer-menu vertical"><a class="footer-menu-link" href="/05_middleclassEX/dish.html">お料理</a></div>
+        <!-- /.footer-menu -->
+        <div class="footer-menu vertical"><a class="footer-menu-link" href="/05_middleclassEX/room.html">お部屋</a></div>
+        <!-- /.footer-menu -->
+      </div><!-- /.footer-menu-wrapper -->
+      <h2 class="footer-top">
+        <img class="footer-logo" src="images/logo02.png" alt="ロゴ">
+        <div>石井花壇</div>
+      </h2>
+      <div class="footer-access">
+        <p class="footer-access-detail">〒000-0000</p>
+        <p class="footer-access-detail">山形県鶴岡市xxxxxxxxxxx</p>
+      </div><!-- /.footer-access -->
+      <div class="footer-access">
+        <p class="footer-access-detail">TEL.000-0000-0000</p>
+        <p class="footer-access-detail">FAX.000-0000-0000</p>
+      </div><!-- /.footer-access -->
+    </div><!-- /.footer-upper -->
+    <div class="footer-bottom">
+      <div class="copyright">
+        Copyright © 石井花壇 All Rights Reserved.
+      </div><!-- /.copyright -->
+    </div><!-- /.footer-bottom -->
+  </footer>
 </body>
 
 </html>

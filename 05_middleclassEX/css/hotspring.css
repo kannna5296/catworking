@@ -44,18 +44,18 @@
   padding-top: 15px;
 }
 
-.room-concept {
+.hotspring-concept {
   height: 200px;
 }
 
-.room-concept-txt {
+.hotspring-concept-txt {
   padding-top: 50px;
   text-align: center;
   line-height: 32px;
 }
 
 .detail {
-  height: 1500px;
+  height: 1000px;
 }
 
 .detail .contents-wrapper {
@@ -133,4 +133,3 @@
 .detail-content:nth-child(even) .detail-txts .detail-text {
   width: 450px;
 }
-/* 偶数番目は逆 終了 */
