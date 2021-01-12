@@ -14,10 +14,41 @@
 </head>
 
 <body>
-  <header id="header">
-    温泉のページだよ
+  <header class="header">
+    <!-- レスポンシブ用ハンバーガーボタン開始 -->
+    <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu"
+      aria-expanded="false" area-label="メニューを開閉する">
+      <span class="hamburger__line">
+      </span>
+    </button>
+    <!-- レスポンシブ用ハンバーガーボタン終了 -->
+    <div class="header-wrapper">
+      <a href="/05_middleclassEX">
+        <h1 class="header-top">
+          <img class="header-logo" src="images/logo02.png" alt="ヘッダロゴ">
+          <div>石井花壇</div>
+        </h1>　
+      </a>
+      <div class="sp-global-menu" id="js-global-menu" area-hidden="true">
+        <nav>
+          <ul class="globalnavi-wrapper">
+            <ul class="globalnavi">
+              <!-- TODO フォルダ階層は後で修正 -->
+              <li><a class="globalnavi-link" href="/05_middleclassEX/room.html">お部屋</a></li>
+              <li><a class="globalnavi-link" href="/05_middleclassEX/dish.html">お料理</a></li>
+              <li><a class="globalnavi-link" href="/05_middleclassEX/hotspring.html">温泉</a></li>
+            </ul>
+            <li><a class="rounded-btn" href="#"><i class="far fa-calendar-check"></i>宿泊予約</a></li>
+          </ul>
+        </nav>
+      </div><!-- /.sp-header-menu -->
+    </div><!-- /.header-wrapper -->
   </header>
-  <section id="mainvisual">
+  <section class="mainvisual">
+    <div class="mainvisual-title">温泉</div><!-- /.mainvisual-title -->
+    <figure class="mainvisual-img__wrapper">
+      <img class="mainvisual-img" src="images/onsen-header.jpg">
+    </figure>
   </section>
   <section class="breadcrumb">
     <div class="contents-wrapper">
