@@ -9,20 +9,137 @@
   <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。" />
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/dish.css">
 </head>
 
 <body>
-  <header id="header">
-    お料理のページだよ
+  <header class="header">
+    <!-- レスポンシブ用ハンバーガーボタン開始 -->
+    <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu"
+      aria-expanded="false" area-label="メニューを開閉する">
+      <span class="hamburger__line">
+      </span>
+    </button>
+    <!-- レスポンシブ用ハンバーガーボタン終了 -->
+    <div class="header-wrapper">
+      <a href="/05_middleclassEX">
+        <h1 class="header-top">
+          <img class="header-logo" src="images/logo02.png" alt="ヘッダロゴ">
+          <div>石井花壇</div>
+        </h1>　
+      </a>
+      <div class="sp-global-menu" id="js-global-menu" area-hidden="true">
+        <nav>
+          <ul class="globalnavi-wrapper">
+            <ul class="globalnavi">
+              <!-- TODO フォルダ階層は後で修正 -->
+              <li><a class="globalnavi-link" href="/05_middleclassEX/room.html">お部屋</a></li>
+              <li><a class="globalnavi-link" href="/05_middleclassEX/dish.html">お料理</a></li>
+              <li><a class="globalnavi-link" href="/05_middleclassEX/hotspring.html">温泉</a></li>
+            </ul>
+            <li><a class="rounded-btn" href="#"><i class="far fa-calendar-check"></i>宿泊予約</a></li>
+          </ul>
+        </nav>
+      </div><!-- /.sp-header-menu -->
+    </div><!-- /.header-wrapper -->
   </header>
-  <section id="mainvisual">
+  <section class="mainvisual">
+    <div class="mainvisual-title">お料理</div><!-- /.mainvisual-title -->
+    <figure class="mainvisual-img__wrapper">
+      <img class="mainvisual-img" src="images/menu-header.jpg">
+    </figure>
   </section>
-  <section id="breadcrumb">
+  <section class="breadcrumb">
+    <div class="contents-wrapper">
+      <ol class="breadcrumb-wrapper" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/05_middleclassEX/">
+            <span itemprop="name">トップ</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/05_middleclassEX/dish.html">
+            <span itemprop="name">お料理</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
   </section>
-  <section id="dish-detail">
+  <section class="dish-concept">
+    <div class="contents-wrapper">
+      <div class="dish-concept-txt">
+        地元熱海の市場で仕入れた食材のみを使った食材をふんだんに使い、<br>大将の技が光る「熱海料理」<br>四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。
+      </div>
+    </div>
   </section>
-  <footer id="footer"></footer>
+  <section class="detail">
+    <div class="contents-wrapper">
+      <ul class="detail-contents">
+        <li class="detail-content">
+          <figure class="detail-img">
+            <img src="images/menu01.jpg">
+          </figure>
+          <div class="detail-txts">
+            <div class="detail-title">地元食材にこだわった会席料理</div>
+            <p class="detail-text">
+              みずみずしくほのかに甘い野菜、新鮮で味に深みがある魚介類、肉類。<br>旬の素材をそのままに生かす、経験に裏打ちされた確かな技。<br>四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。</p>
+          </div>
+        </li>
+        <li class="detail-content">
+          <figure class="detail-img">
+            <img src="images/menu02.jpg">
+          </figure>
+          <div class="detail-txts">
+            <div class="detail-title">熱海の漁港で目利きの品を</div>
+            <p class="detail-text">
+              石井花壇でお出しする料理はすべて料理長である大将の目利きで、<br>熱海の魚市場でその日のうちに仕入れたものを使用しております。<br>日本海の宝玉を十分にお楽しみください。</p>
+        </li>
+        <li class="detail-content">
+          <figure class="detail-img">
+            <img src="images/menu03.jpg">
+          </figure>
+          <div class="detail-txts">
+            <div class="detail-title">食材が一流、職人も一流</div>
+            <p class="detail-text">
+              石井花壇の料理人は料亭で20年経験を積んだものばかり。<br>その時の最も旬な食材を、最高の調理でお届けします。<br>また、お料理への細かいご要望にもお答えできますので、<br>お気軽にお申し付けください。
+            </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-upper">
+      <div class="footer-menu-wrapper">
+        <div class="footer-menu vertical"><a class="footer-menu-link" href="/05_middleclassEX/hotspring.html">温泉</a>
+        </div><!-- /.footer-menu -->
+        <div class="footer-menu vertical"><a class="footer-menu-link" href="/05_middleclassEX/dish.html">お料理</a></div>
+        <!-- /.footer-menu -->
+        <div class="footer-menu vertical"><a class="footer-menu-link" href="/05_middleclassEX/room.html">お部屋</a></div>
+        <!-- /.footer-menu -->
+      </div><!-- /.footer-menu-wrapper -->
+      <h2 class="footer-top">
+        <img class="footer-logo" src="images/logo02.png" alt="ロゴ">
+        <div>石井花壇</div>
+      </h2>
+      <div class="footer-access">
+        <p class="footer-access-detail">〒000-0000</p>
+        <p class="footer-access-detail">山形県鶴岡市xxxxxxxxxxx</p>
+      </div><!-- /.footer-access -->
+      <div class="footer-access">
+        <p class="footer-access-detail">TEL.000-0000-0000</p>
+        <p class="footer-access-detail">FAX.000-0000-0000</p>
+      </div><!-- /.footer-access -->
+    </div><!-- /.footer-upper -->
+    <div class="footer-bottom">
+      <div class="copyright">
+        Copyright © 石井花壇 All Rights Reserved.
+      </div><!-- /.copyright -->
+    </div><!-- /.footer-bottom -->
+  </footer>
 </body>
 
 </html>
