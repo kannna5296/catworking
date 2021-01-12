@@ -58,15 +58,6 @@
         let id = $(this).data("id");
         $('#' + id).addClass('is-active')
       });
-
-      // 「ページトップへ」をクリックした場合
-      $('#pagetop').click(function () {
-        // ページトップにスクロール
-        $('html,body').animate({
-          scrollTop: 0
-        }, 500);
-        return false;
-      });
     });
   </script>
 </head>
@@ -441,7 +432,7 @@
         <div class="footer-menu vertical"><a class="footer-menu-link" href="/05_middleclassEX/room.html">お部屋</a></div>
         <!-- /.footer-menu -->
       </div><!-- /.footer-menu-wrapper -->
-      <h2 id="pagetop" class="footer-top">
+      <h2 class="footer-top">
         <img class="footer-logo" src="images/logo02.png" alt="ロゴ">
         <div>石井花壇</div>
       </h2>
