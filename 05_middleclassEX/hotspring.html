@@ -49,6 +49,43 @@
       </div><!-- /.sp-header-menu -->
     </div><!-- /.header-wrapper -->
   </header>
+  <!-- モーダルエリアここから -->
+  <section id="modalArea" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <div class="reserve-title">宿泊予約</div>
+        <form class="reserve-form">
+          <div class="reserve-label-wrapper">
+            <label class="reserve-label-txt">お名前</label>
+          </div>
+          <input type="text" class="reserve-input" placeholder="例：山根正大" required>
+
+          <div class="reserve-label-wrapper">
+            <label class="reserve-label-txt">メールアドレス</label>
+          </div>
+          <input type="email" class="reserve-input" placeholder="例：Example@example.com" required>
+
+          <div class="reserve-label-wrapper">
+            <label class="reserve-label-txt">ご予約プラン（空いているプランのみ表示されます）</label>
+          </div>
+          <input type="text" class="reserve-input" placeholder="プランを選択してください" required>
+
+          <div class="reserve-label-wrapper">
+            <label class="reserve-label-txt">日時選択</label>
+          </div>
+          <input type="text" class="reserve-input" placeholder="日時を選択して下さい" required>
+
+          <input type="submit" class="reserve-submit-btn" id="js-submit" value="送信する" disabled>
+          <!-- <p class="end-message">送信が完了しました。<br>お問い合わせありがとうございました！</p>
+            <p class="false-message">送信できませんでした。</p> -->
+        </form>
+      </div>
+      <div id="closeModal" class="closeModal">
+        ×
+      </div>
+    </div>
+  </section>
   <section class="mainvisual">
     <div class="mainvisual-title">温泉</div><!-- /.mainvisual-title -->
     <figure class="mainvisual-img__wrapper">
