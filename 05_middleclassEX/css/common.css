@@ -360,28 +360,28 @@ margin-top: 50px;
   margin: 0 auto;
 }
 
-.plan .contents-wrapper .contents {
+.plan-contents {
   display: flex;
   justify-content: space-between;
 }
 
-.plan .contents-wrapper .contents .content {
+.plan-card {
   width: 331px;
 }
 
-.plan .contents-wrapper .contents .content img {
+.plan-card img {
   height: 210px;
   width: 100%;
 }
 
-.plan .contents-wrapper .contents .content .plan-title {
+.plan-title {
   font-size: 20px;
   line-height: 32px;
   margin-top: 32px;
   font-weight: bold;
 }
 
-.plan .contents-wrapper .contents .content .plan-txt {
+.plan-txt {
   font-size: 16px;
   line-height: 32px;
   margin-top: 36px;
