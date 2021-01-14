@@ -16,14 +16,3 @@ $(function () {
         $('#js-global-menu').attr('area-hidden', 'true')
     })
 });
-
-jQuery(function ($) {
-    $('.zoom_slider').bxSlider({
-        auto: true,
-        pager: false,
-        controls: false,
-        mode: 'fade',
-        speed: 1000,
-        pause: 4000,
-    });
-});
