@@ -1,18 +1,18 @@
-.detail {
+.category-detail {
   height: 1500px;
 }
 
-.detail .contents-wrapper {
-  max-width: 1080px;
+.category-detail .contents-wrapper {
+  max-width: 1100px;
   margin: 0 auto;
 }
 
-.detail-content {
+.category-detail-content {
   height: 500px;
   position: relative;
 }
 
-.detail-img img {
+.category-detail-img img {
   height: 300px;
   width: 525px;
   position:absolute;
@@ -21,37 +21,39 @@
   z-index:2;
 }
 
-.detail-txts {
+.category-detail-txts {
   background-image: url("../images/bg.jpg");
   width:813px;
   height: 381px;
   padding: 30px;
-  padding-left: 300px;
+  padding-left: 280px;
   position:absolute;
   top:50px;
   right:0;
   z-index:1;
 }
 
-.detail-title {
+.category-detail-title {
   font-size:24px;
   margin-top: 40px;
   margin-bottom: 20px;
+  
 }
 
-.detail-text {
+.category-detail-txt {
   font-size:16px;
   line-height:32px;
   margin-top: 30px;
+  width: 510px;
 }
 
-.detail-annotation {
+.category-detail-annotation {
   font-size:14px;
   margin-top: 30px;
 }
 
 /* 偶数番目は逆 */
-.detail-content:nth-child(even) .detail-img img {
+.category-detail-content:nth-child(even) .category-detail-img img {
   height: 300px;
   width: 525px;
   position:absolute;
@@ -63,7 +65,7 @@
   z-index:2;
 }
 
-.detail-content:nth-child(even) .detail-txts {
+.category-detail-content:nth-child(even) .category-detail-txts {
   background-image: url("../images/bg.jpg");
   width:813px;
   height: 381px;
@@ -74,6 +76,6 @@
   z-index:1;
 }
 
-.detail-content:nth-child(even) .detail-txts .detail-text {
-  width: 450px;
+.category-detail-content:nth-child(even) .category-detail-txts .category-detail-txt {
+  width: 480px;
 }
