@@ -20,6 +20,10 @@
   <link rel="stylesheet" href="css/hotspring.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <!-- head固定 -->
   <script src="js/modal.js"></script>
   <script src="js/header-scroll.js"></script>
   <script src="js/slider.js"></script>
@@ -86,7 +90,7 @@
           <div class="reserve-label-wrapper">
             <label class="reserve-label-txt">日時選択</label>
           </div>
-          <input type="text" class="reserve-input" placeholder="日時を選択して下さい" required>
+          <input type="text" id="flatpickr" class="reserve-input" placeholder="日時を選択して下さい" required>
 
           <input type="submit" class="reserve-submit-btn" id="js-submit" value="送信する" disabled>
           <!-- <p class="end-message">送信が完了しました。<br>お問い合わせありがとうございました！</p>
@@ -196,6 +200,14 @@
       </div><!-- /.copyright -->
     </div><!-- /.footer-bottom -->
   </footer>
+
+  <script>
+    flatpickr("#flatpickr", {
+      mode: "range",
+      locale: "ja",
+      minDate: "today"
+    });
+  </script>
 </body>
 
 </html>
