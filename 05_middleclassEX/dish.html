@@ -21,6 +21,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/modal.js"></script>
   <script>
     $(function () {
       var headNav = $("header");
@@ -43,21 +44,6 @@
         }
       });
     });
-
-    $(function () {
-      //is-showクラスのつけ外しだけでモーダル表示非表示できるようにしています
-      //アニメーションはcss側に記載しています
-      $('#openModal').on('click', function () {
-        $('#modalArea').toggleClass('is-show');
-      });
-      $('#closeModal').on('click', function () {
-        $('#modalArea').toggleClass('is-show');
-      });
-      $('#modalBg').on('click', function () {
-        $('#modalArea').toggleClass('is-show');
-      });
-    });
-
   </script>
 </head>
 

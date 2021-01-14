@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/hotspring.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/modal.js"></script>
   <script>
     $(function () {
       var headNav = $("header");
@@ -42,21 +43,6 @@
         }
       });
     });
-
-    $(function () {
-      //is-showクラスのつけ外しだけでモーダル表示非表示できるようにしています
-      //アニメーションはcss側に記載しています
-      $('#openModal').on('click', function () {
-        $('#modalArea').toggleClass('is-show');
-      });
-      $('#closeModal').on('click', function () {
-        $('#modalArea').toggleClass('is-show');
-      });
-      $('#modalBg').on('click', function () {
-        $('#modalArea').toggleClass('is-show');
-      });
-    });
-
   </script>
 </head>
 
@@ -153,9 +139,9 @@
       </ol>
     </div>
   </section>
-  <section class="room-concept">
+  <section class="category-concept">
     <div class="contents-wrapper">
-      <div class="room-concept-txt">
+      <div class="category-concept-txt">
         創業より受け継がれてきた石井花壇の和の造り<br>温海の雄大な絶景を堪能していただけるように設計された客室<br>ゆるやかに流れ行く時間に身を委ねて
       </div>
     </div>

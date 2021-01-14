@@ -17,6 +17,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
+  <!-- head固定 -->
+  <script src="js/modal.js"></script>
   <script>
     jQuery(function ($) {
       $('.zoom_slider').bxSlider({
@@ -61,21 +63,6 @@
         $('#' + id).addClass('is-active')
       });
     });
-
-    $(function () {
-      //is-showクラスのつけ外しだけでモーダル表示非表示できるようにしています
-      //アニメーションはcss側に記載しています
-      $('#openModal').on('click', function () {
-        $('#modalArea').toggleClass('is-show');
-      });
-      $('#closeModal').on('click', function () {
-        $('#modalArea').toggleClass('is-show');
-      });
-      $('#modalBg').on('click', function () {
-        $('#modalArea').toggleClass('is-show');
-      });
-    });
-
   </script>
 </head>
 
@@ -505,8 +492,9 @@
       </div><!-- /.copyright -->
     </div><!-- /.footer-bottom -->
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   <script src="js/script.js"></script>
+
 </body>
 
 </html>
