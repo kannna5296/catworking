@@ -288,37 +288,54 @@ margin-top: 50px;
   margin: 0 auto;
 }
 
-.detail .contents-wrapper .contents .content {
+.detail-content {
   display: flex;
   margin-top: 108px;
 }
 
-.detail .contents-wrapper .contents .content figure img{
+.detail-content figure img{
   /* width: 45rem; */
   max-height: 450px;
   min-height: 425px;
   object-fit: cover;
 }
 
-.detail .contents-wrapper .contents .content .detail-txts{
+.detail-button:hover,
+.detail-button:focus {
+  background-color: #000;
+  color:#fff;
+  transition: .3s;
+  padding: 3px 10px;
+}
+
+.detail-content:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+.detail-content:nth-child(even) .detail-txts{
+  margin-left: 0;
+  margin-right: 100px;
+}
+
+.detail-txts{
  margin-left: 70px;
  margin-top: 12px;
  min-width: 470px;
 }
 
-.detail .contents-wrapper .contents .content .detail-txts .detail-heading {
+.detail-heading {
   font-size: 36px;
   line-height: 56px;
   font-weight: bold;
 }
 
-.detail .contents-wrapper .contents .content .detail-txts .detail-txt {
+.detail-txt {
   margin-top: 55px;
   font-size: 16px;
   line-height: 32px;
 }
 
-.detail .contents-wrapper .contents .content .detail-txts .detail-button {
+.detail-button {
   margin-top: 55px;
   width: 200px;
   height: 56px;
@@ -328,22 +345,6 @@ margin-top: 50px;
   border: 1px solid #000;
 }
 
-.detail .contents-wrapper .contents .content .detail-txts .detail-button:hover,
-.detail .contents-wrapper .contents .content .detail-txts .detail-button:focus {
-  background-color: #000;
-  color:#fff;
-  transition: .3s;
-  padding: 3px 10px;
-}
-
-.detail .contents-wrapper .contents .content:nth-child(even){
-  flex-direction: row-reverse;
-}
-
-.detail .contents-wrapper .contents .content:nth-child(even) .detail-txts{
-  margin-left: 0;
-  margin-right: 100px;
-}
 /* サービス詳細終了 */
 
 /* おすすめプラン開始 */
