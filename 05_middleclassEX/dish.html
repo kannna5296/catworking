@@ -8,6 +8,7 @@
   <title>お料理 | 石井花壇 | 温海温泉旅館【公式サイト】</title>
   <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。" />
 
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/header-footer.css">
@@ -16,6 +17,47 @@
   <link rel="stylesheet" href="css/category-mainvisual.css">
   <link rel="stylesheet" href="css/category-concept.css">
   <link rel="stylesheet" href="css/dish.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script>
+    $(function () {
+      var headNav = $("header");
+      var h = $(window).height();
+      //scrollだけだと読み込み時困るのでloadも追加
+      $(window).on('load scroll', function () {
+        //ちょいちょいスクロールしたらヘッダ表示
+        if ($(this).scrollTop() > 0) {
+          //headerの高さ分上に設定(animation用)
+          headNav.css({ "top": '-70px' });
+          headNav.css({ "display": 'block' });
+          //クラスfixedを付与
+          headNav.addClass('is-fixed');
+          //位置を0に設定し、アニメーションのスピードを指定
+          headNav.animate({ "top": 0 }, 600);
+        }
+        else {
+          headNav.removeClass('is-fixed');
+          headNav.css({ "display": 'none' });
+        }
+      });
+    });
+
+    $(function () {
+      //is-showクラスのつけ外しだけでモーダル表示非表示できるようにしています
+      //アニメーションはcss側に記載しています
+      $('#openModal').on('click', function () {
+        $('#modalArea').toggleClass('is-show');
+      });
+      $('#closeModal').on('click', function () {
+        $('#modalArea').toggleClass('is-show');
+      });
+      $('#modalBg').on('click', function () {
+        $('#modalArea').toggleClass('is-show');
+      });
+    });
+
+  </script>
 </head>
 
 <body>
