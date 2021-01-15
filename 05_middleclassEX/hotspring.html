@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/hotspring.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -29,6 +30,10 @@
   <script src="js/modal.js"></script>
   <script src="js/header-scroll.js"></script>
   <script src="js/slider.js"></script>
+
+  <!--[if IE 9]>
+   <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/ie.css">
+  <![endif]-->
 </head>
 
 <body>
@@ -139,7 +144,7 @@
   <section class="category-detail">
     <div class="contents-wrapper">
       <ul class="category-detail-contents">
-        <li class="category-detail-content">
+        <li class="category-detail-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <figure class="category-detail-img">
             <img src="images/onsen01.jpg">
           </figure>
@@ -149,7 +154,7 @@
             </p>
           </div>
         </li>
-        <li class="category-detail-content">
+        <li class="category-detail-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <figure class="category-detail-img">
             <img src="images/onsen02.jpg">
           </figure>
@@ -159,7 +164,7 @@
               四季の移り変わりを、天然温泉の湯に浸りながら味わってください。</p>
         </li>
       </ul>
-      <div class="effect">
+      <div class="effect" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div class="effect-title">温泉の効能</div>
         <table class="effect-content">
           <tr>
@@ -208,12 +213,16 @@
     </div><!-- /.footer-bottom -->
   </footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/script.js"></script>
   <script>
     flatpickr("#flatpickr", {
       mode: "range",
       locale: "ja",
       minDate: "today"
     });
+
+    AOS.init();
   </script>
 </body>
 

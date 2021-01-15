@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/dish.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -30,6 +31,9 @@
   <script src="js/header-scroll.js"></script>
   <script src="js/slider.js"></script>
 
+  <!--[if IE 9]>
+   <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/ie.css">
+  <![endif]-->
 </head>
 
 <body>
@@ -140,7 +144,7 @@
   <section class="category-detail">
     <div class="contents-wrapper">
       <ul class="category-detail-contents">
-        <li class="category-detail-content">
+        <li class="category-detail-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <figure class="category-detail-img">
             <img src="images/menu01.jpg">
           </figure>
@@ -150,7 +154,7 @@
               みずみずしくほのかに甘い野菜、新鮮で味に深みがある魚介類、肉類。<br>旬の素材をそのままに生かす、経験に裏打ちされた確かな技。<br>四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。</p>
           </div>
         </li>
-        <li class="category-detail-content">
+        <li class="category-detail-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <figure class="category-detail-img">
             <img src="images/menu02.jpg">
           </figure>
@@ -159,7 +163,7 @@
             <p class="category-detail-txt">
               石井花壇でお出しする料理はすべて料理長である大将の目利きで、<br>熱海の魚市場でその日のうちに仕入れたものを使用しております。<br>日本海の宝玉を十分にお楽しみください。</p>
         </li>
-        <li class="category-detail-content">
+        <li class="category-detail-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <figure class="category-detail-img">
             <img src="images/menu03.jpg">
           </figure>
@@ -202,12 +206,16 @@
     </div><!-- /.footer-bottom -->
   </footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/script.js"></script>
   <script>
     flatpickr("#flatpickr", {
       mode: "range",
       locale: "ja",
       minDate: "today"
     });
+
+    AOS.init();
   </script>
 </body>
 

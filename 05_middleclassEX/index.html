@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/top.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -114,7 +115,7 @@
     </ul>
   </section>
   <section class="concept">
-    <div class="contents-wrapper">
+    <div class="contents-wrapper" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <div class="concept-sign vertical">石井花壇</div>
       <p class="concept-txt vertical">圧倒的癒しの空間で<br>頑張る現代人に<br>頑張らない非日常をご提供します</p>
       <p class="concept-txt vertical">石井花壇は江戸より続く由緒ある旅館で<br>クラシックな作りの中に大正ロマンあふれる<br>内装を残しております</p>
@@ -127,7 +128,7 @@
   <section class="detail">
     <div class="contents-wrapper">
       <ul class="contents">
-        <li class="detail-content">
+        <li class="detail-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <figure>
             <img src="images/oheya-top.jpg">
           </figure>
@@ -137,7 +138,7 @@
             <button class="detail-button" onclick="location.href='/05_middleclassEX/room.html'">お部屋について</button>
           </div><!-- /.detail-txts -->
         </li>
-        <li class="detail-content">
+        <li class="detail-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <figure>
             <img src="images/menu-top.jpg">
           </figure>
@@ -147,7 +148,7 @@
             <button class="detail-button" onclick="location.href='/05_middleclassEX/dish.html'">お料理について</button>
           </div><!-- /.detail-txts -->
         </li>
-        <li class="detail-content">
+        <li class="detail-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <figure>
             <img src="images/onsen-top.jpg">
           </figure>
@@ -167,7 +168,7 @@
     </h2>
     <div class="contents-wrapper">
       <ul class="plan-contents">
-        <li class="plan-content">
+        <li class="plan-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <a href="#">
             <div class="plan-card plan-link">
               <img src="images/recommended01.jpg">
@@ -176,7 +177,7 @@
             </div>
           </a>
         </li>
-        <li class="plan-content">
+        <li class="plan-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <a href="#">
             <div class="plan-card plan-link">
               <img src="images/recommended02.jpg">
@@ -185,7 +186,7 @@
             </div>
           </a>
         </li>
-        <li class="plan-content">
+        <li class="plan-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <a href="#">
             <div class="plan-card plan-link">
               <img src="images/recommended03.jpg">
@@ -212,7 +213,7 @@
         </li>
         <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger" data-id="tab02">その他</span></li>
       </ul>
-      <div class="tab-content">
+      <div class="tab-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div class="news-contents-sales tab-content__item js-tab-target is-active" id="tab01">
           <div class="container">
             <a href="#">
@@ -397,7 +398,7 @@
       <img class="section-logo" src="images/logo02.png" alt="ロゴ">
       <div>アクセス</div>
     </h2>
-    <div class="access-first">
+    <div class="access-first" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <figure>
         <img src="images/access.jpg" alt="Access画像">
       </figure>
@@ -425,7 +426,7 @@
         </div><!-- /.access-txt -->
       </div><!-- /.access-detail -->
     </div><!-- /.access-first -->
-    <div class="access-second">
+    <div class="access-second" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <div class="googlemap">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399278.7660702994!2d139.50440326921432!3d38.5714334600148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c752ece99152b%3A0xc6ea0016956290d7!2z5bGx5b2i55yM6ba05bKh5biC!5e0!3m2!1sja!2sjp!4v1610146645101!5m2!1sja!2sjp"
@@ -464,6 +465,7 @@
     </div><!-- /.footer-bottom -->
   </footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/script.js"></script>
   <script>
     flatpickr("#flatpickr", {
@@ -471,6 +473,8 @@
       locale: "ja",
       minDate: "today"
     });
+
+    AOS.init();
   </script>
 </body>
 
