@@ -21,6 +21,10 @@
   margin-right: 5px;
 }
 
+.fa-arrow-right {
+  margin-left: 5px; 
+}
+
 .rounded-btn:focus,
 .rounded-btn:hover {
   background-color: #fff;

@@ -187,7 +187,7 @@
 
 /* おすすめプラン開始 */
 .plan {
-  height: 775px;
+  /* height: 775px; */
   background-image: url("../images/bg02.jpg");
   background-size:cover;
   background-position: center center;
@@ -230,6 +230,17 @@
 .plan-link:focus {
   opacity: 0.6;
   transition: .3s;
+}
+
+.plan-button {
+  margin-top: 36px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 56px;
+
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #000;
 }
 /* おすすめプラン終了 */
 
@@ -372,6 +383,52 @@
 }
 /* アクセス部終了 */
 
+@media screen and (max-width: 1025px) {
+
+  .detail-txts {
+    margin-left: 20px;
+  }
+
+  .detail-content:nth-child(even) .detail-txts {
+    margin-right: 0;
+    margin-left:10px;
+  }
+
+  .plan .contents-wrapper {
+    max-width: 1000px;
+  }
+
+  .plan-card {
+    width: 300px;
+  }
+
+  .plan-button {
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-bottom:20px;
+    display: block;
+  }
+
+  .tab-content__item.is-active {
+    display:block;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .tab-content__item .container .card {
+    width: 480px;
+  }
+
+  .access-first .contents-wrapper {
+    max-width: 1000px;
+  }
+
+  .access-detail {
+    margin-left: 20px;
+    margin-right:0;
+  }
+}
+
 @media screen and (max-width: 769px) {
 
   /* メインビジュアル開始 */
@@ -464,4 +521,20 @@
   height: 450px;
   /* opacity: 0.4; */
 }
+/* 
+.plan-contents {
+  display:block;
+}
+
+.plan-content {
+  width: 100%;
+}
+
+.plan-card {
+  width: 100%;
+}
+
+.plan-card img{
+  height: 450px;
+} */
 }
