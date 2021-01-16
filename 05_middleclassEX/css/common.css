@@ -32,36 +32,6 @@ a {
   writing-mode: vertical-rl;
 }
 
-.rounded-btn {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  padding:10px 20px;
-  width: 150px;
-  max-width: 100%;
-  background-color: #978F10;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  font-size: 1.125rem;
-  color:#fff;
-  transition: 0.25s;
-
-  /* 本来関係ないけど見やすいように */
-  /* margin:0.5rem 0.5rem 0.5rem 550px; */
-  margin: 0.5rem 1.5rem;
-}
-
-.fa-calendar-check {
-  margin-right: 5px;
-}
-
-.rounded-btn:focus,
-.rounded-btn:hover {
-  background-color: #fff;
-  color: #978F10;
-  border-color: currentColor;
-}
-
 /* モーダルCSSここから */
 .modalArea {
   visibility: hidden; /* displayではなくvisibility */

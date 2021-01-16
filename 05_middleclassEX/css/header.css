@@ -1,3 +1,33 @@
+.rounded-btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding:10px 20px;
+  width: 150px;
+  max-width: 100%;
+  background-color: #978F10;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-size: 1.125rem;
+  color:#fff;
+  transition: 0.25s;
+
+  /* 本来関係ないけど見やすいように */
+  /* margin:0.5rem 0.5rem 0.5rem 550px; */
+  margin: 0.5rem 1.5rem;
+}
+
+.fa-calendar-check {
+  margin-right: 5px;
+}
+
+.rounded-btn:focus,
+.rounded-btn:hover {
+  background-color: #fff;
+  color: #978F10;
+  border-color: currentColor;
+}
+
 /* PCではハンバーガーボタン非表示 */
 #js-hamburger {
     display: none;
@@ -13,20 +43,20 @@
     height: 100%;
   }
   
-  #js-global-menu nav .globalnavi-wrapper {
+  .globalnavi-wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
   }
   
-  #js-global-menu nav .globalnavi-wrapper .globalnavi {
+  .globalnavi {
     display: flex;
     justify-content: space-between;
     min-width: 150px;
   }
   
-  #js-global-menu nav .globalnavi-wrapper .globalnavi li {
+  .globalnavi li {
     margin: auto 0;
     margin-left: 10px;
     font-size: 16px;
@@ -95,23 +125,25 @@
     #js-hamburger {
       display: block;
     }
-    
-    .button {
-      display: inline-block;
-      text-decoration: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
+
+    #js-global-menu {
+      width:100%;
+      height: 100%;
     }
     
+    #js-global-menu nav {
+      height: 400px;
+    }
+
+    #js-drawer-background {
+      height: calc( 100% - 400px );
+    }
+
     .hamburger {
       position: fixed;
       top: 16px;
       right: 20px;
-      z-index: 5;
+      z-index: 3;
       width: 48px;
       height: 48px;
       border-radius: 50%;
@@ -121,7 +153,7 @@
       -webkit-transition: all .3s ease-in-out;
               transition: all .3s ease-in-out;
     }
-    
+
     .hamburger:hover,
     .hamburger:focus {  
       box-shadow: 0 0 .5rem rgba(161, 161, 161, 0.5);
@@ -136,22 +168,22 @@
       margin: auto;
       width: 18px;
       height: 2px;
-      background-color: #888;
+      background-color: #333;
       -webkit-transition: inherit;
               transition: inherit;
-    }
-              
-    .hamburger__line::before,
-    .hamburger__line::after {
+      }
+
+      .hamburger__line::before,
+      .hamburger__line::after {
         position: absolute;
         display: block;
         width: 100%;
         height: 100%;
-        background-color: #888;
+        background-color: inherit;
         content: '';
         -webkit-transition: inherit;
                 transition: inherit;
-    }
+      }
     
     .hamburger__line::before {
       top: -5px;
@@ -159,51 +191,19 @@
     .hamburger__line::after {
       top: 5px;
     }
-    
-    .drawer-background {
-      position: fixed;
-      z-index: 3;
-      width: 100vw;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      overflow: hidden;
-      height: 100vh;
-      background-color: #000;
-      color: #fff;
-      visibility: hidden;
-      opacity: 0;
-    }
-    
-    .is-drawerActive .sp-global-menu{
-        transform: translateX(0px);
-      transition: 0.3s;
-      }
-    
-    .is-drawerActive .drawer-background {
-      visibility: visible;
-      opacity: 0.8;
-      transition: 0.3s;
-    }
-    
     .hamburger[aria-expanded="true"] {
-      border: 1px solid #fff!important;  
+      border: 1px solid #fff!important;
     }
-    
     .hamburger[aria-expanded="true"] .hamburger__line {
       background-color: transparent;
     }
-    
+
+    .hamburger[aria-expanded="true"] .hamburger__line::before,
     .hamburger[aria-expanded="true"] .hamburger__line::after {
       top: 0;
-      background-color: #fff;
+      background-color:#000;
     }
-    
-    .hamburger[aria-expanded="true"] .hamburger__line::before {
-      top: 0;
-      background-color: #fff;
-    }
-    
+
     .hamburger[aria-expanded="true"] .hamburger__line::before {
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
@@ -218,16 +218,48 @@
     
     .sp-global-menu {
       position: fixed;
-      z-index: 4;
-      width: 280px;
+      width: 100vw;
       top: 0;
       right: 0;
       bottom: 0;
       overflow: hidden;
       height: 100vh;
-      background-color: #000;
+      background-color: rgba(0,0,0,0.5);
       color: #fff;
-      transform: translateX(280px);
-      transition: 0.3s;
+      visibility: hidden;
+    }
+
+    .globalnavi-wrapper {
+      display:block;
+      position:absolute;
+      top:70px;
+    }
+
+    .globalnavi {
+      display:block;
+    }
+
+    .globalnavi li {
+      width: 100%;
+      margin:0;
+      padding:10px 0;
+    }
+
+    .globalnavi-link {
+      font-size: 25px;
+      color:#fff;
+      display:block;
+      width: 100%;
+    }
+
+    .globalnavi-link:hover, 
+    .globalnavi-link:focus {
+      background-color: #fff;
+      color:#000;
+    }
+
+    .rounded-btn {
+      font-size: 25px;
+      width: 200px;
     }
     }
