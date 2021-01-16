@@ -277,7 +277,6 @@
   margin: 0 auto;
 }
 
-
 .tab-content__item .container {
   display: flex;
   flex-wrap: wrap;
@@ -551,5 +550,18 @@
   margin:0;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.tab-content__item.is-active {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tab-content__item .container {
+  display: block;
+}
+
+.tab-content__item .container .card {
+  width: 100%;
 }
 }
