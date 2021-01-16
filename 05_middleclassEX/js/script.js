@@ -1,6 +1,6 @@
 $(function () {
     $('#js-hamburger').click(function () {
-        $('body').toggleClass('is-drawerActive')
+        // $('body').toggleClass('is-drawerActive', 500)
 
         if ($(this).attr('aria-expanded') == 'false') {
             $(this).attr('aria-expanded', true)
@@ -14,7 +14,7 @@ $(function () {
     })
     //背景の黒ボックスクリックでもドロワーが消えるようにする
     $('#js-drawer-background').click(function () {
-        $('body').removeClass('is-drawerActive')
+        // $('body').removeClass('is-drawerActive', 500)
 
         //are-expandedはtrueの想定なのでif文なし
         //ハンバーガーメニュー元に戻す

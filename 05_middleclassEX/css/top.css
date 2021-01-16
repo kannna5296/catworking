@@ -9,7 +9,7 @@
 
 .section-top {
   font-size: 36px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 66px;
   text-align: center;
 }
@@ -32,7 +32,6 @@
   height: 100vh;
   max-height: 1080px;
   width: 100%;
-
 }
 
 .zoom_slider > li[aria-hidden="false"] {
@@ -119,21 +118,21 @@
 
 /* サービス詳細開始 */
 .detail {
-  height: 1600px;
+  /* height: 1600px; */
 }
 
 .detail .contents-wrapper {
   max-width: 1180px;
   margin: 0 auto;
+  margin-top:108px;
 }
 
 .detail-content {
   display: flex;
-  margin-top: 108px;
+  margin-bottom: 108px;
 }
 
 .detail-content figure img{
-  /* width: 45rem; */
   max-height: 450px;
   min-height: 425px;
   object-fit: cover;
@@ -372,3 +371,82 @@
   margin-top: 66px;
 }
 /* アクセス部終了 */
+
+@media screen and (max-width: 769px) {
+
+  /* メインビジュアル開始 */
+.mainvisual {
+  position: relative;
+  max-height: 700px;
+}
+
+.mainvisual .bx-wrapper {
+  position: absolute;
+  width: 100%;
+  max-height: 700px;
+  z-index: 1;
+}
+
+.mainvisual .bx-wrapper img {
+  /* height: 100vh; */
+  max-height: 700px;
+  width: 100%;
+}
+
+.mainvisual-title {
+  top: 200px;
+}
+
+.concept .contents-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.detail .contents-wrapper {
+  width: 100%;
+  margin-top:0;
+}
+
+.detail-content {
+  margin:0;
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+
+.detail-txts {
+  width: 100%;
+  margin:0;
+  padding: 10px 30px;
+  background-color:rgba(224, 224, 224, 0.8);
+}
+
+.detail-content:nth-child(even) {
+  margin:0;
+  position: relative;
+  flex-direction: row;
+}
+
+.detail-content:nth-child(even) .detail-txts{
+  margin:0;
+}
+
+.detail-content figure {
+  position: absolute;
+
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  z-index: -1;
+}
+
+.detail-content figure img {
+  overflow: hidden;
+  width: 100%;
+  height: 450px;
+  /* opacity: 0.4; */
+}
+}
