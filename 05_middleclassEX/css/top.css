@@ -89,7 +89,6 @@
 
 /* コンセプト開始 */
 .concept {
-  height: 681px;
   background-image: url("../images/bg.jpg");
   position: relative;
 }
@@ -111,7 +110,10 @@
 
   margin-top: 64px;
   font-weight: bold;
-  direction:LTR
+  direction:LTR;
+
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
 }
 
 .concept-txt {
@@ -120,7 +122,10 @@
   line-height: 33px;
 
   margin-top: 155px;
-  direction:LTR
+  direction:LTR;
+
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
 }
 
 .concept-txt span {
@@ -134,7 +139,10 @@
   line-height: 33px;
 
   margin-top: 520px;
-  direction:LTR
+  direction:LTR;
+
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
 }
 /* コンセプト終了 */
 
@@ -623,4 +631,52 @@
 
     letter-spacing: 15px;
   }
+
+  .concept .contents-wrapper {
+    direction: LTR;
+    display: block;
+    margin-left:15px;
+    margin-right:15px;
+  }
+
+  .concept-title {
+    writing-mode: horizontal-tb;
+    direction: LTR;
+
+    font-size:20px;
+    line-height: 30px;
+    letter-spacing: 3px;
+
+    margin:0;
+    padding-top:30px;
+    padding-bottom: 20px;
+  }
+
+  .concept-txt {
+    writing-mode: horizontal-tb;
+    direction: LTR;
+    margin-top:0;
+
+    font-size:14px;
+    line-height: 25px;
+    letter-spacing: 1px;
+
+    padding:10px 0;
+  }
+
+  .concept-sign {
+    writing-mode: horizontal-tb;
+    direction: LTR;
+    margin-top:0;
+
+    padding:10px 0;
+    text-align: right;
+  }
 }
+
+@media screen and (max-width: 321px) {
+  
+  .concept-txt {
+    font-size:12px;
+  }
+ }
