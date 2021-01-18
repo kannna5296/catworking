@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -26,7 +29,6 @@
   <!-- head固定 -->
   <script src="js/modal.js"></script>
   <script src="js/header-scroll.js"></script>
-  <script src="js/slider.js"></script>
   <script src="js/tab.js"></script>
 
   <!--[if IE 9]>
@@ -111,11 +113,21 @@
   </section>
   <section class="mainvisual">
     <div class="mainvisual-title">頑張る人の<br>頑張らない時間</div><!-- /.mainvisual-title -->
-    <ul class="zoom_slider">
-      <li><img src="images/mainbg01.jpg" alt="スライド1枚目"></li>
-      <li><img src="images/mainbg02.jpg" alt="スライド2枚目"></li>
-      <li><img src="images/mainbg03.jpg" alt="スライド3枚目"></li>
-    </ul>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- 背景画像１ -->
+        <div class="swiper-slide">
+          <div class="slide-img" style="background-image: url('images/mainbg01.jpg');"></div>
+        </div>
+        <!-- 背景画像２ -->
+        <div class="swiper-slide">
+          <div class="slide-img" style="background-image: url('images/mainbg02.jpg');"></div>
+        </div>
+        <!-- 背景画像３ -->
+        <div class="swiper-slide">
+          <div class="slide-img" style="background-image: url('images/mainbg03.jpg');"></div>
+        </div>
+      </div>
   </section>
   <section class="concept">
     <div class="contents-wrapper" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
@@ -467,6 +479,7 @@
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
   <script>
     flatpickr("#flatpickr", {
       mode: "range",
