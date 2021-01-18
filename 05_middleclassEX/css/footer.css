@@ -19,6 +19,9 @@ footer {
   margin: 0 17px;
   font-size: 18px;
   letter-spacing: 10px;
+
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
 }
 
 .footer-menu-link {
