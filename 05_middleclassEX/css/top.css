@@ -100,6 +100,8 @@
   max-width: 900px;
 
   margin: 0 auto;
+
+  direction:RTL
 }
 
 .concept-title {
@@ -109,7 +111,7 @@
 
   margin-top: 64px;
   font-weight: bold;
-  /* text-align: right; */
+  direction:LTR
 }
 
 .concept-txt {
@@ -118,6 +120,7 @@
   line-height: 33px;
 
   margin-top: 155px;
+  direction:LTR
 }
 
 .concept-txt span {
@@ -131,6 +134,7 @@
   line-height: 33px;
 
   margin-top: 520px;
+  direction:LTR
 }
 /* コンセプト終了 */
 
