@@ -334,14 +334,11 @@
 
 /* アクセス部開始 */
 .access {
-  height: 1180px;
   background-image: url("../images/bg.jpg");
 }
 
 .access-first {
   display: flex;
-
-  height: 370px;
   max-width: 1180px;
   margin: 0 auto;
 }
@@ -439,7 +436,6 @@
     width: 100%;
     margin:0;
     padding: 10px 30px;
-    /* background-color:rgba(224, 224, 224, 0.8); */
     position: absolute;
     top:450px;
   }
@@ -498,7 +494,6 @@
 }
 
 .mainvisual .bx-wrapper img {
-  /* height: 100vh; */
   max-height: 700px;
   width: 100%;
 }
@@ -564,4 +559,32 @@
 .tab-content__item .container .card {
   width: 100%;
 }
+
+.access-first {
+  display: block;
+}
+
+.access-first figure {
+  width: 656px;
+  margin: 0 auto;
+}
+
+.access-detail {
+  width: 656px;
+  margin: 0 auto;
+  margin-top:10px;
+}
+
+.access-heading {
+  font-size: 20px;
+}
+
+.access-txt {
+  font-size: 16px;
+}
+
+.googlemap {
+  padding-bottom: 30px;
+}
+
 }
