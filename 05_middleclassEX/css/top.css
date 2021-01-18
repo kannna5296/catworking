@@ -605,4 +605,18 @@
 
 @media screen and (max-width: 426px) { 
 
+  .mainvisual-title {
+    writing-mode: horizontal-tb;
+    font-size: 24px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+
+    letter-spacing: 15px;
+  }
 }
