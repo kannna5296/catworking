@@ -19,36 +19,54 @@
 .mainvisual {
   position: relative;
   height: 100vh;
-  max-height: 1080px;
 }
 
-.mainvisual .bx-wrapper {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-}
-
-.mainvisual .bx-wrapper img {
-  height: 100vh;
-  max-height: 1080px;
-  width: 100%;
-}
-
-.zoom_slider > li[aria-hidden="false"] {
-  animation: anime_zoom 6s linear;
-}
-.zoom_slider > li[aria-hidden="true"] {
-  transform: scale(1.2);
-}
-
-@keyframes anime_zoom {
+  /* Swiper開始 */
+@-webkit-keyframes zoomUp {
   0% {
-      transform: scale(1.0);
+  -webkit-transform: scale(1);
+  transform: scale(1);
   }
   100% {
-      transform: scale(1.2);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
   }
-}
+  }
+  
+  @keyframes zoomUp { 
+    /* //1.15倍させる指定 */
+  0% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  }
+  100% {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  }
+  }
+  
+  .swiper-slide-active .slide-img,
+  .swiper-slide-duplicate-active .slide-img,
+  .swiper-slide-prev .slide-img { 
+  /* 12秒かけて拡大させる */
+  -webkit-animation: zoomUp 12s linear 0s;
+  animation: zoomUp 12s linear 0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  .swiper-slide {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+  .slide-img {
+  background-size: cover;
+  background-position: center center; 
+  /* //背景画像は中央を軸に表示させる */
+  height: 100vh; 
+  /* //600pxの高さで表示させる */
+  }
+  /* Swiper終了 */
 
 .mainvisual-title {
   position: absolute;
@@ -117,10 +135,6 @@
 /* コンセプト終了 */
 
 /* サービス詳細開始 */
-.detail {
-  /* height: 1600px; */
-}
-
 .detail .contents-wrapper {
   max-width: 1180px;
   margin: 0 auto;
@@ -483,19 +497,19 @@
   /* メインビジュアル開始 */
 .mainvisual {
   position: relative;
-  max-height: 700px;
+  /* max-height: 700px; */
 }
 
 .mainvisual .bx-wrapper {
   position: absolute;
   width: 100%;
-  max-height: 700px;
+  /* max-height: 700px; */
   z-index: 1;
 }
 
 .mainvisual .bx-wrapper img {
-  max-height: 700px;
-  width: 100%;
+  /* max-height: 700px; */
+  /* width: 100%; */
 }
 
 .mainvisual-title {
@@ -586,5 +600,9 @@
 .googlemap {
   padding-bottom: 30px;
 }
+
+}
+
+@media screen and (max-width: 426px) { 
 
 }
