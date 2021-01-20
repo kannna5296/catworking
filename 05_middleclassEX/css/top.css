@@ -91,6 +91,7 @@
 .concept {
   background-image: url("../images/bg.jpg");
   position: relative;
+  padding-bottom: 50px;
 }
 
 .concept .contents-wrapper {
@@ -178,13 +179,12 @@
 
 .detail-content:nth-child(even) .detail-txts{
   margin-left: 0;
-  margin-right: 100px;
+  margin-right: 200px;
 }
 
 .detail-txts{
  margin-left: 70px;
  margin-top: 12px;
- min-width: 470px;
 }
 
 .detail-heading {
@@ -361,6 +361,7 @@
 /* アクセス部開始 */
 .access {
   background-image: url("../images/bg.jpg");
+  padding-bottom: 50px;
 }
 
 .access-first {
@@ -408,17 +409,36 @@
 
 @media screen and (max-width: 1025px) {
 
-  .detail-txts {
-    margin-left: 20px;
+  .detail {
+    padding-top: 50px;
+  }
+
+  .detail .contents-wrapper {
+    max-width: 950px;
+  }
+
+  .detail-content figure {
+    width: 50%;
+  }
+
+  .detail-content:nth-child(even) figure {
+    width: 50%;
   }
 
   .detail-content:nth-child(even) .detail-txts {
-    margin-right: 0;
-    margin-left:10px;
+    margin-right:180px;
+  }
+
+  .detail-txts {
+    margin-left:30px;
+  }
+
+  .detail-heading {
+    font-size: 30px;
   }
 
   .plan .contents-wrapper {
-    max-width: 1000px;
+    max-width: 950px;
   }
 
   .plan-card {
@@ -434,16 +454,16 @@
 
   .tab-content__item.is-active {
     display:block;
-    max-width: 1000px;
+    max-width: 950px;
     margin: 0 auto;
   }
 
   .tab-content__item .container .card {
-    width: 480px;
+    width: 460px;
   }
 
   .access-first .contents-wrapper {
-    max-width: 1000px;
+    max-width: 950px;
   }
 
   .access-detail {
@@ -455,10 +475,28 @@
     width: 100%;
     margin-top:0;
   }
+}
+
+@media screen and (max-width: 769px) {
+
+  .mainvisual-title {
+    top: 200px;
+  }
+
+  .concept .contents-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .detail .contents-wrapper {
+    width: 100%;
+    margin-top:0;
+  }
   
   .detail-content {
     margin:0;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: 800px;
     position: relative;
   }
@@ -480,7 +518,8 @@
   }
   
   .detail-content:nth-child(even) {
-    margin:0;
+    width: 90%;
+    margin: 0 auto;
     position: relative;
     flex-direction: row;
   }
@@ -490,7 +529,8 @@
     margin: 10px 30px;
   }
   
-  .detail-content figure {
+  .detail-content figure,
+  .detail-content:nth-child(even) figure {
     position: absolute;
   
     width: 100%;
@@ -506,116 +546,98 @@
     overflow: hidden;
     width: 100%;
     height: 450px;
-    /* opacity: 0.4; */
   }
-}
 
-@media screen and (max-width: 769px) {
 
-  /* メインビジュアル開始 */
-.mainvisual {
-  position: relative;
-  /* max-height: 700px; */
-}
 
-.mainvisual .bx-wrapper {
-  position: absolute;
-  width: 100%;
-  /* max-height: 700px; */
-  z-index: 1;
-}
+  .plan .contents-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-.mainvisual-title {
-  top: 200px;
-}
+  .plan-contents {
+    display:block;
+  }
+  
+  .plan-content {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom:50px;
+  }
+  
+  .plan-card {
+    width: 100%;
+    /* height: 680px; */
+  }
+  
+  .plan-card img{
+    height: 450px;
+    overflow: hidden;
+  }
+  
+  .plan-title {
+    font-size: 24px;
+    margin-top:15px;
+  }
+  
+  .plan-txt {
+    margin-top: 20px;
+  }
+  
+  .plan-button {
+    margin:0;
+    margin-top: 10px;
+  }
 
-.concept .contents-wrapper {
-  max-width: 700px;
-  margin: 0 auto;
-}
+  .tab-content__item.is-active {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .tab-content__item .container {
+    display: block;
+  }
+  
+  .tab-content__item .container .card {
+    width: 100%;
+  }
 
-.detail-heading {
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.plan-contents {
-  display:block;
-}
-
-.plan-content {
-  width: 750px;
-  margin: 0 auto;
-}
-
-.plan-card {
-  width: 100%;
-  height: 680px;
-}
-
-.plan-card img{
-  height: 450px;
-  overflow: hidden;
-}
-
-.plan-title {
-  font-size: 24px;
-  margin-top:15px;
-}
-
-.plan-txt {
-  margin-top: 20px;
-}
-
-.plan-button {
-  margin:0;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.tab-content__item.is-active {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.tab-content__item .container {
-  display: block;
-}
-
-.tab-content__item .container .card {
-  width: 100%;
-}
-
-.access-first {
-  display: block;
-}
-
-.access-first figure {
-  width: 656px;
-  margin: 0 auto;
-}
-
-.access-detail {
-  width: 656px;
-  margin: 0 auto;
-  margin-top:10px;
-}
-
-.access-heading {
-  font-size: 20px;
-}
-
-.access-txt {
-  font-size: 16px;
-}
-
-.googlemap {
-  padding-bottom: 30px;
-}
+  .access-first {
+    display: block;
+  }
+  
+  .access-first figure {
+    width: 656px;
+    margin: 0 auto;
+  }
+  
+  .access-detail {
+    width: 656px;
+    margin: 0 auto;
+    margin-top:10px;
+  }
+  
+  .access-heading {
+    font-size: 20px;
+  }
+  
+  .access-txt {
+    font-size: 16px;
+  }
+  
+  .googlemap {
+    padding-bottom: 30px;
+  }
 
 }
 
 @media screen and (max-width: 426px) { 
+ 
+  /* セクションの見出し共通 */
+  .section-top {
+    font-size: 30px;
+  }
+  /* セクションの見出し共通終わり */
 
   .mainvisual-title {
     writing-mode: horizontal-tb;
@@ -624,12 +646,16 @@
     width: 300px;
     height: 100px;
 
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     left: 50%;
     transform: translateX(-50%);
 
     letter-spacing: 15px;
+  }
+  
+  .concept {
+    padding-bottom: 0;
   }
 
   .concept .contents-wrapper {
@@ -674,7 +700,7 @@
   }
 
   .detail-content {
-    max-height: 600px;
+    max-height: 650px;
   }
 
   .detail-txts {
@@ -682,9 +708,15 @@
     margin: 10px;
   }
 
+  .detail-heading {
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+
   .detail-txt {
-    font-size:14px;
-    line-height: 25px;
+    font-size:12px;
+    line-height: 20px;
     letter-spacing: 1px;
   }
 
@@ -702,80 +734,61 @@
     margin: 10px;
   }
 
-  /* セクションの見出し共通 */
-.section-top {
-  font-size: 30px;
-}
-/* セクションの見出し共通終わり */
-
-.plan .contents-wrapper {
-  width: 95%;
-}
-
-.plan-content{
-  width: 100%;
-}
-
-.plan-card img {
-  height: 300px;
-  width: 95%;
-  margin:0 auto;
-  object-fit: cover;
-}
-
-.plan-card {
-  height: 650px;
-}
-
-.plan-title,
-.plan-txt {
-  width: 95%;
-  margin:0 auto;
-}
-
-.tab-content__item.tab-content__item.is-active {
-  width: 95%;
-}
-
-.access-first figure {
-  width: 95%;
-}
-
-.access-detail {
-  width: 95%;
-}
-
-.googlemap iframe {
-  width: 95%;
-  height: 400px;
-}
-}
-
-@media screen and (max-width: 376px) {
-
-  .detail-txt {
-    font-size:12px;
+  .plan .contents-wrapper {
+    width: 95%;
   }
- }
-
-@media screen and (max-width: 321px) {
-
-  /* セクションの見出し共通 */
-  .section-top {
-    font-size: 26px;
-  }
-/* セクションの見出し共通終わり */
-
-  .concept-txt {
-    font-size:12px;
+  
+  .plan-content{
+    width: 100%;
   }
 
-  .detail-txt {
-    font-size:10px;
+  .plan-card {
+   margin-bottom: 30px;
+  }
+  
+  .plan-card img {
+    height: 300px;
+    width: 100%;
+    margin:0 auto;
+    object-fit: cover;
+  }
+  
+  .plan-title {
+    width: 100%;
+    margin:5px auto;
   }
 
+  .plan-txt {
+    width: 100%;
+    margin:20px auto;
+  }
+
+  .access-first figure {
+    width: 90%;
+  }
+  
+  .access-detail {
+    width: 90%;
+  }
+  
+  .googlemap iframe {
+    width: 95%;
+    height: 400px;
+  }
+
+}
+
+@media screen and (max-width: 426px) { 
+
+  .detail-txts {
+    margin:0;
+  }
+  
   .googlemap iframe {
     height: 300px;
   }
 
- }
+  .plan-card img {
+    height: 200px;
+  }
+}
