@@ -669,7 +669,7 @@
   }
 
   .detail-content {
-    height: 600px;
+    max-height: 600px;
   }
 
   .detail-txts {
@@ -702,6 +702,35 @@
   font-size: 30px;
 }
 /* セクションの見出し共通終わり */
+
+.plan .contents-wrapper {
+  width: 95%;
+}
+
+.plan-content{
+  width: 100%;
+}
+
+.plan-card img {
+  height: 300px;
+  width: 95%;
+  margin:0 auto;
+  object-fit: cover;
+}
+
+.plan-card {
+  height: 650px;
+}
+
+.plan-title,
+.plan-txt {
+  width: 95%;
+  margin:0 auto;
+}
+
+.tab-content__item.tab-content__item.is-active {
+  width: 95%;
+}
 }
 
 @media screen and (max-width: 376px) {
