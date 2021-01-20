@@ -399,6 +399,11 @@
   text-align: center;
   margin-top: 66px;
 }
+
+.googlemap iframe {
+  width: 600px;
+  height: 400px;
+}
 /* アクセス部終了 */
 
 @media screen and (max-width: 1025px) {
@@ -731,6 +736,19 @@
 .tab-content__item.tab-content__item.is-active {
   width: 95%;
 }
+
+.access-first figure {
+  width: 95%;
+}
+
+.access-detail {
+  width: 95%;
+}
+
+.googlemap iframe {
+  width: 95%;
+  height: 400px;
+}
 }
 
 @media screen and (max-width: 376px) {
@@ -754,6 +772,10 @@
 
   .detail-txt {
     font-size:10px;
+  }
+
+  .googlemap iframe {
+    height: 300px;
   }
 
  }
