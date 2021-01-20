@@ -76,3 +76,17 @@ footer {
   padding-top: 17px;
 }
 /* フッター終了 */
+
+@media screen and (max-width: 321px) { 
+
+  .footer-access {
+    width:300px;
+    margin-right:0;
+    display: block;
+    text-align: center;
+  }
+
+  .footer-upper {
+    height: 550px;
+  }
+}
