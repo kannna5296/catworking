@@ -701,7 +701,6 @@
 
   .detail-content {
     max-height: 650px;
-    /* padding-bottom: 30px; */
   }
 
   .detail-txts {
@@ -777,4 +776,19 @@
     height: 400px;
   }
 
+}
+
+@media screen and (max-width: 426px) { 
+
+  .detail-txts {
+    margin:0;
+  }
+  
+  .googlemap iframe {
+    height: 300px;
+  }
+
+  .plan-card img {
+    height: 200px;
+  }
 }
