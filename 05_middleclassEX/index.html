@@ -169,11 +169,11 @@
               data-aos-anchor-placement="center-bottom">お料理について</button>
           </div><!-- /.detail-txts -->
         </li>
-        <li class="detail-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <li class="detail-content">
           <figure data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <img src="images/onsen-top.jpg">
           </figure>
-          <div class="detail-txts" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <div class="detail-txts">
             <div class="detail-heading" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
               疲れ切った身体にやすらぎを<br>温海の源泉に癒やされて</div><!-- /.detail-heading -->
             <p class="detail-txt" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
@@ -500,7 +500,10 @@
       minDate: "today"
     });
 
-    AOS.init();
+    AOS.init({
+      duration: 2000,
+      delay: 100,
+    });
   </script>
 </body>
 
