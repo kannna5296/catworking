@@ -362,6 +362,7 @@
 /* アクセス部開始 */
 .access {
   background-image: url("../images/bg.jpg");
+  padding-bottom: 50px;
 }
 
 .access-first {
@@ -433,6 +434,42 @@
     font-size: 30px;
   }
 
-  .detail-
-}
+  .plan .contents-wrapper {
+    max-width: 950px;
+  }
 
+  .plan-card {
+    width: 300px;
+  }
+
+  .plan-button {
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-bottom:20px;
+    display: block;
+  }
+
+  .tab-content__item.is-active {
+    display:block;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  .tab-content__item .container .card {
+    width: 460px;
+  }
+
+  .access-first .contents-wrapper {
+    max-width: 950px;
+  }
+
+  .access-detail {
+    margin-left: 20px;
+    margin-right:0;
+  }
+
+  .detail .contents-wrapper {
+    width: 100%;
+    margin-top:0;
+  }
+}
