@@ -179,13 +179,12 @@
 
 .detail-content:nth-child(even) .detail-txts{
   margin-left: 0;
-  margin-right: 100px;
+  margin-right: 200px;
 }
 
 .detail-txts{
  margin-left: 70px;
  margin-top: 12px;
- min-width: 470px;
 }
 
 .detail-heading {
@@ -427,11 +426,11 @@
   }
 
   .detail-content:nth-child(even) .detail-txts {
-    margin-right:0;
+    margin-right:180px;
   }
 
   .detail-txts {
-    margin-left:10px;
+    margin-left:30px;
   }
 
   .detail-heading {
@@ -568,7 +567,7 @@
   
   .plan-card {
     width: 100%;
-    height: 680px;
+    /* height: 680px; */
   }
   
   .plan-card img{
@@ -628,6 +627,154 @@
   
   .googlemap {
     padding-bottom: 30px;
+  }
+
+}
+
+@media screen and (max-width: 426px) { 
+ 
+  /* セクションの見出し共通 */
+  .section-top {
+    font-size: 30px;
+  }
+  /* セクションの見出し共通終わり */
+
+  .mainvisual-title {
+    writing-mode: horizontal-tb;
+    font-size: 24px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+
+    top: 40%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+
+    letter-spacing: 15px;
+  }
+  
+  .concept {
+    padding-bottom: 0;
+  }
+
+  .concept .contents-wrapper {
+    direction: LTR;
+    display: block;
+    margin-left:15px;
+    margin-right:15px;
+  }
+
+  .concept-title {
+    writing-mode: horizontal-tb;
+    direction: LTR;
+
+    font-size:20px;
+    line-height: 30px;
+    letter-spacing: 3px;
+
+    margin:0;
+    padding-top:30px;
+    padding-bottom: 20px;
+  }
+
+  .concept-txt {
+    writing-mode: horizontal-tb;
+    direction: LTR;
+    margin-top:0;
+
+    font-size:14px;
+    line-height: 25px;
+    letter-spacing: 1px;
+
+    padding:10px 0;
+  }
+
+  .concept-sign {
+    writing-mode: horizontal-tb;
+    direction: LTR;
+    margin-top:0;
+
+    padding:10px 0;
+    text-align: right;
+  }
+
+  .detail-content {
+    max-height: 650px;
+    /* padding-bottom: 30px; */
+  }
+
+  .detail-txts {
+    top:300px;
+    margin: 10px;
+  }
+
+  .detail-heading {
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+
+  .detail-txt {
+    font-size:12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+
+  .detail-content figure {
+    height: 300px;
+  }
+
+  .detail-content figure img {
+    max-height: 300px;
+    min-height: 200px;
+  }
+  
+  .detail-content:nth-child(even) .detail-txts{
+    top:300px;
+    margin: 10px;
+  }
+
+  .plan .contents-wrapper {
+    width: 95%;
+  }
+  
+  .plan-content{
+    width: 100%;
+  }
+
+  .plan-card {
+   margin-bottom: 30px;
+  }
+  
+  .plan-card img {
+    height: 300px;
+    width: 100%;
+    margin:0 auto;
+    object-fit: cover;
+  }
+  
+  .plan-title {
+    width: 100%;
+    margin:5px auto;
+  }
+
+  .plan-txt {
+    width: 100%;
+    margin:20px auto;
+  }
+
+  .access-first figure {
+    width: 90%;
+  }
+  
+  .access-detail {
+    width: 90%;
+  }
+  
+  .googlemap iframe {
+    width: 95%;
+    height: 400px;
   }
 
 }
