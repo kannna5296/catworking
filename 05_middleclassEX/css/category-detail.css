@@ -160,6 +160,30 @@
 
 @media screen and (max-width: 426px) {
 
+  .category-detail-title {
+    font-size: 20px;
+  }
+
+  .category-detail-txt {
+    font-size: 12px;
+  }
+
+  .category-detail-annotation {
+    font-size: 12px;
+    margin:10px;
+  }
+
+  .category-detail-img img{ 
+    top:0;
+  }
+
+  .category-detail-txts {
+    padding-top: 280px;
+  }
+
+  .category-detail-content:nth-child(even) .category-detail-img img{ 
+    top:0;
+  }
 } 
 
 @media screen and (max-width: 376px) {

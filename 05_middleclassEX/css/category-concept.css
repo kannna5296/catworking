@@ -1,5 +1,5 @@
 .category-concept {
-  height: 200px;
+  padding-bottom: 30px;
 }
 
 .category-concept .contents-wrapper {
@@ -26,6 +26,10 @@
 @media screen and (max-width: 426px) {
   .category-concept-txt {
     padding-top:20px;
+  }
+
+  .category-concept-txt {
+    font-size: 12px;
   }
 } 
 
