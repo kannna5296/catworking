@@ -792,3 +792,13 @@
     height: 200px;
   }
 }
+
+@media screen and (max-width: 321px) { 
+.detail-heading {
+  font-size:20px;
+}
+
+.plan-title {
+  font-size:20px;
+}
+}

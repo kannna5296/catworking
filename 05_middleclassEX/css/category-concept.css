@@ -3,7 +3,7 @@
 }
 
 .category-concept .contents-wrapper {
-  max-width: 1080px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -12,3 +12,27 @@
   text-align: center;
   line-height: 32px;
 }
+
+@media screen and (max-width: 1025px) {
+  
+} 
+
+@media screen and (max-width: 769px) {
+  .category-concept-txt {
+    font-size: 14px;
+  }
+} 
+
+@media screen and (max-width: 426px) {
+  .category-concept-txt {
+    padding-top:20px;
+  }
+} 
+
+@media screen and (max-width: 376px) {
+  
+} 
+
+@media screen and (max-width: 321px) {
+
+} 

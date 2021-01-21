@@ -79,3 +79,31 @@
 .category-detail-content:nth-child(even) .category-detail-txts .category-detail-txt {
   width: 480px;
 }
+
+@media screen and (max-width: 1025px) {
+
+  .category-detail-img img{
+    width: 450px;
+  }
+
+  .category-detail-content:nth-child(even) .category-detail-img img{ 
+    width: 450px;
+  }
+  }
+} 
+
+@media screen and (max-width: 769px) {
+
+} 
+
+@media screen and (max-width: 426px) {
+
+} 
+
+@media screen and (max-width: 376px) {
+  
+} 
+
+@media screen and (max-width: 321px) {
+
+} 
