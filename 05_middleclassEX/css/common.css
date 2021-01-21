@@ -89,7 +89,7 @@ a {
 }
 
 .reserve-input {
-  width: 400px;
+  width: 100%;
   height: 30px;
   margin: 0 auto;
   border:1px solid #E7E7E7;
@@ -109,3 +109,23 @@ margin-top: 50px;
 }
 
 /* モーダルCSSここまで */
+
+@media screen and (max-width: 426px) {
+
+  .modalWrapper {
+    width: 90%;
+    padding:10px;
+  }
+
+  .reserve-input {
+    width: 100%;
+  }
+} 
+
+@media screen and (max-width: 376px) {
+  
+} 
+
+@media screen and (max-width: 321px) {
+
+} 
