@@ -5,8 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-  <title>お部屋 | 石井花壇 | 温海温泉旅館【公式サイト】</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- Primary Meta Tags -->
+  <title>お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】</title>
   <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。" />
+  <meta name="title" content="お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】">
+  <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://kannnahacks.html.xdomain.jp/room.html">
+  <meta property="og:title" content="お部屋">
+  <meta property="og:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+  <meta property="og:image"
+    content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://kannnahacks.html.xdomain.jp/room.html">
+  <meta property="twitter:title" content="お部屋">
+  <meta property="twitter:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+  <meta property="twitter:image"
+    content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
@@ -40,14 +60,14 @@
 <body>
   <header class="header">
     <!-- レスポンシブ用ハンバーガーボタン開始 -->
-    <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu"
+    <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-global-menu"
       aria-expanded="false" area-label="メニューを開閉する">
       <span class="hamburger__line">
       </span>
     </button>
     <!-- レスポンシブ用ハンバーガーボタン終了 -->
     <div class="header-wrapper">
-      <a href="/05_middleclassEX">
+      <a href="/">
         <h1 class="header-top">
           <img class="header-logo" src="images/logo02.png" alt="ヘッダロゴ">
           <div>石井花壇</div>
@@ -58,13 +78,15 @@
           <ul class="globalnavi-wrapper">
             <ul class="globalnavi">
               <!-- TODO フォルダ階層は後で修正 -->
-              <li><a class="globalnavi-link" href="/05_middleclassEX/room.html">お部屋</a></li>
-              <li><a class="globalnavi-link" href="/05_middleclassEX/dish.html">お料理</a></li>
-              <li><a class="globalnavi-link" href="/05_middleclassEX/hotspring.html">温泉</a></li>
+              <li><a class="globalnavi-link" href="/room.html">お部屋</a></li>
+              <li><a class="globalnavi-link" href="/dish.html">お料理</a></li>
+              <li><a class="globalnavi-link" href="/hotspring.html">温泉</a></li>
             </ul>
             <li><button id="openModal" class="rounded-btn"><i class="far fa-calendar-check"></i>宿泊予約</button></li>
           </ul>
         </nav>
+        <div class="drawer-background" id="js-drawer-background">
+        </div><!-- /.drawer-background -->
       </div><!-- /.sp-header-menu -->
     </div><!-- /.header-wrapper -->
   </header>
@@ -120,14 +142,14 @@
     <div class="contents-wrapper">
       <ol class="breadcrumb-wrapper" itemscope itemtype="https://schema.org/BreadcrumbList">
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a itemprop="item" href="/05_middleclassEX/">
+          <a itemprop="item" href="/">
             <span itemprop="name">トップ</span>
           </a>
           <meta itemprop="position" content="1" />
         </li>
 
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a itemprop="item" href="/05_middleclassEX/room.html">
+          <a itemprop="item" href="/room.html">
             <span itemprop="name">お部屋</span>
           </a>
           <meta itemprop="position" content="2" />
@@ -182,11 +204,11 @@
   <footer class="footer">
     <div class="footer-upper">
       <div class="footer-menu-wrapper">
-        <div class="footer-menu vertical"><a class="footer-menu-link" href="/05_middleclassEX/hotspring.html">温泉</a>
+        <div class="footer-menu vertical"><a class="footer-menu-link" href="/hotspring.html">温泉</a>
         </div><!-- /.footer-menu -->
-        <div class="footer-menu vertical"><a class="footer-menu-link" href="/05_middleclassEX/dish.html">お料理</a></div>
+        <div class="footer-menu vertical"><a class="footer-menu-link" href="/dish.html">お料理</a></div>
         <!-- /.footer-menu -->
-        <div class="footer-menu vertical"><a class="footer-menu-link" href="/05_middleclassEX/room.html">お部屋</a></div>
+        <div class="footer-menu vertical"><a class="footer-menu-link" href="/room.html">お部屋</a></div>
         <!-- /.footer-menu -->
       </div><!-- /.footer-menu-wrapper -->
       <h2 class="footer-top">
