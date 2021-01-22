@@ -78,6 +78,7 @@
   line-height: 51px;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+ -webkit-writing-mode: vertical-rl;
 
   width:100px;
   height: 500px;
@@ -115,6 +116,7 @@
 
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
 }
 
 .concept-txt {
@@ -127,6 +129,7 @@
 
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
 }
 
 .concept-txt span {
