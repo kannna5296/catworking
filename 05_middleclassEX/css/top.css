@@ -149,7 +149,7 @@
 
 /* サービス詳細開始 */
 .detail .contents-wrapper {
-  max-width: 1180px;
+  max-width: 1250px;
   margin: 0 auto;
   margin-top:108px;
 }
@@ -163,6 +163,7 @@
   max-height: 450px;
   min-height: 425px;
   object-fit: cover;
+  width: 675px;
 }
 
 .detail-button:hover,
@@ -179,7 +180,7 @@
 
 .detail-content:nth-child(even) .detail-txts{
   margin-left: 0;
-  margin-right: 200px;
+  margin-right: 250px;
 }
 
 .detail-txts{
