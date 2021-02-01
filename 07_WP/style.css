@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*
+ * Theme Name: MY THEME
+ * AUTHOR hiro
+ * Description: オリジナルテーマ
+ * Version: 1.0
+*/
+
+:root {
+    --f1: 28px; /* 39.05px */
+    --f2: 26px; /* 31.2px */
+    --f3: 22px; /* 24.96px */
+    --f4: 1.25em; /* 20.px */
+    --f5: 1em;    /* 16.px */
+    --f6: 0.8em;  /* 12.8px */
+
+    --basecolor: #63a211; /*基本色*/
+    --gradient:  linear-gradient( 71deg,  rgba(34,126,34,1) 3.7%, rgba(99,162,17,1) 84.3% );
+
+    --myfont: 'Josefin Sans', sans-serif;
+    --myw: 900px; /*標準幅*/
+}
+
+h1 {
+    font-size: var(--f1);
+}
+
+h2 {
+    font-size: var(--f2);
+}
+
+h3 {
+    font-size: var(--f3);
+}
+
+body {
+    margin: 0;
+}
+
+.mycontainer {
+    margin-left:10px;
+    margin-right: 10px;
+    max-width: 900px;
+}
+
+.post-categoies {
+
+}
+
+.mycontainer {
+
+}
+
+@media (min-width: 1320px) {
+    .mycols {
+        display: flex;
+        margin: 50px calc( ( 100vw - var(--myw) ) / 2);
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 740px) {
+
+    .alignfull {
+        margin-left: calc( (100vw - var(--myw) ) / 2 * -1);
+        margin-right: calc( (100vw - var(--myw) ) / 2 * -1);
+    }
+
+    .alignwide {
+        margin-left: calc( (100vw - var(--myw) ) / 4 * -1);
+        margin-right: calc( (100vw - var(--myw) ) / 4 * -1);
+        max-width: none;
+        width: auto;
+    }
+}
