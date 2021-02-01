@@ -12,9 +12,9 @@
     --f3: 22px; /* 24.96px */
     --f4: 1.25em; /* 20.px */
     --f5: 1em;    /* 16.px */
-    --f6: 0.8em;  /* 12.8px */
+    --f6: 12px;  /* 12.8px */
 
-    --basecolor: #63a211; /*基本色*/
+    --basecolor: #1b224c; /*基本色*/
     --gradient:  linear-gradient( 71deg,  rgba(34,126,34,1) 3.7%, rgba(99,162,17,1) 84.3% );
 
     --myfont: 'Josefin Sans', sans-serif;
@@ -43,12 +43,27 @@ body {
     max-width: 900px;
 }
 
-.post-categoies {
+.post-categories {
+    display:flex;
+    padding:0;
+    list-style-type: none;
+}
 
+.post-categories li:not(last-child) {
+    margin-right: 10px;
+}
+
+.post-categories a {
+    background-color: var(--basecolor);
+    color: #ffffff;
+    font-size: var(--f6);
+    padding: 10px 15px;
+    text-decoration: none;
 }
 
 .mycontainer {
-
+    margin-left:10px;
+    margin-right: 10px
 }
 
 @media (min-width: 1320px) {
@@ -59,7 +74,14 @@ body {
     }
 }
 
-@media (min-width: 740px) {
+@media (min-width: 900px) {
+    .mycontainer {
+        max-width: none;
+
+        /* articleとbodyの差分埋めて、figureのせいで出る横スクロールを隠す */
+        margin-left: calc( (100vw - var(--myw) ) /2);
+        margin-right: calc( (100vw - var(--myw) ) /2);
+    }
 
     .alignfull {
         margin-left: calc( (100vw - var(--myw) ) / 2 * -1);
