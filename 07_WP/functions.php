@@ -70,3 +70,10 @@ function mytheme_widgets() {
   }
   
   add_action('widgets_init', 'mytheme_widgets');
+
+
+function my_replace_to_custom_tags( $postarr ) {
+    $postarr['post_content'] = str_replace('<p><a href=', '<p><a class="mypostlink" href=', $postarr['post_content'] );
+    return $postarr;
+}
+add_filter('wp_insert_post_data', 'my_replace_to_custom_tags');

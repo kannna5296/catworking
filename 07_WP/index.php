@@ -17,7 +17,11 @@
 <p><?php bloginfo( 'description' ); ?></p>
 </header>
 
-<div class="mycols">
+<div 
+<?php if( current_theme_supports( 'mycols' ) && !is_sigle() ): ?>
+class="mycols"
+<?php endif; ?>>
+
 <div class="mycontent">
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
